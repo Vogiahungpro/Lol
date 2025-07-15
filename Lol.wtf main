@@ -1,10 +1,17 @@
-local Steal_a_Brainrot = 109983668079237
-local BladeBall = 13772394625
-local GameID = game.PlaceId
+local Steal_a_Brainrot = "109983668079237"
+local BladeBall = "13772394625"
+local GameID = tostring(game.PlaceId)
 
 pcall(function()
     if GameID == Steal_a_Brainrot then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Lol"))()
+        local urls = {
+            "https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Lol",
+            "https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/steal%20a%20brainrot%20no%20kick%20swift",
+            "https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Anti%20kick%20steal%20a%20brainrot"
+        }
+        for _, url in ipairs(urls) do
+            loadstring(game:HttpGet(url))()
+        end
     elseif GameID == BladeBall then
         loadstring(game:HttpGet("https://pandadevelopment.net/virtual/file/093c52661f498627"))()
     end
