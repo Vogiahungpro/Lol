@@ -1,1 +1,14 @@
-loadstring(game:HttpGet("https://pandadevelopment.net/virtual/file/093c52661f498627"))()
+local Steal a Brainrot = 109983668079237
+
+local BladeBall = 13772394625
+
+local GameID = game.PlaceId
+
+pcall(function()
+    if GameID == Steal a Brainrot then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Lol"))()
+    elseif GameID == BladeBall then
+        loadstring(game:HttpGet("https://pandadevelopment.net/virtual/file/093c52661f498627"))()
+    end
+end)
+
