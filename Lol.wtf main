@@ -1,5 +1,6 @@
 local Steal_a_Brainrot = 109983668079237
 local BladeBall = 13772394625
+local PhantomBall = 12979690461
 local GameID = game.PlaceId
 
 pcall(function()
@@ -7,5 +8,7 @@ pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Lol"))()
     elseif GameID == BladeBall then
         loadstring(game:HttpGet("https://pandadevelopment.net/virtual/file/093c52661f498627"))()
+    elseif GameID == PhantomBall then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Phantom%20ball"))()
     end
 end)
