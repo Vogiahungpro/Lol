@@ -1,5 +1,5 @@
 local Steal_a_Brainrot = 109983668079237
-local BladeBall = 13772394625
+local BladeBall = 13772394625 and 15234596844
 local PhantomBall = 12979690461
 local GameID = game.PlaceId
 
