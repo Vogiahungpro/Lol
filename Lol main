@@ -1,2 +1,516 @@
--- This script was generated using the MoonVeil Obfuscator v1.3.2 [https://moonveil.cc]
-local Sa,t,Qb,Ha,Wc=getmetatable,pairs,type;local R,Ia,Wb,Eb,_a,Rc,B,Mb,bb,gc,rc,wd,g,nd,Gb,ra,nc,Db,oc,Q,K,Hc,lb ra={}lb,Q={[15694]=14016,[-26578]=7956},function(Ob)return lb[Ob+11014]end Rc={[14016]=function()Mb=(getfenv());bb,R,nc=(string.char),(string.byte),(bit32 .bxor);Ia=function(Ka,ja)local Ta,Kb,id,Dc,ed Dc={}Kb,ed={[14516]=-5557,[-18802]=30782,[-17191]=-21024,[-2124]=-17430,[30365]=-9906},function(T)return Kb[T- -25978]end Ta={[-17430]=function()if(Dc[1]>=0 and Dc[2]>Dc[3])or((Dc[1]<0 or Dc[1]~=Dc[1])and Dc[2]<Dc[3])then id=-21024 else id=ed(-44780)end end,[30782]=function()Dc[4]=Dc[4]..bb(nc(R(Ka,(Dc[5]-44)+1),R(ja,(Dc[5]-44)%#ja+1)))id=ed(4387)end,[-9906]=function()Dc[2]=Dc[2]+Dc[1];Dc[5]=Dc[2];if Dc[2]~=Dc[2]then id=-21024 else id=-17430 end end,[-2800]=function()Dc[5]=Dc[2];if Dc[3]~=Dc[3]then id=ed(-43169)else id=ed(-28102)end end}id=ed(-11462)repeat while true do Dc[6]=Ta[id]if Dc[6]~=nil then if Dc[6]()then break end elseif id==-5557 then Dc[4]='';Dc[2],Dc[3],Dc[1]=44,(#Ka-1)+44,1 id=-2800 elseif id==-21024 then return Dc[4]end end until id==-932 end;Gb,Hc,wd,g,B,_a,Eb,Wb=Mb[Ia('\nk\188\16q\169','y\31\206')][Ia('\232\128\130\252\141\153','\157\238\242')],Mb[Ia('q\1\20k\27\1','\2uf')][Ia('\177\183\160','\194')],Mb[Ia('\239Y\164\245C\177','\156-\214')][Ia('\26\178\f\174','x\203')],Mb[Ia('\239\224\249\186\191','\141\137')][Ia('NN!K[=','\"=I')],Mb[Ia('\16\0\6Z@','ri')][Ia('6\174\224-\187\252','D\221\136')],Mb[Ia('\215\17\193K\135','\181x')][Ia('\14,\2)','lM')],Mb[Ia('D\235R\230U','0\138')][Ia('\194\219g\194\213}','\161\180\t')],{};rc=(function(pc)local cd,Z,jd,X,e cd={}X,jd={[-15560]=-124,[-15883]=-9399,[25971]=28495,[6675]=14716,[-25539]=-31139,[22202]=29401,[-17001]=-5178,[-23728]=25524,[-21091]=-31785,[4284]=-22602,[-17007]=32010,[12349]=28495,[31127]=-124,[13116]=24582,[-4560]=-9971,[23054]=-16771,[20186]=28495,[-14909]=12952,[-16378]=28495,[-28463]=14716,[53]=-124,[25024]=-9399,[17841]=14716,[10232]=26369,[32170]=-124,[-10637]=-29449,[-20542]=25524,[-6820]=-15604,[-13500]=28495,[31066]=28495},function(Ma)return X[Ma-14904]end e={[3554]=function()cd[1]=cd[2];if cd[3]~=cd[3]then Z=jd(-656)else Z=jd(-979)end end,[14716]=function()cd[2]=cd[2]+cd[4];cd[1]=cd[2];if cd[2]~=cd[2]then Z=jd(47074)else Z=jd(39928)end end,[24582]=function()cd[5][#cd[5]+1]=cd[6]cd[7]=Hc(cd[7]..cd[6],-cd[8])Z=jd(21579)end,[-31139]=function()if cd[9]+1<=#pc then Z=jd(8084)return true end Z=jd(40875)end,[28495]=function()cd[10]=B(cd[10],1)if cd[6]then Z=jd(28020)return true end Z=jd(-13559)end,[-124]=function()if cd[9]<=#pc then Z=jd(19188)else Z=jd(10344)end end,[-15604]=function()cd[11]=Gb(Ia('V!Z','h'),pc,cd[9]);cd[9]=cd[9]+2 cd[12],cd[13]=#cd[7]-B(cd[11],cd[14]),_a(cd[11],(cd[15]-1))+cd[16]cd[6]=Hc(cd[7],cd[12],cd[12]+cd[13]-1)Z=jd(-1474)end,[32010]=function()cd[6]=Hc(pc,cd[9],cd[9])cd[9]=cd[9]+1 Z=jd(35090)end,[-22602]=function()cd[10]=wd(pc,cd[9]);cd[9]=cd[9]+1 cd[4],cd[3],cd[2]=1,(8)+139,140 Z=3554 end,[-16771]=function()if cd[9]<=#pc then Z=jd(-2103)return true end Z=jd(27253)end,[-9399]=function()if(cd[4]>=0 and cd[2]>cd[3])or((cd[4]<0 or cd[4]~=cd[4])and cd[2]<cd[3])then Z=jd(46031)else Z=28386 end end,[28386]=function()cd[6]=nil;if _a(cd[10],1)~=0 then Z=jd(37958)return true else Z=jd(-10635)return true end Z=28495 end}Z=jd(37106)repeat while true do cd[17]=e[Z]if cd[17]~=nil then if cd[17]()then break end elseif Z==12952 then return cd[18]elseif Z==-29449 then cd[19]=12;cd[14],cd[8]=16-cd[19],g(1,cd[19]);cd[15],cd[16],cd[9],cd[5],cd[7]=g(1,cd[14]),3,1,{},'';Z=-124;elseif Z==-9971 then cd[20]=Eb(cd[5]);Wb[pc]=cd[20]return cd[20]elseif Z==29401 then cd[18]=Wb[pc];if cd[18]then Z=jd(-5)break end Z=-29449 end end until Z==-29186 end);Db=Ia('\194y=P\v\158\196\bz\235\56^\193\210{\181\234\132\148\53\247u\234\171\140\158^\141\181\188\nc\228S\23~%\180\238.\\\209\2\96\255\232A\147\204\174\190\27\146\18\143\192\225\241\t\216\238\225D*','\131;~\20N\216\131@3\161s\18\140\156\52\229\187\214\199a\162#\189\243\213\196?\239\214\216o\5');nd,K=Mb[Ia('\242B\1\232X\20','\129\54s')][Ia('\227\144\241\129','\132\227')],Mb[Ia('\22\127\138\fe\159','e\v\248')][Ia('{\249y\227','\24\145')];oc=(function(xa)xa=nd(xa,'[^'..Db..'=]','')return(xa:gsub('.',function(gd)if(gd=='=')then return''end local n,Fc='',(Db:find(gd)-1)for aa=6,1,-1 do n=n..(Fc%2^aa-Fc%2^(aa-1)>0 and'1'or'0')end return n;end):gsub('%d%d%d?%d?%d?%d?%d?%d?',function(w)if(#w~=8)then return''end local Nc=0 for kc=1,8 do Nc=Nc+(w:sub(kc,kc)=='1'and 2^(8-kc)or 0)end return K(Nc)end))end);gc=Q(-37592);return true;end}gc=Q(4680)repeat while true do ra[1]=Rc[gc]if ra[1]~=nil then if ra[1]()then break end end end until gc==7956 local Nb,Ga,lc,fd,c,V,v,ka,d,Oc,wc,Xa,ac,Zb,Ea,mc,U,Bc,Wa,Kc,Aa,m,na,hd,Ub,f,bc,_d=Mb[Ia('\220\180\216\168','\168\205')],Mb[Ia('\177J\160E\173','\193)')],Mb[Ia('\130\253\149\224\149','\231\143')],Mb[Ia('\30\31u\229\a\18~\226','jp\27\144')],Mb[Ia('J\216PN\217W','+\171#')],Mb[Ia('\254C\130\232E\154','\141&\238')],Mb[Ia('\138\5\140\180\195\169\152\20\153\187\202\184','\249\96\248\217\166\221')],Mb[Ia('\211\227?\201\249*','\160\151M')][Ia('\141g\146\134i\148','\235\b\224')],Mb[Ia('.b\203\52x\222',']\22\185')][Ia('\169Z\160\189W\187','\220\52\208')],Mb[Ia('\20\1\51\14\27&','guA')][Ia('\224\230\241','\147')],Mb[Ia('\229c\243\255y\230','\150\23\129')][Ia('\138\181\156\169','\232\204')],Mb[Ia('ISmSIx',":\'\31")][Ia('^\217\\\195','=\177')],Mb[Ia("1\251\'\246 ",'E\154')][Ia('\176\181\171\191','\221\218')],Mb[Ia('\1i\23d\16','u\b')][Ia('\177\205\162\199','\193\172')],Mb[Ia('\197y\211t\212','\177\24')][Ia('\129@\168\131F\168','\226\50\205')],Mb[Ia('\188\240\170\253\173','\200\145')][Ia('[\252\175W\224\168','2\146\220')],Mb[Ia('\212\31\194\18\197','\160~')][Ia('@\15?@\1%','#\96Q')],Mb[Ia('i7\250\229\127,\225\228o','\nX\136\138')][Ia('\208|\248\210z\248','\179\14\157')],Mb[Ia('\254t\24\54\232o\3\55\248','\157\27jY')][Ia('\237\f\241\t\240','\148e')],Mb[Ia('R\238\154\233D\245\129\232T','1\129\232\134')][Ia('l\18zk\26l','\30w\t')],Mb[Ia('\240\51q\156\230(j\157\246','\147\\\3\243')][Ia('\24\0\20\31\30','{l')],Mb[Ia('\226\154\244\192\178','\128\243')][Ia('\212\217\196','\182')],Mb[Ia('\3\"\21xS','aK')][Ia('\243X\254R','\145 ')],Mb[Ia('\160\248\182\162\240','\194\145')][Ia('\161\f\173\t','\195m')],Mb[Ia('sTe\14#','\17=')][Ia('YB^EO',';6')],Mb[Ia('\247\219\225\129\167','\149\178')][Ia('Z\21\50A\0.','(fZ')],Mb[Ia('\132\158\146\196\212','\230\247')][Ia('\175\21>\170\0\"','\195fV')],Mb[Ia('\129\49\151k\209','\227X')][Ia('~I\157iP\138o','\27\49\233')]local F,ia,O,Hb,ba,ub,P,Sc=function(Bb)return Nb(Bb)==Ia('\223k}\211{b','\177\30\16')end,function(hc)return Nb(hc)==Ia('\14\203,\20\209\57','}\191^')end,function(Yc)return Nb(Yc)==Ia('\149j\248\155\96\246\153','\247\5\151')end,function(fb)return Nb(fb)==Ia('\233cL\183\251\127M\186','\143\22\"\212')end,{{4,6,false},{4,5,false},{2,5,false},{7,2,true},{3,7,true},{8,0,true},{3,4,true},{9,5,false},{6,8,false},{4,7,false},{7,9,false},{3,4,true},{5,0,true},{6,5,false},{7,2,true},{1,7,false},{3,4,true},{2,5,false},{7,5,false},{1,7,false},{0,0,true},{6,1,false},{7,3,true},{5,5,false},{1,9,true},{4,3,false},{7,6,true},{7,2,false},{2,5,false},{1,0,true},{6,4,true},{9,5,true},{1,4,true},{7,2,false},{0,2,false},{4,5,false},{10,7,false},{1,7,false},{1,1,true},{1,5,true},{1,5,true},{4,1,true},{6,6,false},{6,6,true},{4,5,true},{3,6,true},{4,3,false},{1,7,false},{7,1,true},{1,9,true},{6,7,true},{10,5,false},{1,5,true},{10,6,true},{6,4,true},{2,6,false},{1,5,false},{4,5,true},{7,3,true},{7,5,false},{7,5,false},{7,2,true},{10,1,false},{2,5,false},{3,2,false},{5,5,false},{10,7,false},{4,3,false},{4,7,false},{4,7,true},{1,1,true},{4,5,false},{10,9,true},{7,3,false},{8,0,true},{8,2,false},{7,6,false},{6,2,true},{7,2,false},{3,1,true},{4,4,true},{1,7,false},{5,2,false},{5,0,true},{0,0,true},{7,5,false},{7,4,false},{6,1,false},{6,2,false},{7,2,false},{7,9,true},{3,5,true},{1,7,false},{6,4,true},{7,6,false},{4,0,false},{10,6,true},{3,5,false},{10,4,false},{1,6,true},{2,5,false},{2,5,false},{4,9,false},{10,3,false},{6,5,false},{7,2,false},{3,6,true},{4,4,false},{3,3,false},{1,4,true},{3,6,false},{8,5,false},{7,9,true},{6,5,false},{8,5,true},{4,5,false},{9,5,false},{7,4,true},{8,0,true},{1,5,false},{1,5,false},{2,5,false},{10,2,true},{4,4,false},{7,1,true},{3,2,false},{6,5,false},{10,5,false},{1,5,false},{1,1,true},{2,5,false},{4,6,false},{7,6,false},{7,3,true},{4,2,true},{1,2,false},{7,5,false},{6,2,false},{1,5,true},{4,9,false},{5,6,false},{10,4,true},{5,5,true},{1,9,true},{4,4,true},{7,1,true},{1,5,false},{6,4,true},{9,5,false},{7,1,false},{6,6,false},{1,7,false},{9,5,false},{6,7,true},{7,2,false},{6,1,false},{0,5,false},{4,4,false},{5,5,false},{1,7,false},{7,3,false},{7,1,true},{3,7,false},{8,5,false},{6,9,false},{1,1,false},{10,9,true},{1,1,true},{1,3,false},{1,1,false},{1,5,false},{1,4,true},{6,7,true},{9,5,false},{6,5,false},{7,6,true},{1,5,false},{4,7,false},{7,5,true},{10,1,true},{9,5,false},{1,1,true},{4,2,false},{3,1,true},{7,0,true},{10,9,true},{3,0,false},{4,5,false},{6,5,true},{0,5,false},{6,5,true},{3,4,false},{1,6,false},{3,9,true},{1,1,true},{1,6,true},{7,7,false},{1,5,false},{4,0,false},{4,5,false},{10,1,false},{1,1,true},{10,3,true},{1,1,false},{1,9,true},{3,7,false},{8,5,false},{1,7,true},{7,9,false},{1,5,true},{10,9,false},{7,9,false},{10,3,false},{1,7,true},{1,0,false},{1,7,false},{4,2,false},{10,9,true},{10,9,false},{1,3,true},{9,5,false},{4,3,true},{2,2,false},{4,0,false},{7,5,false},{7,4,true},{4,5,true},{7,0,true},{4,2,true},{4,5,false},{4,4,true},{4,4,true},{7,7,false},{10,3,true},{10,2,true},{1,5,false},{7,2,false},{6,5,false},{7,3,true},{3,3,true},{1,3,true},{4,7,true},{3,5,true},{1,5,false},{3,4,true},{5,5,false},{5,2,false},{7,4,true},{8,5,false},{7,4,false},{8,2,false},{1,5,true},{10,5,true},{10,9,false},{1,5,false},{1,5,false}},-1,-2,{[15524]={},[-989]={}}local function Ec(ld)return if ld<32768 then ld else ld-65536 end local function zb(Xc)return if Xc<8388608 then Xc else Xc-16777216 end local function va(za)local ea=Sc[-989][za]if not(ea)then else return ea end local pb,sd=za,1 local function sa()local Pa=d(Ia('y',';'),pb,sd)sd=sd+1 return na(Pa,1)end local function Ua()local mb=d(Ia('U ]','i'),pb,sd)sd=sd+4 return na(mb,-166906468)end local function ca()local Rb=d(Ia('[\3','g'),pb,sd)sd=sd+8 return Rb end local function ab(ud)local k=d(Ia('\218','\185')..ud,pb,sd)sd=sd+ud return k end local function Mc()local ic,oa,vb,cc,z cc={}oa,z={[-5867]=11350,[-30750]=11350,[-6073]=11350,[-19468]=26930,[-15470]=-11485,[21578]=25002,[32579]=-18085,[-14873]=-18085},function(nb)return oa[nb-20581]end vb={[15324]=function()cc[1]=cc[2];if cc[3]~=cc[3]then ic=-26353 else ic=-11485 end end,[-11485]=function()if(cc[4]>=0 and cc[2]>cc[3])or((cc[4]<0 or cc[4]~=cc[4])and cc[2]<cc[3])then ic=-26353 else ic=-21197 end end,[11350]=function()cc[2]=cc[2]+cc[4];cc[1]=cc[2];if cc[2]~=cc[2]then ic=-26353 else ic=z(5111)end end,[-21197]=function()cc[5]=sa();cc[6]=m(cc[6],bc(hd(cc[5],127),(cc[1]-60)*7))if not Ub(cc[5],128)then ic=z(42159)return true end ic=z(14714)end,[25002]=function()ic=-26353 return true end}ic=z(1113)repeat while true do cc[7]=vb[ic]if cc[7]~=nil then if cc[7]()then break end elseif ic==26930 then cc[6]=0;cc[2],cc[3],cc[4]=60,(4)+60,1 ic=15324 elseif ic==-26353 then return na(cc[6],485734970)end end until ic==6619 end local function C()local Zc,wa,Lb,Na,ob Na={}Lb,wa={[31430]=-26264,[-1799]=-25805,[22628]=-12624,[-11240]=23514,[-7577]=-19245,[5300]=-25805},function(Fb)return Lb[Fb- -13217]end Zc={[-25805]=function()ob=wa(-20794);return true;end}ob=wa(18213)repeat while true do Na[1]=Zc[ob]if Na[1]~=nil then if Na[1]()then break end elseif ob==23514 then return ab(Na[2])elseif ob==-12624 then return''elseif ob==-26264 then Na[2]=Mc();if not(Na[2]==0)then ob=wa(-24457)break else ob=wa(9411)break end ob=-25805 end end until ob==-19245 end local function ga(xb)local Va,jc,r,db,td r={}jc,td={[32384]=28098,[-14227]=6976,[20250]=-12267,[24072]=17948,[-6433]=17948,[-24572]=17948,[-24702]=28098,[-28387]=17948,[26345]=-29660,[-20347]=11375,[21947]=-3811,[5638]=17948,[15344]=28098,[11065]=28098,[20520]=28098,[27616]=7567,[32283]=28098,[-32541]=18567,[12200]=28098,[-29578]=28098,[-11751]=6976,[9032]=-22629,[-5606]=17948,[4568]=28098,[8951]=-12267,[24834]=28098,[7105]=28098,[1960]=23609,[18876]=6976,[4356]=1072,[-23584]=6976,[-14347]=28098,[19035]=-15541,[25368]=28098,[-27210]=-12383,[-26691]=-6799,[4277]=28098,[-18968]=22946,[1661]=-21337,[-25992]=28098},function(Cb)return jc[Cb+-22817]end Va={[-15541]=function()r[1]=hd(f(r[2],8),16777215);r[3][-20406]=r[1]r[3][27790]=zb(r[1])db=td(55100)end,[-6799]=function()r[3][-9136]=hd(f(r[2],8),255)r[1]=hd(f(r[2],16),65535)r[3][-8828]=r[1]r[3][21534]=Ec(r[1])db=td(8470)end,[1072]=function()r[4]=Ua();r[3][-12964]=r[4];mc(xb,{})db=td(43067)end,[-22629]=function()r[3][4700]=hd(f(r[2],8),255)r[3][-9136]=hd(f(r[2],16),255)r[3][8235]=hd(f(r[2],24),255)db=td(-1885)end,[-3811]=function()r[3][8235]=hd(f(r[2],8),255)r[3][4700]=hd(f(r[2],16),255)r[3][-9136]=hd(f(r[2],24),255)db=td(29922)end,[23609]=function()if r[5]==1 then db=td(-3874)return true elseif r[5]==2 then db=td(44764)return true elseif r[5]==9 then db=td(3849)return true elseif not(r[5]==6)then db=td(33882)return true else db=td(41852)return true end db=td(48185)end,[-29660]=function()r[3][-9136]=hd(f(r[2],8),255)r[3][4700]=hd(f(r[2],16),255)r[3][8235]=hd(f(r[2],24),255)db=td(35017)end,[22946]=function()r[3][8235]=hd(f(r[2],8),255)r[3][-9136]=hd(f(r[2],16),255)r[3][4700]=hd(f(r[2],24),255)db=td(-6761)end,[11375]=function()r[3][-9136]=hd(f(r[2],8),255)r[3][8235]=hd(f(r[2],16),255)r[3][4700]=hd(f(r[2],24),255)db=td(-3175)end,[-12383]=function()if r[5]==0 then db=td(49162)return true elseif not(r[5]==8)then db=td(24777)return true else db=td(50433)return true end db=td(43337)end,[7567]=function()r[3][4700]=hd(f(r[2],8),255)r[3][8235]=hd(f(r[2],16),255)r[3][-9136]=hd(f(r[2],24),255)db=td(27385)end}db=td(24478)repeat while true do r[6]=Va[db]if r[6]~=nil then if r[6]()then break end elseif db==-21337 then r[2]=Ua();r[7]=hd(r[2],255);r[8]=ba[r[7]+1];r[5],r[9],r[10]=r[8][1],r[8][2],r[8][3];r[3]={[30502]=nil,[-15946]=0,[-20406]=0,[-8828]=0,[21911]=0,[-27719]=0,[-27010]=0,[-5701]=0,[21534]=0,[-12964]=0,[27790]=0,[-9136]=0,[-17830]=r[9],[8235]=0,[4700]=0,[-14809]=r[7]};mc(xb,r[3])if r[5]==5 then db=td(31849)break elseif not(r[5]==7)then db=td(-4393)break else db=td(2470)break end db=td(27094)elseif db==28098 then if r[10]then db=td(27173)break end db=td(31768)elseif db==-12267 then return r[10]end end until db==31386 end local function sb(Jc,Qa)local Y,Qc,_c,Ib,rd Qc={}Ib,_c={[-10930]=-3212,[-13670]=-26400,[9914]=-19861,[5294]=-24127,[16922]=16749,[29256]=15225,[-1990]=-10568,[-30605]=-3212,[21173]=-3212,[-7832]=-3212,[-3228]=9632,[-19925]=12914,[-19932]=-3212,[-16300]=-27501,[22666]=-3212,[11631]=16529,[-18242]=-26400,[30890]=-3212,[-31508]=-3212,[-7099]=-3212,[-3601]=-3212,[32610]=-10568,[28268]=-16269,[32344]=-32540,[17072]=-27501,[-14830]=6518,[12633]=-4585,[-14203]=9632,[-3428]=-10568,[29884]=3729,[-22034]=-2797,[-12202]=-3212,[-31717]=-3212,[-16310]=-3212,[7798]=-3212,[-3590]=-27501,[9023]=8654,[6399]=-3212,[-1383]=-3212,[-25540]=7219,[-319]=-3212,[-2825]=13742,[-24359]=-3212},function(zc)return Ib[zc+3888]end Y={[-4585]=function()Qc[1]=hd(f(Qc[2],10),1023);Jc[-15946]=Qa[Qc[1]+1]rd=_c(-4207)end,[-19861]=function()Jc[-27010]=Qa[Jc[-12964]+1]rd=_c(-11720)end,[12914]=function()Jc[-27010]=Qa[Jc[27790]+1]rd=_c(-20198)end,[13742]=function()Jc[-27010]=_d(Jc[-12964],0,1)==1 Jc[-5701]=_d(Jc[-12964],31,1)==1 rd=_c(-28247)end,[-2797]=function()Qc[2]=Jc[-12964];Qc[3],Qc[4]=f(Qc[2],30),hd(f(Qc[2],20),1023);Jc[-27010]=Qa[Qc[4]+1]Jc[21911]=Qc[3]if Qc[3]==2 then rd=_c(8745)return true elseif Qc[3]==3 then rd=_c(24380)return true end rd=_c(-10987)end,[3729]=function()Jc[-27010]=Qa[_d(Jc[-12964],0,24)+1]Jc[-5701]=_d(Jc[-12964],31,1)==1 rd=_c(-35605)end,[7219]=function()if Qc[5]==2 then rd=_c(13034)return true elseif not(Qc[5]==4)then rd=_c(3910)return true else rd=_c(-25922)return true end rd=_c(-5271)end,[-24127]=function()if not(Qc[5]==7)then rd=_c(28456)return true else rd=_c(25368)return true end rd=_c(-35396)end,[15225]=function()Jc[-27010]=Qa[Jc[21534]+1]rd=_c(-34493)end,[-3212]=function()rd=_c(7743);return true;end,[8654]=function()Qc[5]=Jc[-17830];if Qc[5]==8 then rd=_c(-23813)return true elseif Qc[5]==9 then rd=_c(-6713)return true elseif not(Qc[5]==0)then rd=_c(1406)return true else rd=_c(6026)return true end rd=-3212 end,[-32540]=function()if not(Qc[5]==1)then rd=_c(-29428)return true else rd=_c(25996)return true end rd=_c(18778)end,[16749]=function()Jc[-27010]=Qa[Jc[4700]+1]rd=_c(-7489)end,[-16269]=function()Qc[1],Qc[6]=hd(f(Qc[2],10),1023),hd(f(Qc[2],0),1023);Jc[-15946]=Qa[Qc[1]+1]Jc[-27719]=Qa[Qc[6]+1]rd=_c(17285)end}rd=_c(5135)repeat while true do Qc[7]=Y[rd]if Qc[7]~=nil then if Qc[7]()then break end end end until rd==16529 end local function Pb()local ec,Xb,rb,S,kd kd={}ec,S={[4662]=21392,[27366]=-31363,[32392]=-6432,[16135]=18327,[28210]=19848,[23125]=-31363,[-22471]=19848,[-25937]=11354,[-3865]=-22750,[11053]=19848,[-22642]=-3508,[-24335]=-31363,[31517]=-21539,[-18573]=-21404,[-6441]=21392,[1530]=-30378,[-18467]=9606,[-8300]=13397,[17680]=-31363,[-1226]=1804,[28000]=1804,[-20156]=-21675,[10963]=5662,[-7785]=-21539,[4993]=-1785},function(Da)return ec[Da+-206]end Xb={[-21675]=function()kd[1]=false rb=S(27572)end,[-9851]=function()kd[2]=kd[3];if kd[4]~=kd[4]then rb=-20915 else rb=18327 end end,[-31363]=function()kd[5]=kd[5]+kd[6];kd[2]=kd[5];if kd[5]~=kd[5]then rb=S(-1020)else rb=S(11169)end end,[-30378]=function()kd[1]=ga(kd[7])rb=S(17886)end,[-24536]=function()if(kd[8]>=0 and kd[9]>kd[10])or((kd[8]<0 or kd[8]~=kd[8])and kd[9]<kd[10])then rb=S(-6235)else rb=S(-18261)end end,[62]=function()if(kd[11]>=0 and kd[12]>kd[13])or((kd[11]<0 or kd[11]~=kd[11])and kd[12]<kd[13])then rb=-21539 else rb=17901 end end,[9606]=function()kd[14][(kd[2]-205)]=Pb()rb=S(5199)end,[-6432]=function()kd[3]=kd[3]+kd[15];kd[2]=kd[3];if kd[3]~=kd[3]then rb=-20915 else rb=S(16341)end end,[11354]=function()kd[2]=kd[5];if kd[16]~=kd[16]then rb=1804 else rb=5662 end end,[17901]=function()kd[17][(kd[2]-245)]=kd[18]()rb=S(-8094)end,[-3508]=function()kd[2]=kd[9];if kd[10]~=kd[10]then rb=S(4868)else rb=-24536 end end,[-7437]=function()sb(kd[7][(kd[2]-93)],kd[17])rb=S(32598)end,[-8270]=function()if not(kd[1])then rb=S(1736)return true else rb=S(-19950)return true end rb=S(23331)end,[13397]=function()kd[12]=kd[12]+kd[11];kd[2]=kd[12];if kd[12]~=kd[12]then rb=S(-7579)else rb=62 end end,[-1785]=function()kd[9]=kd[9]+kd[8];kd[2]=kd[9];if kd[9]~=kd[9]then rb=21392 else rb=-24536 end end,[-21404]=function()kd[2]=kd[12];if kd[13]~=kd[13]then rb=S(31723)else rb=62 end end,[5662]=function()if(kd[6]>=0 and kd[5]>kd[16])or((kd[6]<0 or kd[6]~=kd[6])and kd[5]<kd[16])then rb=S(28206)else rb=-8270 end end,[18327]=function()if(kd[15]>=0 and kd[3]>kd[4])or((kd[15]<0 or kd[15]~=kd[15])and kd[3]<kd[4])then rb=-20915 else rb=-7437 end end}rb=S(-3659)repeat while true do kd[19]=Xb[rb]if kd[19]~=nil then if kd[19]()then break end elseif rb==21392 then return{[1172]=kd[20],[29583]=kd[21],[-21689]=kd[22],[-26700]=kd[14],[4896]=kd[23],[-30063]=kd[7]}elseif rb==-21539 then kd[15],kd[4],kd[3]=1,(kd[24])+93,94 rb=-9851 elseif rb==-20915 then kd[25]=Mc();kd[14]=Ea(kd[25]);kd[9],kd[10],kd[8]=206,(kd[25])+205,1 rb=S(-22436)elseif rb==-22750 then kd[22],kd[21],kd[23],kd[20],kd[24]=sa(),sa(),sa(),'',Mc();kd[7],kd[1]=Ea(kd[24]),false;kd[6],kd[16],kd[5]=1,(kd[24])+28,29 rb=S(-25731)elseif rb==1804 then kd[26]=Mc();kd[17]=Ea(kd[26]);kd[18]=function()local b,u,Tb,L,xc xc={}Tb,L={[-6800]=-29177,[8810]=-29177,[-4869]=-17631,[-28150]=-29177,[-14088]=-29177,[21183]=-29177,[-19926]=-12779,[20094]=-17631,[-1934]=-17631,[17332]=-17631,[8943]=-29177,[-21595]=21139,[-7690]=-17631,[-1522]=9040,[-21875]=-29177,[-6301]=-16742,[31344]=-29177,[-26521]=-20896,[-21607]=-3021,[20025]=24225},function(o)return Tb[o- -12810]end u={[-3021]=function()xc[1]=nil b=L(-26898)end,[9040]=function()xc[1]=C()b=L(-4000)end,[-12779]=function()xc[1]=ca()b=L(8373)end,[21139]=function()if xc[2]==4 then b=L(-39331)return true elseif xc[2]==1 then b=L(-34417)return true elseif not(xc[2]==3)then b=L(18534)return true else b=L(-14332)return true end b=L(-3867)end,[-20896]=function()xc[1]=Mc()b=L(-40960)end}b=L(7215)repeat while true do xc[3]=u[b]if xc[3]~=nil then if xc[3]()then break end elseif b==-29177 then return xc[1]elseif b==24225 then xc[2]=sa();if not(xc[2]==5)then b=L(-34405)break else b=L(-32736)break end b=-29177 end end until b==28115 end kd[13],kd[11],kd[12]=(kd[26])+245,1,246 rb=S(-18367)end end until rb==-26990 end local Vc=Pb()Sc[-989][za]=Vc return Vc end local la=Mb[Ia('= \163< \185,','ZE\215')]()local function Cc(Ja,La)Ja=va(Ja)local ta=Ja local function qc(Ya,qd)local function fa(...)return{[14972]=V(Ia('_','|'),...),[13280]={...}}end local function a(j,yb,Ac)local ya,Ca,xd xd,ya={[-4352]=-26581,[-1731]=-10394,[22949]=-10394,[4267]=-6030,[14038]=-10394,[30497]=-28651,[-30370]=-10394},function(Oa)return xd[Oa+14827]end Ca=ya(15670)repeat while true do if Ca==-10394 then return j[yb],a(j,yb+1,Ac)elseif Ca==-28651 then if not(yb>Ac)then Ca=ya(8122)break else Ca=ya(-19179)break end Ca=ya(-45197)elseif Ca==-26581 then return end end until Ca==-20148 end local function W(Za,uc,Ra,Sb)local A,vd,i,Gc,cb i={}cb,vd={[2973]=-17633,[-19000]=-14689,[14457]=3989,[-28367]=-13962,[24565]=15512,[-25792]=3989,[4941]=-22101,[-14086]=-22087,[28277]=26237,[-28446]=-31991,[24599]=18846,[6814]=227,[23444]=13969,[-24070]=23712,[-29422]=7434,[-15480]=3989,[-16703]=21726,[-6278]=14724,[12232]=-3380,[10295]=13969,[19600]=3989,[-13645]=3989,[-28412]=18309,[12614]=3989,[26868]=27578,[-28474]=-31999,[1112]=-20614,[-32755]=3989,[-30084]=18401,[-31082]=3989,[31654]=15949,[-2211]=14154,[-25576]=2753,[-6290]=3989,[10370]=3989,[-32742]=-1905,[18550]=16959,[-26282]=-27921,[13713]=3989,[26842]=3989,[26474]=21733,[22485]=15297,[-14996]=16612,[29197]=-699,[2732]=-3380,[2960]=3989,[18733]=5172,[-29895]=-1872,[-11964]=3989,[-24762]=-4998,[26956]=3989,[-9030]=-20146,[27927]=3989,[14160]=3989,[30116]=-4998,[3979]=-13200,[27551]=11868,[-9895]=22840,[-4581]=3989,[24720]=3989,[-22192]=4868,[-16359]=7434,[23460]=-30102,[-7524]=-25135,[-12818]=-15607,[-12010]=27578,[-8348]=3989,[18095]=-21303,[-29192]=7795,[12373]=3989,[-13836]=-25278,[19247]=28166,[21121]=15051,[-12001]=8964,[-18993]=-3380,[-14384]=7434,[844]=-18887,[-4038]=773,[-25110]=4868,[-10789]=3989,[-25188]=3989,[-8942]=-3386,[-13410]=-10659,[-17482]=-25135,[-6821]=3989,[3451]=-16928,[25790]=8454,[-2785]=15949,[-12186]=26646,[-27089]=3989,[-1975]=7434,[-28792]=26308,[6138]=11540,[31823]=-3559,[-26490]=20919,[17639]=3989,[5004]=-1119,[18941]=-2772,[-4556]=21733,[-32392]=22330,[-3063]=22108,[5097]=3989,[-4919]=15241,[25840]=-29042,[-8146]=7434,[-25804]=3989,[23242]=3989,[-19963]=3989,[-13432]=3989,[-4393]=-17633,[-28813]=3989,[-17709]=16940,[-29288]=3989,[-14930]=-7279,[-30026]=11868,[27630]=22269,[4849]=773,[26544]=-16928,[1878]=-25278,[-8542]=8964,[26435]=31719,[3249]=-3380,[893]=-11410,[10940]=-27921,[5201]=9076,[-28915]=12278,[7741]=14154,[25237]=-8043,[3457]=3989,[-28174]=20919,[-7745]=-14632,[6672]=-973,[-31339]=3989,[-11649]=3989,[-11354]=-2772,[-16229]=-5638,[-2664]=-1905,[-26567]=15377,[-19453]=-16928,[3372]=20919,[-29000]=-1526,[25414]=-5770,[23631]=3989,[27725]=3989,[-20103]=24217,[13478]=13969,[-3708]=3989,[-26467]=3989,[-50]=-6317,[-11764]=-2489,[31565]=-25278,[159]=-3380,[14831]=3989,[21606]=-23522,[-28102]=3989,[29095]=15949,[-2943]=3989,[26395]=16890,[-31404]=7512,[-13582]=3989,[25806]=3989,[25845]=15051,[-13818]=-3380,[22311]=-3386,[-8387]=3989,[18970]=-22087,[-19118]=3989,[-11656]=12806,[-2314]=7351,[-7318]=-25135,[-2995]=-4936,[-7188]=18401,[6741]=-23678,[11412]=-1905,[-11076]=3989,[-6995]=-25135,[-29821]=31202,[29397]=-19797,[28566]=-5914,[-23467]=-5914,[16579]=-5770,[30271]=3989,[12670]=-16928,[-27054]=24818,[-11275]=3989,[21885]=3989,[-31739]=3989,[-31781]=3989,[3803]=6927,[25811]=3989,[-14041]=-7279,[-25986]=3989,[-10880]=3989,[-11777]=20919,[-15486]=10422,[17075]=-2876,[14400]=3989,[3587]=8911,[19683]=-1760,[16378]=-2553,[16481]=3989,[31934]=8964,[28668]=-15404,[17354]=12278,[-25394]=5929,[-28962]=18995,[-20112]=-11796,[22302]=-14223,[-31717]=3989,[-21502]=7433,[22716]=3989,[3532]=-31398,[2810]=-19011,[22447]=7011,[-24049]=24818,[26690]=-16928,[19568]=3989,[4260]=-16928,[4967]=-7279,[-11481]=-488,[14424]=-31264,[28433]=-1526,[-19820]=-22433,[18790]=18401,[-6363]=3989,[-12305]=3989,[10430]=12431,[-17672]=3989,[17925]=22840,[-5359]=-23493,[-17854]=-8739,[-29226]=-18391,[18361]=3989,[-1841]=22840,[-1980]=-25135,[23887]=15598,[7592]=3989,[-661]=15949,[26949]=3989,[-31514]=-3601,[-25603]=12620,[-4905]=-7026,[-12641]=-25946,[27872]=3989,[-21153]=-18391,[23032]=13954,[-4237]=3989,[13674]=-24365,[-19585]=7512,[-25774]=-372,[-25730]=1179,[28400]=-5638,[-31722]=3989,[-13694]=3989,[-19882]=-1526,[-6229]=1997,[-26451]=3989,[12473]=3989,[-17454]=22269,[28646]=13969,[-29088]=22269,[-6984]=3989,[27381]=4868,[-22043]=-11041,[-5027]=23659,[31870]=773,[-36]=-21162,[15820]=4723,[-7926]=21726,[-15957]=3989,[4096]=28191,[4674]=3989,[23171]=-30364,[28710]=3989,[25252]=3989,[16975]=-13838,[-18954]=3989,[-15113]=-2161,[-30716]=7434,[-8905]=27578,[30101]=-1323,[-10836]=3989,[22071]=3989,[14399]=-11410,[-8727]=22073,[-11067]=3989,[-19952]=-3726,[-2955]=8964,[-20623]=31719,[1864]=-32579,[-3866]=-3021,[-17083]=14693,[8060]=-25946,[4826]=-25946,[6280]=-22101,[-31173]=3989,[8920]=12757,[30976]=20919,[-615]=-7789,[-18738]=-833,[-1523]=-7279,[3338]=3989,[-8301]=-19628,[-25558]=-4127,[-26111]=-4998,[3040]=25936,[-21754]=3989,[22342]=16959,[-15842]=-4998,[-28965]=-7258,[20292]=-25278,[-30172]=-19657,[4423]=-5381,[-30262]=3989,[-2162]=21733,[10801]=-16928,[-29040]=15377,[-28676]=15578,[-27577]=3989,[13825]=-15757,[30133]=26237,[-14507]=22476,[-4887]=-13838,[18885]=-12795,[-6251]=-7279,[-24936]=-22087,[-26938]=1359,[-18114]=3989,[-3256]=4485,[2360]=-3380,[-9728]=3989,[-4914]=15949,[-12141]=3989,[7756]=28191,[2476]=-16928,[-21204]=32261,[23019]=3989,[16500]=20919,[-12053]=3989,[6658]=20919,[29872]=622,[-27892]=-15757,[20264]=3989,[24570]=22330,[12968]=3989,[28614]=20919,[-23647]=-11438,[-32593]=31202,[-31141]=7434,[31033]=3989,[-24010]=-27921,[31722]=-31991,[-22424]=7512,[-20724]=29423,[-27820]=-17633,[-31188]=-1355,[23804]=21726,[-17612]=31821,[6714]=20222,[-7244]=-5914,[-23952]=21321,[32714]=3989,[22429]=-31991,[16619]=3989,[15523]=3989,[-14292]=3989,[-15665]=27569,[-16466]=20919,[14471]=6667,[-2001]=-25946,[20321]=-29722,[-15177]=14154,[-29799]=-13838,[-30563]=-25946,[-5354]=-10681,[14720]=-16543,[-30528]=3989,[3214]=3989,[-17946]=3989,[-21230]=14154,[9639]=-3601,[2835]=17727,[-2984]=-13838,[-22927]=18309,[-25446]=3989,[-8451]=3989,[-280]=3989,[30590]=-25135,[24151]=-25946,[18912]=3989,[30233]=3989,[31811]=-1905,[31207]=18401,[26507]=7512,[23182]=3989,[28932]=8964,[31315]=-16010,[7295]=31474,[6790]=-1905,[-18596]=3989,[-19910]=-3601,[32477]=3989,[-23284]=3989,[-14132]=31202,[-28383]=3989,[27043]=-20788,[3496]=3989,[-12121]=15101,[-29775]=3989,[25799]=-22218,[-10161]=17519,[4830]=15949,[-14586]=3989,[20154]=1858,[26304]=3989,[7086]=3989,[-26915]=3989,[8681]=-1672,[23457]=-15473,[25312]=-15757,[10809]=-6360,[-32598]=-1905,[27995]=3989},function(eb)return cb[eb- -18749]end Gc={[16940]=function()i[1][3]=i[1][2][i[1][1]]i[1][2]=i[1]i[1][1]=3 i[2][i[3]]=nil A=vd(-16273)end,[-1672]=function()i[4]=i[5]+i[6]-1 A=vd(-39902)end,[-2553]=function()i[7]={[3]=Za[i[8][8235]],[1]=3};i[7][2]=i[7]i[9][(i[3]-16)]=i[7]A=vd(-36231)end,[10422]=function()A=vd(-38701);return true;end,[2753]=function()i[10]=uc[i[11][-27010]+1];i[12]=i[10][4896];i[9]=Ea(i[12]);Za[i[11][-9136]]=qc(i[10],i[9])i[13],i[14],i[15]=1,17,(i[12])+16 A=-2752 end,[-16530]=function()i[16]..=Za[i[3]]A=vd(1405)end,[-2489]=function()i[9][(i[3]-16)]=qd[i[8][8235]+1]A=vd(-26067)end,[-29042]=function()Za[i[11][-9136]]=i[11][8235]==1 i[17]+=i[11][4700]A=vd(-25570)end,[24217]=function()if i[11][4700]==57 then A=vd(-30935)return true elseif not(i[11][4700]==195)then A=vd(-44143)return true else A=vd(-47425)return true end A=vd(-37703)end,[7011]=function()if i[18]==75 then A=vd(-47941)return true elseif not(i[18]==101)then A=vd(-38569)return true else A=vd(10448)return true end A=vd(-45200)end,[-4127]=function()i[19]=Ec(na(i[11][-8828],31889));i[10]=uc[i[19]+1];i[12]=i[10][4896];i[9]=Ea(i[12]);Za[na(i[11][-9136],253)]=qc(i[10],i[9])i[20],i[21],i[22]=1,(i[12])+48,49 A=vd(12566)end,[-15473]=function()i[23]=Sb[14972]i[4]=i[5]+i[23]-1 A=vd(-48775)end,[-22101]=function()i[11][-14809]=190 i[17]+=1 A=vd(8976)end,[-16928]=function()i[3],i[1]=i[24](i[25],i[26]);i[26]=i[3];if i[26]==nil then A=vd(-15253)else A=vd(-23776)end end,[-20788]=function()i[27]=i[28]-1 A=vd(-50263)end,[32261]=function()if i[11][4700]==72 then A=vd(7050)return true elseif i[11][4700]==82 then A=vd(-47714)return true elseif not(i[11][4700]==114)then A=vd(-47711)return true else A=vd(-4325)return true end A=vd(-46326)end,[-21162]=function()i[17]+=i[11][21534]A=vd(4493)end,[15241]=function()i[5],i[28],i[29]=i[11][-9136],i[11][8235],i[11][-27010];i[30]=Za[i[28]];Za[i[5]+1]=i[30]Za[i[5]]=i[30][i[29]]i[17]+=1 A=vd(4270)end,[-18391]=function()ac(i[31][13280],1,i[6],i[5],Za)A=vd(-47132)end,[-13200]=function()i[17]+=i[11][21534]A=vd(8200)end,[-1119]=function()i[32],i[33]=i[11][21911],i[11][-27010];i[34]=la[i[33]]or Sc[15524][i[33]];if i[32]==1 then A=vd(-5075)return true elseif i[32]==2 then A=vd(934)return true elseif not(i[32]==3)then A=vd(-11959)return true else A=vd(-14326)return true end A=vd(13062)end,[-29722]=function()i[11]=Ra[i[17]]i[18]=i[11][-14809]A=vd(-23636)end,[-1905]=function()i[17]+=1 A=vd(-25039)end,[11868]=function()ac(Sb[13280],1,i[23],i[5],Za)A=vd(5971)end,[-19657]=function()i[5],i[23]=i[11][-9136],i[11][8235]-1;if i[23]==ub then A=vd(4708)return true end;A=vd(8802);end,[12757]=function()i[17]+=1 A=vd(-13652)end,[-1872]=function()i[6]=i[35]-1 A=vd(-47975)end,[14693]=function()i[36]=i[11][-27010];Za[i[11][8235]][i[36]]=Za[i[11][-9136]]i[17]+=1 A=vd(-44541)end,[-11796]=function()i[1]=qd[i[11][8235]+1];Za[i[11][-9136]]=i[1][2][i[1][1]]A=vd(-36863)end,[-7026]=function()Za[i[11][-9136]]=Ea(i[11][-12964])i[17]+=1 A=vd(-1110)end,[-6360]=function()if i[18]==254 then A=vd(9919)return true elseif i[18]==143 then A=vd(-40792)return true elseif i[18]==146 then A=vd(-44352)return true elseif not(i[18]==180)then A=vd(-44479)return true else A=vd(-15162)return true end A=vd(13728)end,[-19011]=function()i[37]=Sa(i[24]);if i[37]~=nil and i[37].__iter~=nil then A=vd(-27779)return true elseif Qb(i[24])==Ia('\163\164\181\169\178','\215\197')then A=vd(-19364)return true end A=vd(-6079)end,[8911]=function()i[28],i[35]=i[11][8235],i[11][4700];i[38],i[16]=Ga(U,Za,'',i[28],i[35]);if not i[38]then A=vd(498)return true end A=vd(10183)end,[4485]=function()i[17]-=1 Ra[i[17]]={[-14809]=116,[-9136]=i[11][-9136],[8235]=i[11][8235],[4700]=0}A=vd(-45216)end,[21733]=function()i[9][(i[3]-48)]=i[39]A=vd(-15377)end,[-19797]=function()i[40],i[41],i[42]=i[43].__iter(i[40])A=vd(-10689)end,[-23493]=function()i[27]=i[4]-i[5]+1 A=vd(-9110)end,[-5381]=function()Za[i[11][-9136]]=i[34][i[11][-15946]][i[11][-27719]]A=vd(-21413)end,[16890]=function()i[24],i[25],i[26]=i[2];if Qb(i[24])~='function'then A=vd(-15939)return true end;A=vd(-14489);end,[-973]=function()if not(i[18]==2)then A=vd(4422)return true else A=vd(-24103)return true end A=vd(-29816)end,[31474]=function()i[44][-15946]=(function(dd,H)local Jb,J,ad,D,Yb Yb={}D,J={[1849]=-23223,[-12779]=3128,[31770]=2322,[-9383]=20115,[-23605]=2322},function(N)return D[N- -13903]end ad={[-23223]=function()Yb[1]=Yb[1]+Yb[2];Yb[3]=Yb[1];if Yb[1]~=Yb[1]then Jb=9106 else Jb=J(17867)end end,[-21342]=function()Yb[3]=Yb[1];if Yb[4]~=Yb[4]then Jb=9106 else Jb=J(-37508)end end,[2322]=function()if(Yb[2]>=0 and Yb[1]>Yb[4])or((Yb[2]<0 or Yb[2]~=Yb[2])and Yb[1]<Yb[4])then Jb=9106 else Jb=J(-26682)end end,[3128]=function()Yb[5]=Yb[5]..Xa(na(wc(dd,(Yb[3]-82)+1),wc(H,(Yb[3]-82)%#H+1)))Jb=J(-12054)end}Jb=J(-23286)repeat while true do Yb[6]=ad[Jb]if Yb[6]~=nil then if Yb[6]()then break end elseif Jb==9106 then return Yb[5]elseif Jb==20115 then Yb[5]='';Yb[2],Yb[4],Yb[1]=1,(#dd-1)+82,82 Jb=-21342 end end until Jb==-2887 end)(i[44][-15946],i[11][-15946])A=vd(-12469)end,[-25135]=function()i[14]=i[14]+i[13];i[3]=i[14];if i[14]~=i[14]then A=vd(-4292)else A=vd(-47789)end end,[-7789]=function()i[24],i[25],i[26]=t(i[24])A=vd(7795)end,[15297]=function()i[17]+=1 A=vd(-30713)end,[-13962]=function()i[36]=i[11][-27010];Za[i[11][-9136]]=Za[i[11][8235]][i[36]]i[17]+=1 A=vd(-30024)end,[-22218]=function()i[17]-=1 Ra[i[17]]={[-14809]=245,[-9136]=i[11][-9136],[8235]=i[11][8235],[4700]=0}A=vd(-49831)end,[1359]=function()i[1]=qd[i[11][8235]+1];i[1][2][i[1][1]]=Za[i[11][-9136]]A=vd(-30802)end,[30063]=function()i[45],i[46],i[47]=i[48];if Qb(i[45])~='function'then A=vd(-49937)return true end;A=vd(-18590);end,[-10681]=function()i[5],i[28],i[35]=na(i[11][-9136],153),na(i[11][8235],55),na(i[11][4700],135);i[49],i[50]=i[28]==0 and i[4]-i[5]or i[28]-1,Za[i[5]];i[31]=fa(i[50](a(Za,i[5]+1,i[5]+i[49])));i[6]=i[31][14972];if not(i[35]==0)then A=vd(-48644)return true else A=vd(-10068)return true end;A=-18391;end,[16612]=function()i[17]+=i[11][21534]A=vd(-3226)end,[-699]=function()if not(i[11][4700]==122)then A=vd(136)return true else A=vd(-4278)return true end A=vd(-2268)end,[-11438]=function()i[17]-=1 Ra[i[17]]={[-14809]=158,[-9136]=i[11][-9136],[8235]=i[11][8235],[4700]=0}A=vd(7057)end,[-14632]=function()i[44]=Ra[i[17]];i[44][-27010]=(function(p,G)local Tc,da,_b,md,od md={}da,od={[522]=-18395,[3855]=-18395,[15573]=-9616,[28707]=-18395,[-19372]=-16693,[-18049]=10669},function(dc)return da[dc- -17126]end Tc={[-9616]=function()md[1]=md[2];if md[3]~=md[3]then _b=od(-13271)else _b=-15989 end end,[-10970]=function()md[4]=md[4]..Xa(na(wc(p,(md[1]-252)+1),wc(G,(md[1]-252)%#G+1)))_b=od(-36498)end,[-16693]=function()md[2]=md[2]+md[5];md[1]=md[2];if md[2]~=md[2]then _b=od(-16604)else _b=-15989 end end,[-15989]=function()if(md[5]>=0 and md[2]>md[3])or((md[5]<0 or md[5]~=md[5])and md[2]<md[3])then _b=od(11581)else _b=-10970 end end}_b=od(-35175)repeat while true do md[6]=Tc[_b]if md[6]~=nil then if md[6]()then break end elseif _b==-18395 then return md[4]elseif _b==10669 then md[4]='';md[3],md[2],md[5]=(#p-1)+252,252,1 _b=od(-1553)end end until _b==-3938 end)(i[44][-27010],i[11][-27010])i[11][-14809]=187 A=vd(-6276)end,[25936]=function()i[43]=Sa(i[40]);if i[43]~=nil and i[43].__iter~=nil then A=vd(10648)return true elseif Qb(i[40])==Ia('\163N\181C\178','\215/')then A=vd(-42701)return true end A=vd(-49312)end,[21321]=function()i[40],i[41],i[42]=t(i[40])A=vd(-31390)end,[-488]=function()if not(i[18]==190)then A=vd(2857)return true else A=vd(-27476)return true end A=vd(11522)end,[7795]=function()i[51]=Za[i[11][8235]];Za[i[11][-9136]]=if i[51]then i[51]else i[11][-27010]or false A=vd(8093)end,[-16010]=function()i[3]=i[22];if i[21]~=i[21]then A=vd(-33335)else A=1997 end end,[26646]=function()i[17]-=1 Ra[i[17]]={[-14809]=163,[-9136]=i[11][-9136],[8235]=i[11][8235],[4700]=0}A=vd(-29538)end,[27569]=function()i[39]={[1]=i[36],[2]=Za}i[2][i[36]]=i[39]A=vd(-20911)end,[-30364]=function()if not(i[18]==119)then A=vd(3698)return true else A=vd(-44307)return true end A=vd(-27136)end,[-7258]=function()i[17]-=1 Ra[i[17]]={[-14809]=156,[-9136]=i[11][-9136],[8235]=i[11][8235],[4700]=0}A=vd(-49922)end,[22476]=function()i[17]+=i[11][21534]A=vd(-27097)end,[17519]=function()i[7]={[3]=Za[i[8][8235]],[1]=3};i[7][2]=i[7]i[9][(i[3]-48)]=i[7]A=vd(-45239)end,[17727]=function()i[32],i[44]=i[11][21911],Ra[i[17]+1];i[44][-27010]=(function(q,gb)local wb,qa,ma,Vb,fc ma={}fc,Vb={[-14748]=-4738,[30633]=-4738,[-4374]=258,[18306]=5860,[-7333]=-2985,[-31994]=-27596,[7911]=1059},function(kb)return fc[kb+-21183]end qa={[5860]=function()ma[1]=ma[1]+ma[2];ma[3]=ma[1];if ma[1]~=ma[1]then wb=Vb(6435)else wb=258 end end,[-27596]=function()ma[3]=ma[1];if ma[4]~=ma[4]then wb=Vb(51816)else wb=Vb(16809)end end,[258]=function()if(ma[2]>=0 and ma[1]>ma[4])or((ma[2]<0 or ma[2]~=ma[2])and ma[1]<ma[4])then wb=-4738 else wb=Vb(29094)end end,[1059]=function()ma[5]=ma[5]..Xa(na(wc(q,(ma[3]-85)+1),wc(gb,(ma[3]-85)%#gb+1)))wb=Vb(39489)end}wb=Vb(13850)repeat while true do ma[6]=qa[wb]if ma[6]~=nil then if ma[6]()then break end elseif wb==-2985 then ma[5]='';ma[2],ma[1],ma[4]=1,85,(#q-1)+85 wb=Vb(-10811)elseif wb==-4738 then return ma[5]end end until wb==22248 end)(i[44][-27010],i[11][-27010])if i[32]==2 then A=vd(-11454)return true elseif i[32]==3 then A=vd(-36361)return true end A=-22101 end,[-14223]=function()if i[52]==1 then A=vd(-17637)return true elseif not(i[52]==2)then A=vd(-12091)return true else A=vd(-39473)return true end A=vd(-30526)end,[29423]=function()i[9][(i[3]-48)]=qd[i[8][8235]+1]A=vd(12227)end,[30206]=function()i[40],i[41],i[42]=i[2];if Qb(i[40])~='function'then A=vd(-15709)return true end;A=vd(-13923);end,[-31999]=function()Za[i[11][-9136]]=i[11][-27010]A=vd(-5781)end,[-372]=function()if not(i[18]==163)then A=vd(-6376)return true else A=vd(-42819)return true end A=vd(-50471)end,[6667]=function()i[17]-=1 Ra[i[17]]={[-14809]=248,[-9136]=i[11][-9136],[8235]=i[11][8235],[4700]=0}A=vd(-40503)end,[23659]=function()if i[1][1]>=i[11][-9136]then A=vd(-36458)return true end A=vd(-7948)end,[-12795]=function()Za[i[11][-9136]]=nil A=vd(-4589)end,[-23522]=function()if i[18]==170 then A=vd(-31567)return true elseif not(i[18]==20)then A=vd(-7940)return true else A=vd(-35832)return true end A=vd(-8379)end,[12620]=function()if not(Za[i[11][-9136]])then A=vd(3136)return true else A=vd(5816)return true end A=vd(-22986)end,[-22433]=function()if i[18]==142 then A=vd(-23654)return true elseif i[18]==17 then A=vd(7646)return true elseif not(i[18]==136)then A=vd(-40251)return true else A=vd(-39953)return true end A=vd(4433)end,[-16543]=function()i[8]=Ra[i[17]];i[17]+=1 i[52]=i[8][-9136]if not(i[52]==0)then A=vd(3553)return true else A=vd(-28910)return true end A=vd(-2249)end,[5929]=function()if i[11][4700]==219 then A=vd(-37487)return true elseif not(i[11][4700]==248)then A=vd(-48921)return true else A=vd(-22005)return true end A=vd(-42033)end,[8454]=function()i[17]-=1 Ra[i[17]]={[-14809]=85,[-9136]=i[11][-9136],[8235]=i[11][8235],[4700]=0}A=vd(1515)end,[3989]=function()if true then A=-1818 else A=30206 end end,[15101]=function()if not(not Za[i[11][-9136]])then A=vd(-15789)return true else A=vd(-33745)return true end A=vd(-51504)end,[-2752]=function()i[3]=i[14];if i[15]~=i[15]then A=vd(-47562)else A=vd(-45316)end end,[-15404]=function()i[17]+=i[11][21534]A=vd(-34706)end,[15578]=function()i[17]-=1 Ra[i[17]]={[-14809]=101,[-9136]=i[11][-9136],[8235]=i[11][8235],[4700]=0}A=vd(-48524)end,[-3021]=function()i[45],i[46],i[47]=i[53].__iter(i[45])A=vd(-6517)end,[18995]=function()if i[11][4700]==189 then A=vd(-42396)return true else A=vd(-19029)return true end A=vd(-50088)end,[15512]=function()i[17]+=i[11][21534]A=vd(-2130)end,[12806]=function()i[1][3]=i[1][2][i[1][1]]i[1][2]=i[1]i[1][1]=3 i[2][i[3]]=nil A=vd(5402)end,[-31398]=function()i[3]=i[54];if i[55]~=i[55]then A=vd(-30750)else A=-6317 end end,[6927]=function()if i[52]==2 then A=vd(-30513)return true end A=vd(-20729)end,[1858]=function()i[54]=i[54]+i[56];i[3]=i[54];if i[54]~=i[54]then A=vd(-27291)else A=vd(-18799)end end,[-3380]=function()i[3],i[57]=i[45](i[46],i[47]);i[47]=i[3];if i[47]==nil then A=vd(-34235)else A=-29581 end end,[14724]=function()i[29],i[58],i[59]=i[11][-27010],i[11][-5701],Za[i[11][-9136]];if(i[59]==i[29])~=i[58]then A=vd(-18785)return true else A=vd(-47541)return true end A=vd(9123)end,[20919]=function()i[22]=i[22]+i[20];i[3]=i[22];if i[22]~=i[22]then A=vd(-31054)else A=vd(-24978)end end,[-8043]=function()if i[18]==83 then A=vd(-23668)return true elseif not(i[18]==84)then A=vd(-44523)return true else A=vd(-47116)return true end A=vd(-11157)end,[-2161]=function()i[29],i[58],i[59]=i[11][-27010],i[11][-5701],Za[i[11][-9136]];if(i[59]==i[29])~=i[58]then A=vd(-14770)return true else A=vd(-9829)return true end A=vd(-25733)end,[-25946]=function()i[3],i[1]=i[40](i[41],i[42]);i[42]=i[3];if i[42]==nil then A=30063 else A=vd(-30405)end end,[-20614]=function()i[36]=i[8][8235];i[39]=i[2][i[36]];if not(i[39]==nil)then A=vd(7725)return true else A=vd(-34414)return true end A=21733 end,[-6317]=function()if(i[56]>=0 and i[54]>i[55])or((i[56]<0 or i[56]~=i[56])and i[54]<i[55])then A=vd(13185)else A=-16530 end end,[-833]=function()i[17]-=1 Ra[i[17]]={[-14809]=59,[-9136]=i[11][-9136],[8235]=i[11][8235],[4700]=0}A=vd(-14075)end,[-31264]=function()i[17]-=1 Ra[i[17]]={[-14809]=152,[-9136]=i[11][-9136],[8235]=i[11][8235],[4700]=0}A=vd(-37345)end,[23712]=function()Za[i[11][-9136]]=Za[i[11][8235]]A=vd(-388)end,[-1760]=function()Za[i[11][-9136]]=i[34][i[11][-15946]]A=vd(-51347)end,[31821]=function()i[44][-15946]=(function(E,M)local Uc,ib,vc,tb,Ic ib={}Uc,tb={[-18385]=-14099,[28777]=3050,[10324]=3604,[-15163]=27389,[-29311]=27389,[18698]=-4230},function(Ba)return Uc[Ba- -16814]end Ic={[-4230]=function()ib[1]=ib[1]+ib[2];ib[3]=ib[1];if ib[1]~=ib[1]then vc=-14099 else vc=tb(-31977)end end,[27389]=function()if(ib[2]>=0 and ib[1]>ib[4])or((ib[2]<0 or ib[2]~=ib[2])and ib[1]<ib[4])then vc=-14099 else vc=-27908 end end,[3050]=function()ib[3]=ib[1];if ib[4]~=ib[4]then vc=tb(-35199)else vc=tb(-46125)end end,[-27908]=function()ib[5]=ib[5]..Xa(na(wc(E,(ib[3]-22)+1),wc(M,(ib[3]-22)%#M+1)))vc=tb(1884)end}vc=tb(-6490)repeat while true do ib[6]=Ic[vc]if ib[6]~=nil then if ib[6]()then break end elseif vc==-14099 then return ib[5]elseif vc==3604 then ib[5]='';ib[4],ib[1],ib[2]=(#E-1)+22,22,1 vc=tb(11963)end end until vc==25808 end)(i[44][-15946],i[11][-15946])i[44][-27719]=(function(s,hb)local y,h,Ab,Pc,pa Pc={}pa,y={[-11034]=-31826,[-5167]=-6689,[30044]=17421,[-9761]=18697},function(tc)return pa[tc+-21541]end h={[17421]=function()if(Pc[1]>=0 and Pc[2]>Pc[3])or((Pc[1]<0 or Pc[1]~=Pc[1])and Pc[2]<Pc[3])then Ab=-1588 else Ab=y(11780)end end,[-6689]=function()Pc[2]=Pc[2]+Pc[1];Pc[4]=Pc[2];if Pc[2]~=Pc[2]then Ab=-1588 else Ab=y(51585)end end,[-2608]=function()Pc[4]=Pc[2];if Pc[3]~=Pc[3]then Ab=-1588 else Ab=17421 end end,[18697]=function()Pc[5]=Pc[5]..Xa(na(wc(s,(Pc[4]-172)+1),wc(hb,(Pc[4]-172)%#hb+1)))Ab=y(16374)end}Ab=y(10507)repeat while true do Pc[6]=h[Ab]if Pc[6]~=nil then if Pc[6]()then break end elseif Ab==-31826 then Pc[5]='';Pc[2],Pc[3],Pc[1]=172,(#s-1)+172,1 Ab=-2608 elseif Ab==-1588 then return Pc[5]end end until Ab==-30395 end)(i[44][-27719],i[11][-27719])A=vd(-13808)end,[1179]=function()if i[18]==116 then A=vd(-45687)return true elseif i[18]==187 then A=vd(-37867)return true elseif not(i[18]==54)then A=vd(6488)return true else A=vd(-15914)return true end A=vd(9961)end,[-18887]=function()i[8]=Ra[i[17]];i[17]+=1 i[52]=i[8][-9136]if not(i[52]==0)then A=vd(-14946)return true else A=vd(-2371)return true end A=vd(11841)end,[-23678]=function()i[19]=Ec(na(i[11][-8828],34695));Za[na(i[11][-9136],44)]=i[19]A=vd(-30890)end,[-29581]=function()Aa(i[57])i[48][i[3]]=nil A=vd(-32567)end,[-15607]=function()i[17]+=i[11][21534]A=vd(-28477)end,[-11041]=function()i[29],i[58],i[59]=i[11][-27010],i[11][-5701],Za[i[11][-9136]];if not((O(i[59])and(i[59]==i[29]))~=i[58])then A=vd(3736)return true else A=vd(-33256)return true end A=vd(-22457)end,[20222]=function()i[45],i[46],i[47]=t(i[45])A=vd(-16017)end,[-20146]=function()i[24],i[25],i[26]=i[37].__iter(i[24])A=vd(-15298)end,[8964]=function()Za[i[11][-9136]]=i[16]A=vd(-44735)end,[-2876]=function()if not(i[18]==8)then A=vd(-30230)return true else A=vd(-26494)return true end A=vd(7555)end,[1997]=function()if(i[20]>=0 and i[22]>i[21])or((i[20]<0 or i[20]~=i[20])and i[22]<i[21])then A=vd(6503)else A=vd(-4029)end end,[28166]=function()i[16]=Za[i[28]]i[55],i[54],i[56]=i[35],i[28]+1,1 A=vd(-15217)end,[26308]=function()i[17]+=1 A=vd(9246)end,[11540]=function()i[17]-=1 Ra[i[17]]={[-14809]=28,[-9136]=i[11][-9136],[8235]=i[11][8235],[4700]=0}A=vd(-50466)end,[-1355]=function()i[53]=Sa(i[45]);if i[53]~=nil and i[53].__iter~=nil then A=vd(-22615)return true elseif Qb(i[45])==Ia('\245x\227u\228','\129\25')then A=vd(-12035)return true end A=vd(-37742)end,[9076]=function()i[17]-=1 Ra[i[17]]={[-14809]=17,[-9136]=i[11][-9136],[8235]=i[11][8235],[4700]=0}A=vd(-21692)end,[-24365]=function()Za[i[11][-9136]]=i[34]A=vd(-7337)end,[7433]=function()if not(i[18]==32)then A=vd(-1674)return true else A=vd(-13745)return true end A=vd(4882)end,[22073]=function()i[17]+=1 A=vd(-4349)end,[15377]=function()if(i[13]>=0 and i[14]>i[15])or((i[13]<0 or i[13]~=i[13])and i[14]<i[15])then A=vd(-23330)else A=vd(-17905)end end}A=vd(-32159)repeat while true do i[60]=Gc[A]if i[60]~=nil then if i[60]()then break end elseif A==15598 then if i[18]==158 then A=vd(-21744)break elseif i[18]==129 then A=vd(-25027)break elseif i[18]==176 then A=vd(-12008)break elseif i[18]==38 then A=vd(-33862)break elseif not(i[18]==120)then A=vd(-12077)break else A=vd(-30870)break end A=vd(-38712)elseif A==-4936 then if i[11][4700]==7 then A=vd(-12611)break elseif i[11][4700]==180 then A=vd(7041)break elseif not(i[11][4700]==251)then A=vd(-36603)break else A=vd(-13548)break end A=vd(819)elseif A==-10659 then i[4],i[17],i[2],i[48],i[61]=-1,1,v({},{[Ia('\241])\193f!','\174\2D')]=Ia('\242\247','\132')}),v({},{[Ia('G@\152w{\144','\24\31\245')]=Ia('\19\v','x')}),false;A=vd(851);elseif A==-13838 then i[61]=false i[17]+=1 if i[18]==152 then A=vd(-38852)break elseif not(i[18]==148)then A=vd(5850)break else A=vd(7091)break end A=vd(-49277)elseif A==-8739 then i[5],i[28]=i[11][-9136],i[11][8235];i[23]=i[28]-1;if not(i[23]==ub)then A=vd(8294)break else A=vd(-24108)break end A=vd(-38659)elseif A==22108 then if not(i[18]==59)then A=vd(5138)break else A=vd(-38861)break end A=vd(7062)elseif A==12431 then if not(i[18]==215)then A=vd(-21812)break else A=vd(-47223)break end A=vd(-5036)elseif A==-3601 then return a(Za,i[5],i[5]+i[27]-1)elseif A==-1818 then if not(not i[61])then A=vd(-48548)break else A=vd(1572)break end A=vd(-21733)elseif A==18846 then if not(i[18]==37)then A=vd(-8319)break else A=vd(-44325)break end A=vd(3322)end end until A==-3726 end local I I={}I[1]=function(...)local qb,bd,Fa,ua,x ua={}bd,qb={[-32205]=-13476,[-24857]=-5759,[4007]=-16289,[18223]=-5759,[-128]=-10042,[-4578]=-13476,[11036]=-18043,[-2560]=-13476,[5889]=-25099,[-18303]=1728,[-3592]=-28093,[-1230]=-15198,[-2440]=-5759,[4713]=-28188,[-6508]=-13476},function(yc)return bd[yc- -10987]end Fa={[-5759]=function()x=qb(-11115);return true;end,[-28188]=function()ua[1],ua[2]=Ya[29583]+1,ua[3][Ia('\t','g')]-Ya[29583];ua[4][14972]=ua[2];ac(ua[3],ua[1],ua[1]+ua[2]-1,1,ua[4][13280])x=qb(-17495)end,[-28093]=function()ua[5]=Nb(ua[5])x=qb(49)end}x=qb(-6980)repeat while true do ua[6]=Fa[x]if ua[6]~=nil then if ua[6]()then break end elseif x==-15198 then return a(ua[7][13280],2,ua[7][14972])elseif x==-13476 then ua[7]=fa(Ga(W,ua[8],Ya[-26700],Ya[-30063],ua[4]));if ua[7][13280][1]then x=qb(-12217)break else x=qb(-5098)break end x=qb(-13427)elseif x==-25099 then ua[5]=ua[7][13280][2];if ia(ua[5])==false then x=qb(-14579)break end x=-18043 elseif x==-16289 then ua[3],ua[8],ua[4]=Zb(...),Ea(Ya[-21689]),{[14972]=0,[13280]={}};ac(ua[3],1,Ya[29583],0,ua[8])if not(Ya[29583]<ua[3][Ia(Ia('\134','\240'),Ia('$','<'))])then x=qb(-13547)break else x=qb(-6274)break end x=qb(-15565)elseif x==-18043 then return lc(ua[5],0)end end until x==-10042 end return I[1]end return qc(Ja,La)end local Lc local sc,pd,ha,jb,l sc={}jb,pd={[-9085]=10507,[28623]=27614},function(_)return jb[_+31250]end ha={[27614]=function()Lc,Ha={[0]=0},function()Lc[0]=Lc[0]+1 return{[1]=Lc[0],[2]=Lc}end Wc=Cc l=pd(-40335)return true end}l=pd(-2627)repeat while true do sc[1]=ha[l]if sc[1]~=nil then if sc[1]()then break end end end until l==10507 return(function()return Wc(rc(oc('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')),{})end)()(...)
+-- Roblox Executor Client with Discord Bot Katabump API Integration
+-- Synced with index.js Discord bot endpoints and data structures
+
+if _G.executed then return end
+_G.executed = true
+
+repeat task.wait() until game:IsLoaded()
+
+-- Check for executor key
+if not _G.EXECUTOR_KEY or _G.EXECUTOR_KEY == "" or _G.EXECUTOR_KEY == "your_key_here" then
+    game.Players.LocalPlayer:Kick("Invalid executor key. Please set _G.EXECUTOR_KEY before running this script.")
+    return
+end
+
+-- Services
+local HttpService = game:GetService("HttpService")
+local Players = game:GetService("Players")
+local RbxAnalytics = game:GetService("RbxAnalyticsService")
+local player = Players.LocalPlayer
+
+-- Configuration - Synced with Discord Bot API (index.js)
+local CONFIG = {
+    API_BASE = "http://localhost:3000",
+    -- Alternative ports to try if 3000 fails
+    FALLBACK_PORTS = {3001, 8000, 8080, 5000},
+    ENDPOINTS = {
+        -- Legacy endpoints for backward compatibility
+        STATUS = "/api/status",
+        PROSES = "/api/proses",
+        USERS = "/api/users",
+        SYNC = "/api/sync",
+        -- Enhanced v1 endpoints (matching index.js)
+        V1_VALIDATE_KEY = "/api/v1/validate-key",
+        V1_AUTH = "/api/v1/auth",
+        V1_SYNC = "/api/v1/sync",
+        V1_STATUS = "/api/v1/status",
+        V1_LOG = "/api/v1/log"
+    },
+    TIMEOUT = 10000,
+    MAX_RETRIES = 3,
+    EXECUTOR_KEY = _G.EXECUTOR_KEY,
+    SCRIPT_URL = "https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Lol.wtf%20main"
+}
+
+-- Discord Bot Synced Executor
+local DiscordKatabumpExecutor = {}
+DiscordKatabumpExecutor.__index = DiscordKatabumpExecutor
+
+function DiscordKatabumpExecutor.new()
+    local self = setmetatable({}, DiscordKatabumpExecutor)
+    self.authenticated = false
+    self.userInfo = {}
+    self.executorKey = CONFIG.EXECUTOR_KEY
+    self.keyValidated = false
+    self.hwidBound = false
+    self.retryCount = 0
+    self.discordUserId = nil
+    self.whitelisted = false
+    return self
+end
+
+-- Get user's IP address
+function DiscordKatabumpExecutor:getIP()
+    local success, result = pcall(function()
+        local requestFunc = (http_request or request or (syn and syn.request))
+        if requestFunc then
+            local res = requestFunc({
+                Url = "https://api.ipify.org?format=json",
+                Method = "GET",
+                Headers = { ["User-Agent"] = "DiscordKatabump/2.0" }
+            })
+            return res.Body
+        else
+            return game:HttpGet("https://api.ipify.org?format=json")
+        end
+    end)
+    
+    if success and result then
+        local data
+        pcall(function()
+            data = HttpService:JSONDecode(result)
+        end)
+        if data and data.ip then
+            return data.ip
+        end
+    end
+    return "Unknown"
+end
+
+-- Prepare user information (matching Discord bot expectations)
+function DiscordKatabumpExecutor:prepareUserInfo()
+    self.userInfo = {
+        username = player.Name,
+        userId = tostring(player.UserId), -- Convert to string to match Discord bot expectations
+        hwid = RbxAnalytics:GetClientId(),
+        ip = self:getIP(),
+        timestamp = os.time(),
+        gameId = game.GameId,
+        placeId = game.PlaceId,
+        executorVersion = "DiscordKatabump-2.0",
+        executorKey = self.executorKey,
+        -- Additional fields for Discord bot sync
+        robloxUserId = player.UserId,
+        robloxUsername = player.Name,
+        displayName = player.DisplayName or player.Name,
+        accountAge = player.AccountAge
+    }
+end
+
+-- Make HTTP request to Discord Bot API with enhanced error handling
+function DiscordKatabumpExecutor:makeDiscordBotRequest(endpoint, method, data)
+    local fullUrl = CONFIG.API_BASE .. endpoint
+    
+    print("🌐 Making request to:", fullUrl)
+    print("📤 Method:", method or "GET")
+    
+    local headers = {
+        ["Content-Type"] = "application/json",
+        ["User-Agent"] = "DiscordKatabump/2.0",
+        ["X-Executor-Key"] = self.executorKey,
+        ["X-HWID"] = self.userInfo.hwid or "unknown"
+    }
+    
+    local success, response = pcall(function()
+        local jsonData = data and HttpService:JSONEncode(data) or nil
+        if jsonData then
+            print("📦 Request Data Length:", #jsonData, "characters")
+        end
+        
+        local requestFunc = (http_request or request or (syn and syn.request))
+        
+        if requestFunc then
+            print("🔧 Using custom HTTP request function")
+            local result = requestFunc({
+                Url = fullUrl,
+                Method = method or "GET",
+                Headers = headers,
+                Body = jsonData,
+                Timeout = CONFIG.TIMEOUT
+            })
+            return result
+        else
+            print("🔧 Using Roblox HttpService")
+            if method == "POST" and jsonData then
+                local body = game:HttpPost(fullUrl, jsonData, Enum.HttpContentType.ApplicationJson)
+                return { Body = body, StatusCode = 200 }
+            else
+                local body = game:HttpGet(fullUrl)
+                return { Body = body, StatusCode = 200 }
+            end
+        end
+    end)
+    
+    if success and response then
+        print("✅ HTTP Request successful")
+        print("📥 Response Status:", response.StatusCode or "Unknown")
+        print("📊 Response Length:", response.Body and #response.Body or 0, "characters")
+        
+        local responseData
+        local parseSuccess, parseError = pcall(function()
+            responseData = HttpService:JSONDecode(response.Body)
+        end)
+        
+        if parseSuccess then
+            print("✅ JSON Parse successful")
+            return responseData, response.StatusCode
+        else
+            print("❌ JSON Parse failed:", parseError)
+            print("📄 Raw Response:", response.Body and response.Body:sub(1, 200) or "Empty")
+            return nil, response.StatusCode
+        end
+    else
+        print("❌ HTTP Request failed:", response or "Unknown error")
+        
+        -- Specific error handling for connection issues
+        if response and type(response) == "string" then
+            if response:find("Connection refused") or response:find("ConnectFailure") then
+                print("🚫 Connection refused - Discord bot may not be running")
+                return nil, 0 -- Use status code 0 for connection refused
+            elseif response:find("timeout") or response:find("Timeout") then
+                print("⏱️ Request timeout - Discord bot may be slow to respond")
+                return nil, 408
+            end
+        end
+        
+        return nil, 500
+    end
+end
+
+-- Try different ports if the main one fails
+function DiscordKatabumpExecutor:tryFallbackPorts()
+    print("🔄 Trying fallback ports...")
+    
+    for _, port in ipairs(CONFIG.FALLBACK_PORTS) do
+        local originalBase = CONFIG.API_BASE
+        CONFIG.API_BASE = "http://localhost:" .. port
+        
+        print("🔍 Trying port:", port)
+        local responseData, statusCode = self:makeDiscordBotRequest(CONFIG.ENDPOINTS.STATUS, "GET")
+        
+        if responseData and responseData.status == "online" then
+            print("✅ Found Discord Bot API on port:", port)
+            return true
+        end
+        
+        -- Restore original if failed
+        CONFIG.API_BASE = originalBase
+    end
+    
+    print("❌ No working ports found")
+    return false
+end
+
+-- Enhanced status check with fallback
+function DiscordKatabumpExecutor:checkDiscordBotStatusWithFallback()
+    -- Try main port first
+    print("📡 Checking primary port 3000...")
+    local success = self:checkDiscordBotStatus()
+    
+    if not success then
+        print("🔄 Primary port failed, trying fallback ports...")
+        success = self:tryFallbackPorts()
+        
+        if success then
+            -- Re-run status check with new port
+            return self:checkDiscordBotStatus()
+        end
+    end
+    
+    return success
+end
+
+-- Validate executor key using legacy /api/proses endpoint (matching index.js)
+function DiscordKatabumpExecutor:validateWithDiscordBot()
+    if not self.userInfo.username then
+        self:prepareUserInfo()
+    end
+    
+    -- Use the /api/proses endpoint as defined in index.js
+    local requestData = {
+        userId = self.userInfo.userId,
+        key = self.executorKey,
+        action = "validate_and_auth",
+        hwid = self.userInfo.hwid,
+        username = self.userInfo.username,
+        robloxUserId = self.userInfo.robloxUserId,
+        ip = self.userInfo.ip,
+        gameId = self.userInfo.gameId,
+        placeId = self.userInfo.placeId,
+        timestamp = self.userInfo.timestamp
+    }
+    
+    local responseData, statusCode = self:makeDiscordBotRequest(CONFIG.ENDPOINTS.PROSES, "POST", requestData)
+    
+    if responseData and responseData.success then
+        self.authenticated = true
+        self.keyValidated = true
+        
+        if responseData.userData then
+            self.discordUserId = responseData.userData.userId
+            self.whitelisted = responseData.userData.isWhitelisted
+            print("✅ Discord Bot Authentication Success")
+            print("🔑 Executor Key Validated:", responseData.userData.executorKey or "Yes")
+            print("👤 Access Level:", responseData.userData.accessLevel or "CUSTOMER")
+            print("🌐 Katabump Ready:", responseData.userData.katabumpReady and "Yes" or "No")
+            return true
+        else
+            player:Kick("Invalid response from Discord Bot API.")
+            return false
+        end
+    else
+        local errorMessage = "Discord Bot authentication failed."
+        if responseData and responseData.message then
+            errorMessage = responseData.message
+        elseif statusCode == 400 then
+            errorMessage = "Invalid executor key format."
+        elseif statusCode == 401 then
+            errorMessage = "Invalid executor key for this user."
+        elseif statusCode == 403 then
+            errorMessage = "User not whitelisted. Please redeem a key in Discord."
+        end
+        
+        player:Kick(errorMessage)
+        return false
+    end
+end
+
+-- Enhanced validation using v1 API endpoints
+function DiscordKatabumpExecutor:validateExecutorKeyV1()
+    local requestData = {
+        action = "validate_executor_key",
+        executorKey = self.executorKey,
+        hwid = self.userInfo.hwid,
+        userId = self.userInfo.userId,
+        username = self.userInfo.username,
+        robloxUserId = self.userInfo.robloxUserId,
+        timestamp = self.userInfo.timestamp
+    }
+    
+    local responseData, statusCode = self:makeDiscordBotRequest(CONFIG.ENDPOINTS.V1_VALIDATE_KEY, "POST", requestData)
+    
+    if responseData and responseData.success and responseData.valid then
+        self.keyValidated = true
+        print("✅ V1 API: Executor key validated")
+        return true
+    else
+        player:Kick("V1 API: Invalid executor key. Access denied.")
+        return false
+    end
+end
+
+-- Authenticate using v1 API
+function DiscordKatabumpExecutor:authenticateV1()
+    local authData = {
+        action = "authenticate",
+        executorKey = self.executorKey,
+        hwid = self.userInfo.hwid,
+        userId = self.userInfo.userId,
+        username = self.userInfo.username,
+        robloxUserId = self.userInfo.robloxUserId,
+        ip = self.userInfo.ip,
+        gameId = self.userInfo.gameId,
+        placeId = self.userInfo.placeId,
+        timestamp = self.userInfo.timestamp,
+        version = self.userInfo.executorVersion
+    }
+    
+    local responseData, statusCode = self:makeDiscordBotRequest(CONFIG.ENDPOINTS.V1_AUTH, "POST", authData)
+    
+    if responseData and responseData.success then
+        self.authenticated = true
+        
+        if responseData.whitelisted then
+            self.hwidBound = true
+            self.whitelisted = true
+            print("✅ V1 API: Authentication successful")
+            return true
+        else
+            player:Kick("V1 API: Account not whitelisted. Please redeem a valid key in Discord.")
+            return false
+        end
+    else
+        player:Kick("V1 API: Authentication failed. Please try again later.")
+        return false
+    end
+end
+
+-- Sync HWID using v1 API
+function DiscordKatabumpExecutor:syncHWIDV1()
+    local syncData = {
+        action = "sync_hwid",
+        executorKey = self.executorKey,
+        hwid = self.userInfo.hwid,
+        userId = self.userInfo.userId,
+        robloxUserId = self.userInfo.robloxUserId,
+        timestamp = os.time()
+    }
+    
+    local responseData, statusCode = self:makeDiscordBotRequest(CONFIG.ENDPOINTS.V1_SYNC, "POST", syncData)
+    
+    if responseData and responseData.success then
+        self.hwidBound = true
+        print("✅ V1 API: HWID sync successful")
+        return true
+    else
+        player:Kick("V1 API: HWID sync failed. Access denied.")
+        return false
+    end
+end
+
+-- Sync data with Discord Bot using legacy /api/sync endpoint
+function DiscordKatabumpExecutor:syncWithDiscordBot()
+    local syncData = {
+        userId = self.userInfo.userId,
+        keyData = {
+            executorKey = self.executorKey,
+            hwid = self.userInfo.hwid,
+            lastAccess = os.time(),
+            gameId = self.userInfo.gameId,
+            placeId = self.userInfo.placeId
+        },
+        timestamp = os.time(),
+        executorKey = self.executorKey,
+        action = "lua_script_access"
+    }
+    
+    local responseData, statusCode = self:makeDiscordBotRequest(CONFIG.ENDPOINTS.SYNC, "POST", syncData)
+    
+    if responseData and responseData.success then
+        print("✅ Discord Bot Sync: Data synchronized successfully")
+        return true
+    else
+        print("⚠️ Discord Bot Sync: Failed to sync data (non-critical)")
+        return false
+    end
+end
+
+-- Get script from GitHub URL
+function DiscordKatabumpExecutor:getScriptFromGitHub()
+    local success, script = pcall(function()
+        local requestFunc = (http_request or request or (syn and syn.request))
+        if requestFunc then
+            local response = requestFunc({
+                Url = CONFIG.SCRIPT_URL,
+                Method = "GET",
+                Headers = { ["User-Agent"] = "DiscordKatabump/2.0" }
+            })
+            return response.Body
+        else
+            return game:HttpGet(CONFIG.SCRIPT_URL)
+        end
+    end)
+    
+    if success and script and script ~= "" then
+        print("✅ Script loaded from GitHub successfully")
+        return script
+    else
+        player:Kick("Failed to load script from GitHub. Please try again.")
+        return nil
+    end
+end
+
+-- Execute script with validation
+function DiscordKatabumpExecutor:executeScript(script)
+    if not self.authenticated or not self.keyValidated then
+        player:Kick("Invalid authentication state. Please restart.")
+        return false
+    end
+    
+    local success, result = pcall(function()
+        local func = loadstring(script)
+        if func then
+            return func()
+        else
+            error("Failed to load script")
+        end
+    end)
+    
+    if success then
+        self:logExecutionV1(true)
+        print("✅ Script executed successfully")
+        return true
+    else
+        self:logExecutionV1(false, tostring(result))
+        player:Kick("Script execution failed: " .. tostring(result))
+        return false
+    end
+end
+
+-- Log execution using v1 API endpoint
+function DiscordKatabumpExecutor:logExecutionV1(success, error)
+    pcall(function()
+        local logData = {
+            action = "log_execution",
+            executorKey = self.executorKey,
+            userId = self.userInfo.userId,
+            robloxUserId = self.userInfo.robloxUserId,
+            success = success,
+            error = error,
+            timestamp = os.time(),
+            gameId = self.userInfo.gameId,
+            placeId = self.userInfo.placeId,
+            hwid = self.userInfo.hwid
+        }
+        
+        self:makeDiscordBotRequest(CONFIG.ENDPOINTS.V1_LOG, "POST", logData)
+    end)
+end
+
+-- Main execution flow (Silent with Discord Bot integration)
+print("🚀 Starting Discord Bot Katabump Integration...")
+
+local executor = DiscordKatabumpExecutor.new()
+
+-- Step 0: Check Discord Bot API status
+print("📡 Checking Discord Bot API status...")
+if not executor:checkDiscordBotStatus() then
+    return
+end
+
+-- Step 1: Prepare user info
+print("👤 Preparing user information...")
+executor:prepareUserInfo()
+
+-- Step 2: Validate and authenticate with Discord Bot (Primary method)
+print("🔐 Authenticating with Discord Bot...")
+local authResult = executor:validateWithDiscordBot()
+if authResult ~= true then
+    return
+end
+
+-- Step 3: Sync data with Discord Bot (Optional but recommended)
+print("🔄 Syncing data with Discord Bot...")
+executor:syncWithDiscordBot()
+
+-- Step 4: Get and execute script
+print("📜 Loading script from GitHub...")
+local script = executor:getScriptFromGitHub()
+if script then
+    print("⚡ Executing script...")
+    executor:executeScript(script)
+else
+    return
+end
+
+-- Store globally for manual access
+_G.DiscordKatabumpExecutor = executor
+_G.executor = executor -- Backward compatibility
+
+print("✅ Discord Bot Katabump Integration completed successfully!")
+print("🔑 Executor Key: " .. executor.executorKey:sub(1, 8) .. "...")
+print("👤 Discord User ID: " .. (executor.discordUserId or "Unknown"))
+print("✅ Whitelisted: " .. (executor.whitelisted and "Yes" or "No"))
+print("🌐 Authenticated: " .. (executor.authenticated and "Yes" or "No"))
+
+return executor
