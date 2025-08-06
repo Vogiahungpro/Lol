@@ -1,5 +1,6 @@
 -- Roblox Executor Client with Discord Bot Katabump API Integration
 -- Synced with index.js Discord bot endpoints and data structures
+-- Updated to use lol.vercel.app API domain
 
 if _G.executed then return end
 _G.executed = true
@@ -20,26 +21,33 @@ local player = Players.LocalPlayer
 
 -- Configuration - Synced with Discord Bot API (index.js)
 local CONFIG = {
-    API_BASE = "http://localhost:3000",
-    -- Alternative ports to try if 3000 fails
-    FALLBACK_PORTS = {3001, 8000, 8080, 5000},
+    -- Updated to match Discord bot configuration
+    API_BASE = "https://lol.vercel.app",
+    -- Fallback URLs (including localhost for development)
+    FALLBACK_URLS = {
+        "http://localhost:3000",
+        "http://localhost:3001", 
+        "http://localhost:8000",
+        "http://localhost:8080",
+        "http://localhost:5000"
+    },
     ENDPOINTS = {
-        -- Legacy endpoints for backward compatibility
+        -- Core API endpoints matching Discord bot
         STATUS = "/api/status",
+        VALIDATE_KEY = "/api/validate-key",
         PROSES = "/api/proses",
         USERS = "/api/users",
         SYNC = "/api/sync",
-        -- Enhanced v1 endpoints (matching index.js)
-        V1_VALIDATE_KEY = "/api/v1/validate-key",
-        V1_AUTH = "/api/v1/auth",
-        V1_SYNC = "/api/v1/sync",
-        V1_STATUS = "/api/v1/status",
-        V1_LOG = "/api/v1/log"
+        LOG = "/api/log",
+        AUTH = "/api/auth",
+        SCRIPT = "/api/script"
     },
-    TIMEOUT = 10000,
+    TIMEOUT = 15000, -- Increased for remote API
     MAX_RETRIES = 3,
     EXECUTOR_KEY = _G.EXECUTOR_KEY,
-    SCRIPT_URL = "https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Lol.wtf%20main"
+    SCRIPT_URL = "https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Lol.wtf%20main",
+    GITHUB_FALLBACK = true,
+    USER_AGENT = "DiscordKatabump/2.0-Vercel"
 }
 
 -- Discord Bot Synced Executor
@@ -56,6 +64,8 @@ function DiscordKatabumpExecutor.new()
     self.retryCount = 0
     self.discordUserId = nil
     self.whitelisted = false
+    self.apiDomain = CONFIG.API_BASE
+    self.usingFallback = false
     return self
 end
 
@@ -67,7 +77,7 @@ function DiscordKatabumpExecutor:getIP()
             local res = requestFunc({
                 Url = "https://api.ipify.org?format=json",
                 Method = "GET",
-                Headers = { ["User-Agent"] = "DiscordKatabump/2.0" }
+                Headers = { ["User-Agent"] = CONFIG.USER_AGENT }
             })
             return res.Body
         else
@@ -97,29 +107,40 @@ function DiscordKatabumpExecutor:prepareUserInfo()
         timestamp = os.time(),
         gameId = game.GameId,
         placeId = game.PlaceId,
-        executorVersion = "DiscordKatabump-2.0",
+        executorVersion = CONFIG.USER_AGENT,
         executorKey = self.executorKey,
         -- Additional fields for Discord bot sync
         robloxUserId = player.UserId,
         robloxUsername = player.Name,
         displayName = player.DisplayName or player.Name,
-        accountAge = player.AccountAge
+        accountAge = player.AccountAge,
+        -- API domain info
+        apiDomain = self.apiDomain,
+        usingFallback = self.usingFallback
     }
 end
 
--- Make HTTP request to Discord Bot API with enhanced error handling
+-- Make HTTP request to Discord Bot API with enhanced error handling for Vercel
 function DiscordKatabumpExecutor:makeDiscordBotRequest(endpoint, method, data)
-    local fullUrl = CONFIG.API_BASE .. endpoint
+    local fullUrl = self.apiDomain .. endpoint
     
     print("🌐 Making request to:", fullUrl)
     print("📤 Method:", method or "GET")
     
     local headers = {
         ["Content-Type"] = "application/json",
-        ["User-Agent"] = "DiscordKatabump/2.0",
+        ["User-Agent"] = CONFIG.USER_AGENT,
         ["X-Executor-Key"] = self.executorKey,
-        ["X-HWID"] = self.userInfo.hwid or "unknown"
+        ["X-HWID"] = self.userInfo.hwid or "unknown",
+        ["X-API-Source"] = "roblox-lua",
+        ["X-Domain"] = self.apiDomain
     }
+    
+    -- Add CORS headers for Vercel
+    if self.apiDomain:find("vercel.app") then
+        headers["Origin"] = "https://roblox.com"
+        headers["Access-Control-Request-Method"] = method or "GET"
+    end
     
     local success, response = pcall(function()
         local jsonData = data and HttpService:JSONEncode(data) or nil
@@ -130,7 +151,7 @@ function DiscordKatabumpExecutor:makeDiscordBotRequest(endpoint, method, data)
         local requestFunc = (http_request or request or (syn and syn.request))
         
         if requestFunc then
-            print("🔧 Using custom HTTP request function")
+            print("🔧 Using custom HTTP request function for", self.apiDomain)
             local result = requestFunc({
                 Url = fullUrl,
                 Method = method or "GET",
@@ -140,7 +161,7 @@ function DiscordKatabumpExecutor:makeDiscordBotRequest(endpoint, method, data)
             })
             return result
         else
-            print("🔧 Using Roblox HttpService")
+            print("🔧 Using Roblox HttpService for", self.apiDomain)
             if method == "POST" and jsonData then
                 local body = game:HttpPost(fullUrl, jsonData, Enum.HttpContentType.ApplicationJson)
                 return { Body = body, StatusCode = 200 }
@@ -152,7 +173,7 @@ function DiscordKatabumpExecutor:makeDiscordBotRequest(endpoint, method, data)
     end)
     
     if success and response then
-        print("✅ HTTP Request successful")
+        print("✅ HTTP Request successful to", self.apiDomain)
         print("📥 Response Status:", response.StatusCode or "Unknown")
         print("📊 Response Length:", response.Body and #response.Body or 0, "characters")
         
@@ -170,16 +191,19 @@ function DiscordKatabumpExecutor:makeDiscordBotRequest(endpoint, method, data)
             return nil, response.StatusCode
         end
     else
-        print("❌ HTTP Request failed:", response or "Unknown error")
+        print("❌ HTTP Request failed to", self.apiDomain, ":", response or "Unknown error")
         
         -- Specific error handling for connection issues
         if response and type(response) == "string" then
             if response:find("Connection refused") or response:find("ConnectFailure") then
-                print("🚫 Connection refused - Discord bot may not be running")
+                print("🚫 Connection refused to", self.apiDomain)
                 return nil, 0 -- Use status code 0 for connection refused
             elseif response:find("timeout") or response:find("Timeout") then
-                print("⏱️ Request timeout - Discord bot may be slow to respond")
+                print("⏱️ Request timeout to", self.apiDomain)
                 return nil, 408
+            elseif response:find("SSL") or response:find("certificate") then
+                print("🔒 SSL/Certificate error with", self.apiDomain)
+                return nil, 495
             end
         end
         
@@ -187,50 +211,117 @@ function DiscordKatabumpExecutor:makeDiscordBotRequest(endpoint, method, data)
     end
 end
 
--- Try different ports if the main one fails
-function DiscordKatabumpExecutor:tryFallbackPorts()
-    print("🔄 Trying fallback ports...")
+-- Try fallback URLs if main API fails
+function DiscordKatabumpExecutor:tryFallbackUrls()
+    print("🔄 Primary API failed, trying fallback URLs...")
     
-    for _, port in ipairs(CONFIG.FALLBACK_PORTS) do
-        local originalBase = CONFIG.API_BASE
-        CONFIG.API_BASE = "http://localhost:" .. port
+    for i, fallbackUrl in ipairs(CONFIG.FALLBACK_URLS) do
+        print("🔍 Trying fallback URL (" .. i .. "/" .. #CONFIG.FALLBACK_URLS .. "):", fallbackUrl)
         
-        print("🔍 Trying port:", port)
+        local originalDomain = self.apiDomain
+        self.apiDomain = fallbackUrl
+        self.usingFallback = true
+        
         local responseData, statusCode = self:makeDiscordBotRequest(CONFIG.ENDPOINTS.STATUS, "GET")
         
-        if responseData and responseData.status == "online" then
-            print("✅ Found Discord Bot API on port:", port)
+        if responseData and responseData.status then
+            print("✅ Found working API at:", fallbackUrl)
             return true
         end
         
         -- Restore original if failed
-        CONFIG.API_BASE = originalBase
+        self.apiDomain = originalDomain
     end
     
-    print("❌ No working ports found")
+    -- Reset fallback flag if all failed
+    self.usingFallback = false
+    print("❌ No working fallback URLs found")
     return false
+end
+
+-- Check Discord Bot API status with Vercel support
+function DiscordKatabumpExecutor:checkDiscordBotStatus()
+    print("📡 Checking Discord Bot API status at:", self.apiDomain)
+    
+    local responseData, statusCode = self:makeDiscordBotRequest(CONFIG.ENDPOINTS.STATUS, "GET")
+    
+    if responseData and responseData.status then
+        print("✅ Discord Bot API is", responseData.status)
+        print("🌐 API Domain:", responseData.domain or self.apiDomain)
+        print("👥 Total Users:", responseData.totalUsers or 0)
+        print("🔑 Users with Keys:", responseData.usersWithExecutorKeys or 0)
+        
+        -- Check if using Vercel
+        if responseData.domain and responseData.domain:find("vercel.app") then
+            print("☁️ Running on Vercel deployment")
+        end
+        
+        return true
+    else
+        print("❌ Primary API failed, status code:", statusCode or "Unknown")
+        
+        -- Try fallback URLs
+        return self:tryFallbackUrls()
+    end
 end
 
 -- Enhanced status check with fallback
 function DiscordKatabumpExecutor:checkDiscordBotStatusWithFallback()
-    -- Try main port first
-    print("📡 Checking primary port 3000...")
+    -- Try main API first (lol.vercel.app)
+    print("📡 Checking primary Vercel API...")
     local success = self:checkDiscordBotStatus()
     
     if not success then
-        print("🔄 Primary port failed, trying fallback ports...")
-        success = self:tryFallbackPorts()
-        
-        if success then
-            -- Re-run status check with new port
-            return self:checkDiscordBotStatus()
-        end
+        print("🔄 Vercel API failed, trying local fallbacks...")
+        success = self:tryFallbackUrls()
     end
     
     return success
 end
 
--- Validate executor key using legacy /api/proses endpoint (matching index.js)
+-- Validate executor key using /api/validate-key endpoint
+function DiscordKatabumpExecutor:validateExecutorKey()
+    if not self.userInfo.username then
+        self:prepareUserInfo()
+    end
+    
+    local requestData = {
+        userId = self.userInfo.userId,
+        executorKey = self.executorKey,
+        timestamp = os.time(),
+        robloxUserId = self.userInfo.robloxUserId,
+        hwid = self.userInfo.hwid,
+        apiDomain = self.apiDomain
+    }
+    
+    local responseData, statusCode = self:makeDiscordBotRequest(CONFIG.ENDPOINTS.VALIDATE_KEY, "POST", requestData)
+    
+    if responseData and responseData.success then
+        self.keyValidated = true
+        print("✅ Executor Key Validation: Success")
+        
+        if responseData.userData then
+            self.discordUserId = responseData.userData.userId
+            print("🔑 Key validated for user:", responseData.userData.userId)
+        end
+        
+        return true
+    else
+        local errorMessage = "Executor key validation failed."
+        if responseData and responseData.message then
+            errorMessage = responseData.message
+        elseif statusCode == 401 then
+            errorMessage = "Invalid executor key for this user."
+        elseif statusCode == 403 then
+            errorMessage = "User not whitelisted. Please redeem a key in Discord."
+        end
+        
+        player:Kick(errorMessage)
+        return false
+    end
+end
+
+-- Validate and authenticate using /api/proses endpoint (matching index.js)
 function DiscordKatabumpExecutor:validateWithDiscordBot()
     if not self.userInfo.username then
         self:prepareUserInfo()
@@ -247,7 +338,9 @@ function DiscordKatabumpExecutor:validateWithDiscordBot()
         ip = self.userInfo.ip,
         gameId = self.userInfo.gameId,
         placeId = self.userInfo.placeId,
-        timestamp = self.userInfo.timestamp
+        timestamp = self.userInfo.timestamp,
+        apiDomain = self.apiDomain,
+        usingFallback = self.usingFallback
     }
     
     local responseData, statusCode = self:makeDiscordBotRequest(CONFIG.ENDPOINTS.PROSES, "POST", requestData)
@@ -259,10 +352,18 @@ function DiscordKatabumpExecutor:validateWithDiscordBot()
         if responseData.userData then
             self.discordUserId = responseData.userData.userId
             self.whitelisted = responseData.userData.isWhitelisted
+            
             print("✅ Discord Bot Authentication Success")
             print("🔑 Executor Key Validated:", responseData.userData.executorKey or "Yes")
             print("👤 Access Level:", responseData.userData.accessLevel or "CUSTOMER")
-            print("🌐 Katabump Ready:", responseData.userData.katabumpReady and "Yes" or "No")
+            print("🌐 API Domain:", self.apiDomain)
+            print("📡 Using Fallback:", self.usingFallback and "Yes" or "No")
+            
+            -- Log if using fallback mode
+            if responseData.userData.fallback then
+                print("⚠️ API Response: Using local fallback mode")
+            end
+            
             return true
         else
             player:Kick("Invalid response from Discord Bot API.")
@@ -278,97 +379,18 @@ function DiscordKatabumpExecutor:validateWithDiscordBot()
             errorMessage = "Invalid executor key for this user."
         elseif statusCode == 403 then
             errorMessage = "User not whitelisted. Please redeem a key in Discord."
+        elseif statusCode == 0 then
+            errorMessage = "Cannot connect to Discord Bot API. Please try again later."
         end
         
+        print("❌ Authentication Error:", errorMessage)
+        print("🌐 Attempted API:", self.apiDomain)
         player:Kick(errorMessage)
         return false
     end
 end
 
--- Enhanced validation using v1 API endpoints
-function DiscordKatabumpExecutor:validateExecutorKeyV1()
-    local requestData = {
-        action = "validate_executor_key",
-        executorKey = self.executorKey,
-        hwid = self.userInfo.hwid,
-        userId = self.userInfo.userId,
-        username = self.userInfo.username,
-        robloxUserId = self.userInfo.robloxUserId,
-        timestamp = self.userInfo.timestamp
-    }
-    
-    local responseData, statusCode = self:makeDiscordBotRequest(CONFIG.ENDPOINTS.V1_VALIDATE_KEY, "POST", requestData)
-    
-    if responseData and responseData.success and responseData.valid then
-        self.keyValidated = true
-        print("✅ V1 API: Executor key validated")
-        return true
-    else
-        player:Kick("V1 API: Invalid executor key. Access denied.")
-        return false
-    end
-end
-
--- Authenticate using v1 API
-function DiscordKatabumpExecutor:authenticateV1()
-    local authData = {
-        action = "authenticate",
-        executorKey = self.executorKey,
-        hwid = self.userInfo.hwid,
-        userId = self.userInfo.userId,
-        username = self.userInfo.username,
-        robloxUserId = self.userInfo.robloxUserId,
-        ip = self.userInfo.ip,
-        gameId = self.userInfo.gameId,
-        placeId = self.userInfo.placeId,
-        timestamp = self.userInfo.timestamp,
-        version = self.userInfo.executorVersion
-    }
-    
-    local responseData, statusCode = self:makeDiscordBotRequest(CONFIG.ENDPOINTS.V1_AUTH, "POST", authData)
-    
-    if responseData and responseData.success then
-        self.authenticated = true
-        
-        if responseData.whitelisted then
-            self.hwidBound = true
-            self.whitelisted = true
-            print("✅ V1 API: Authentication successful")
-            return true
-        else
-            player:Kick("V1 API: Account not whitelisted. Please redeem a valid key in Discord.")
-            return false
-        end
-    else
-        player:Kick("V1 API: Authentication failed. Please try again later.")
-        return false
-    end
-end
-
--- Sync HWID using v1 API
-function DiscordKatabumpExecutor:syncHWIDV1()
-    local syncData = {
-        action = "sync_hwid",
-        executorKey = self.executorKey,
-        hwid = self.userInfo.hwid,
-        userId = self.userInfo.userId,
-        robloxUserId = self.userInfo.robloxUserId,
-        timestamp = os.time()
-    }
-    
-    local responseData, statusCode = self:makeDiscordBotRequest(CONFIG.ENDPOINTS.V1_SYNC, "POST", syncData)
-    
-    if responseData and responseData.success then
-        self.hwidBound = true
-        print("✅ V1 API: HWID sync successful")
-        return true
-    else
-        player:Kick("V1 API: HWID sync failed. Access denied.")
-        return false
-    end
-end
-
--- Sync data with Discord Bot using legacy /api/sync endpoint
+-- Sync data with Discord Bot using /api/sync endpoint
 function DiscordKatabumpExecutor:syncWithDiscordBot()
     local syncData = {
         userId = self.userInfo.userId,
@@ -377,33 +399,71 @@ function DiscordKatabumpExecutor:syncWithDiscordBot()
             hwid = self.userInfo.hwid,
             lastAccess = os.time(),
             gameId = self.userInfo.gameId,
-            placeId = self.userInfo.placeId
+            placeId = self.userInfo.placeId,
+            apiDomain = self.apiDomain
         },
         timestamp = os.time(),
         executorKey = self.executorKey,
-        action = "lua_script_access"
+        action = "lua_script_access",
+        source = "roblox_lua",
+        apiDomain = self.apiDomain,
+        usingFallback = self.usingFallback
     }
     
     local responseData, statusCode = self:makeDiscordBotRequest(CONFIG.ENDPOINTS.SYNC, "POST", syncData)
     
     if responseData and responseData.success then
         print("✅ Discord Bot Sync: Data synchronized successfully")
+        print("🌐 Synced with:", self.apiDomain)
+        
+        if responseData.fallback then
+            print("⚠️ Sync used fallback mode")
+        end
+        
         return true
     else
         print("⚠️ Discord Bot Sync: Failed to sync data (non-critical)")
+        print("📡 Sync attempted with:", self.apiDomain)
         return false
     end
 end
 
+-- Log execution to Discord Bot API
+function DiscordKatabumpExecutor:logExecution(success, error)
+    pcall(function()
+        local logData = {
+            userId = self.userInfo.userId,
+            executorKey = self.executorKey,
+            data = {
+                success = success,
+                error = error,
+                timestamp = os.time(),
+                gameId = self.userInfo.gameId,
+                placeId = self.userInfo.placeId,
+                hwid = self.userInfo.hwid,
+                apiDomain = self.apiDomain,
+                usingFallback = self.usingFallback
+            },
+            timestamp = os.time(),
+            source = "roblox_lua"
+        }
+        
+        self:makeDiscordBotRequest(CONFIG.ENDPOINTS.LOG, "POST", logData)
+    end)
+end
+
 -- Get script from GitHub URL
 function DiscordKatabumpExecutor:getScriptFromGitHub()
+    print("📜 Loading script from GitHub...")
+    
     local success, script = pcall(function()
         local requestFunc = (http_request or request or (syn and syn.request))
         if requestFunc then
             local response = requestFunc({
                 Url = CONFIG.SCRIPT_URL,
                 Method = "GET",
-                Headers = { ["User-Agent"] = "DiscordKatabump/2.0" }
+                Headers = { ["User-Agent"] = CONFIG.USER_AGENT },
+                Timeout = CONFIG.TIMEOUT
             })
             return response.Body
         else
@@ -413,9 +473,28 @@ function DiscordKatabumpExecutor:getScriptFromGitHub()
     
     if success and script and script ~= "" then
         print("✅ Script loaded from GitHub successfully")
+        print("📊 Script length:", #script, "characters")
         return script
     else
+        print("❌ Failed to load script from GitHub:", script or "Unknown error")
         player:Kick("Failed to load script from GitHub. Please try again.")
+        return nil
+    end
+end
+
+-- Try to get script from Discord Bot API (if available)
+function DiscordKatabumpExecutor:getScriptFromDiscordBot()
+    print("📜 Attempting to get script from Discord Bot API...")
+    
+    local scriptEndpoint = CONFIG.ENDPOINTS.SCRIPT .. "/" .. self.userInfo.userId .. "?key=" .. self.executorKey
+    local responseData, statusCode = self:makeDiscordBotRequest(scriptEndpoint, "GET")
+    
+    if responseData and responseData.success and responseData.data and responseData.data.script then
+        print("✅ Script loaded from Discord Bot API")
+        print("📊 Script length:", #responseData.data.script, "characters")
+        return responseData.data.script
+    else
+        print("⚠️ Could not get script from Discord Bot API, falling back to GitHub")
         return nil
     end
 end
@@ -427,6 +506,8 @@ function DiscordKatabumpExecutor:executeScript(script)
         return false
     end
     
+    print("⚡ Executing script...")
+    
     local success, result = pcall(function()
         local func = loadstring(script)
         if func then
@@ -437,44 +518,28 @@ function DiscordKatabumpExecutor:executeScript(script)
     end)
     
     if success then
-        self:logExecutionV1(true)
+        self:logExecution(true)
         print("✅ Script executed successfully")
+        print("🌐 Authenticated via:", self.apiDomain)
         return true
     else
-        self:logExecutionV1(false, tostring(result))
+        self:logExecution(false, tostring(result))
+        print("❌ Script execution failed:", tostring(result))
         player:Kick("Script execution failed: " .. tostring(result))
         return false
     end
 end
 
--- Log execution using v1 API endpoint
-function DiscordKatabumpExecutor:logExecutionV1(success, error)
-    pcall(function()
-        local logData = {
-            action = "log_execution",
-            executorKey = self.executorKey,
-            userId = self.userInfo.userId,
-            robloxUserId = self.userInfo.robloxUserId,
-            success = success,
-            error = error,
-            timestamp = os.time(),
-            gameId = self.userInfo.gameId,
-            placeId = self.userInfo.placeId,
-            hwid = self.userInfo.hwid
-        }
-        
-        self:makeDiscordBotRequest(CONFIG.ENDPOINTS.V1_LOG, "POST", logData)
-    end)
-end
-
--- Main execution flow (Silent with Discord Bot integration)
-print("🚀 Starting Discord Bot Katabump Integration...")
+-- Main execution flow with enhanced Vercel support
+print("🚀 Starting Discord Bot Katabump Integration (Vercel Edition)...")
+print("🌐 Primary API: " .. CONFIG.API_BASE)
 
 local executor = DiscordKatabumpExecutor.new()
 
--- Step 0: Check Discord Bot API status
+-- Step 0: Check Discord Bot API status (Vercel + Fallback)
 print("📡 Checking Discord Bot API status...")
-if not executor:checkDiscordBotStatus() then
+if not executor:checkDiscordBotStatusWithFallback() then
+    player:Kick("Discord Bot API is offline. Please try again later.")
     return
 end
 
@@ -482,7 +547,7 @@ end
 print("👤 Preparing user information...")
 executor:prepareUserInfo()
 
--- Step 2: Validate and authenticate with Discord Bot (Primary method)
+-- Step 2: Validate and authenticate with Discord Bot
 print("🔐 Authenticating with Discord Bot...")
 local authResult = executor:validateWithDiscordBot()
 if authResult ~= true then
@@ -493,9 +558,13 @@ end
 print("🔄 Syncing data with Discord Bot...")
 executor:syncWithDiscordBot()
 
--- Step 4: Get and execute script
-print("📜 Loading script from GitHub...")
-local script = executor:getScriptFromGitHub()
+-- Step 4: Get script (try Discord Bot API first, then GitHub)
+print("📜 Loading script...")
+local script = executor:getScriptFromDiscordBot()
+if not script then
+    script = executor:getScriptFromGitHub()
+end
+
 if script then
     print("⚡ Executing script...")
     executor:executeScript(script)
@@ -512,5 +581,7 @@ print("🔑 Executor Key: " .. executor.executorKey:sub(1, 8) .. "...")
 print("👤 Discord User ID: " .. (executor.discordUserId or "Unknown"))
 print("✅ Whitelisted: " .. (executor.whitelisted and "Yes" or "No"))
 print("🌐 Authenticated: " .. (executor.authenticated and "Yes" or "No"))
+print("📡 API Domain: " .. executor.apiDomain)
+print("🔄 Using Fallback: " .. (executor.usingFallback and "Yes" or "No"))
 
 return executor
