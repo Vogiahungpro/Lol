@@ -1,5 +1,5 @@
 -- Enhanced Roblox Executor Client with Discord Bot Katabump API Integration
--- Updated to work with Vercel API endpoints and Discord bot sync
+-- Updated to work with localhost:80 API endpoints and Discord bot sync
 -- Version 2.1 - Enhanced error handling and fallback system
 
 if _G.executed then return end
@@ -19,12 +19,12 @@ local Players = game:GetService("Players")
 local RbxAnalytics = game:GetService("RbxAnalyticsService")
 local player = Players.LocalPlayer
 
--- Enhanced Configuration - Synced with Discord Bot API and Vercel endpoints
+-- Enhanced Configuration - Synced with Discord Bot API and localhost endpoints
 local CONFIG = {
-    -- Primary API (Vercel deployment)
-    API_BASE = "https://lol.vercel.app",
+    -- Primary API (localhost deployment)
+    API_BASE = "http://localhost:80",
     
-    -- Fallback URLs (including localhost for development)
+    -- Fallback URLs (including other localhost ports for development)
     FALLBACK_URLS = {
         "http://localhost:3000",
         "http://localhost:3001", 
@@ -33,7 +33,7 @@ local CONFIG = {
         "http://localhost:5000"
     },
     
-    -- API Endpoints matching Vercel structure
+    -- API Endpoints matching localhost structure
     ENDPOINTS = {
         STATUS = "/api/status",
         VALIDATE_KEY = "/api/validate-key",
@@ -46,15 +46,15 @@ local CONFIG = {
     },
     
     -- Timeouts and retry configuration
-    TIMEOUT = 20000, -- Increased for Vercel cold starts
-    MAX_RETRIES = 5, -- Increased for better reliability
-    RETRY_DELAY = 2000, -- 2 second delay between retries
+    TIMEOUT = 15000, -- Reduced for local connections
+    MAX_RETRIES = 3, -- Reduced for local testing
+    RETRY_DELAY = 1000, -- 1 second delay between retries
     
     -- Script configuration
     EXECUTOR_KEY = _G.EXECUTOR_KEY,
     SCRIPT_URL = "https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Lol.wtf%20main",
     GITHUB_FALLBACK = true,
-    USER_AGENT = "DiscordKatabump/2.1-Enhanced",
+    USER_AGENT = "DiscordKatabump/2.1-Localhost",
     
     -- API Features
     AUTO_RETRY = true,
@@ -106,11 +106,11 @@ function DiscordKatabumpExecutor:makeHTTPRequest(url, method, data, timeout)
         ["Accept"] = "application/json"
     }
     
-    -- Add CORS headers for Vercel
-    if self.apiDomain:find("vercel.app") then
-        headers["Origin"] = "https://roblox.com"
-        headers["Access-Control-Request-Method"] = method or "GET"
+    -- Add localhost-specific headers
+    if self.apiDomain:find("localhost") then
+        headers["Origin"] = "http://localhost"
         headers["Cache-Control"] = "no-cache"
+        headers["Connection"] = "keep-alive"
     end
     
     local success, response = pcall(function()
@@ -310,7 +310,7 @@ function DiscordKatabumpExecutor:prepareUserInfo()
         
         -- Session info
         sessionId = tostring(math.random(100000, 999999)),
-        clientVersion = "2.1-Enhanced"
+        clientVersion = "2.1-Localhost"
     }
     
     print("✅ User info prepared:")
@@ -335,14 +335,14 @@ function DiscordKatabumpExecutor:checkDiscordBotStatus()
         print("🔑 Users with Keys:", responseData.usersWithExecutorKeys or 0)
         print("📊 API Version:", responseData.apiVersion or "Unknown")
         
-        -- Check for Vercel deployment
-        if responseData.type and responseData.type == "vercel" then
-            print("☁️ Running on Vercel deployment")
+        -- Check for localhost deployment
+        if responseData.service and responseData.service:find("Local") then
+            print("🏠 Running on localhost deployment")
         end
         
         -- Check features
-        if responseData.features then
-            print("🎯 Available features:", table.concat(responseData.features, ", "))
+        if responseData.customApiIntegration then
+            print("🎯 Custom API Integration: Active")
         end
         
         return true
@@ -416,7 +416,7 @@ function DiscordKatabumpExecutor:validateExecutorKey()
         elseif statusCode == 403 then
             errorMessage = "❌ User not whitelisted.\n💬 Please redeem a key in Discord first."
         elseif statusCode == 0 then
-            errorMessage = "❌ Cannot connect to Discord Bot API.\n🌐 Please check your internet connection."
+            errorMessage = "❌ Cannot connect to Discord Bot API.\n🌐 Please check if localhost:80 is running."
         end
         
         print("❌ Key validation failed:", errorMessage)
@@ -495,7 +495,7 @@ function DiscordKatabumpExecutor:validateWithDiscordBot()
         elseif statusCode == 403 then
             errorMessage = "❌ User not whitelisted.\n💬 Please redeem a key in Discord first.\n🆔 User ID: " .. self.userInfo.userId
         elseif statusCode == 0 then
-            errorMessage = "❌ Cannot connect to Discord Bot API.\n🌐 All API endpoints are unreachable."
+            errorMessage = "❌ Cannot connect to Discord Bot API.\n🌐 Please make sure localhost:80 is running."
         end
         
         print("❌ Authentication Error:", errorMessage)
@@ -525,7 +525,7 @@ function DiscordKatabumpExecutor:syncWithDiscordBot()
         timestamp = os.time(),
         executorKey = self.executorKey,
         action = "lua_script_access",
-        source = "roblox_lua_enhanced",
+        source = "roblox_lua_localhost",
         apiDomain = self.apiDomain,
         usingFallback = self.usingFallback,
         connectionHistory = #self.connectionHistory,
@@ -538,7 +538,7 @@ function DiscordKatabumpExecutor:syncWithDiscordBot()
         print("✅ Discord Bot Sync: SUCCESS")
         print("🌐 Synced with:", self.apiDomain)
         
-        if responseData.fallback then
+        if responseData.fallbackMode then
             print("⚠️ Sync used fallback mode")
         end
         
@@ -572,7 +572,7 @@ function DiscordKatabumpExecutor:logExecution(success, error)
                 errorCount = #self.errors
             },
             timestamp = os.time(),
-            source = "roblox_lua_enhanced",
+            source = "roblox_lua_localhost",
             clientVersion = self.userInfo.clientVersion
         }
         
@@ -734,7 +734,7 @@ local statusSuccess = executor:checkDiscordBotStatusWithFallback()
 
 if not statusSuccess then
     executor:printErrorSummary()
-    player:Kick("❌ Discord Bot API is offline.\n🌐 All API endpoints are unreachable.\n🔄 Please try again later.")
+    player:Kick("❌ Discord Bot API is offline.\n🌐 All API endpoints are unreachable.\n🔄 Please make sure localhost:80 is running.")
     return
 end
 
