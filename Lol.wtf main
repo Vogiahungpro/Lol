@@ -2,6 +2,7 @@ local Steal_a_Brainrot = 109983668079237
 local BladeBall_Main = 13772394625     -- Correct Blade Ball ID from your screenshot
 local BladeBall_Training = 15234596844 -- Training mode (if it exists)
 local PhantomBall = 12979690461
+local NinetyNine_Night_In_The_Forest = 79546208627805
 local GameID = game.PlaceId
 
 pcall(function()
@@ -19,6 +20,9 @@ pcall(function()
     elseif GameID == PhantomBall then
         print("Loading Phantom Ball script...")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Phantom%20ball"))()
+    elseif GameID == NinetyNine_Night_In_The_Forest then
+        print("Loading 99 Night in the Forest script...")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/99"))()
     else
         warn("No script configured for this game. Current ID: " .. tostring(GameID))
     end
