@@ -9,7 +9,7 @@ pcall(function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Lol"))()
     elseif GameID == BladeBall then
         print("Loading Blade Ball script...")
-        loadstring(game:HttpGet("https://pandadevelopment.net/virtual/file/093c52661f498627"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/bb"))()
     elseif GameID == PhantomBall then
         print("Loading Phantom Ball script...")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Phantom%20ball"))()
