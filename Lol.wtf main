@@ -1,20 +1,34 @@
 local Steal_a_Brainrot = 109983668079237
-local BladeBall1 = 13772394625
-local BladeBall2 = 15234596844
+local BladeBall_Main = 13772394625      -- Main Blade Ball game
+local BladeBall_Training = 15234596844  -- Training mode
 local PhantomBall = 12979690461
 local GameID = game.PlaceId
+
+-- Debug: Print the actual Game ID
+print("Current Game ID:", GameID)
+print("Blade Ball Main ID:", BladeBall_Main)
+print("Blade Ball Training ID:", BladeBall_Training)
+
+-- Check if it matches
+if GameID == BladeBall_Main then
+    print("Matches Blade Ball Main")
+elseif GameID == BladeBall_Training then
+    print("Matches Blade Ball Training")
+else
+    print("No match found")
+end
 
 pcall(function()
     if GameID == Steal_a_Brainrot then
         print("Loading Steal a Brainrot script...")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Lol"))()
-    elseif GameID == BladeBall1 or GameID == BladeBall2 then
+    elseif GameID == BladeBall_Main or GameID == BladeBall_Training then
         print("Loading Blade Ball script...")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/bb"))()
     elseif GameID == PhantomBall then
         print("Loading Phantom Ball script...")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Phantom%20ball"))()
     else
-        warn("No script configured for this game.")
+        warn("No script configured for this game. Current ID: " .. tostring(GameID))
     end
 end)
