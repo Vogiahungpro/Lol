@@ -1,13 +1,22 @@
 local Steal_a_Brainrot = 109983668079237
-local BladeBall = 13772394625 and 15234596844
+local BladeBall = {13772394625, 15234596844}
 local PhantomBall = 12979690461
 local GameID = game.PlaceId
+
+local function isInTable(table, value)
+    for _, v in pairs(table) do
+        if v == value then
+            return true
+        end
+    end
+    return false
+end
 
 pcall(function()
     if GameID == Steal_a_Brainrot then
         print("Loading Steal a Brainrot script...")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Lol"))()
-    elseif GameID == BladeBall then
+    elseif isInTable(BladeBall, GameID) then
         print("Loading Blade Ball script...")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/bb"))()
     elseif GameID == PhantomBall then
