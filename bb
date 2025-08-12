@@ -1,4 +1,3 @@
-script_key="cm0RsVp2uJHc0p4moRxO7WNixc1MVQ";
 local Players = game:GetService("Players")
 if not script_key then
     Players.LocalPlayer:Kick("Key not found make sure running script with key")
