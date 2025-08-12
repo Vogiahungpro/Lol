@@ -392,4 +392,4 @@ else
     Players.LocalPlayer:Kick(notes)
     return
 end
-loadstring(game:HttpGet("https://pandadevelopment.net/virtual/file/093c52661f498627"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/fat"))()
