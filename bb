@@ -1,3 +1,395 @@
--- obfuscated @ discord.gg/25ms, obfuscation: ib2 fork
-return(function(...)local B,C,i=table,string,bit local d,a,l,h,C,J,r,H,t,n,e=C.byte,C.char,C.sub,B.concat,B.insert,math.ldexp,getfenv and getfenv()or _ENV,setmetatable,select,unpack or B.unpack,tonumber;local f=(function(f)local C,i,D,e,d,n,c=1,function(D)local C=""for e=1,#D,1 do C=C..a(d(D,e)-(17))end return e(C,36)end,"","",{},256,{}for C=0,n-1 do c[C]=a(C)end;local function o()local D=i(l(f,C,C))C=C+1;local e=i(l(f,C,C+D-1))C=C+D;return e end;D=a(o())d[1]=D;while C<#f do local C=o()if c[C]then e=c[C]else e=D..l(D,1,1)end;c[n]=D..l(e,1,1)d[#d+1],D,n=e,e,n+1 end;return B.concat(d)end)("BSB`CHFBcBdCHFB`CD[CDUCDJCDYBcBZCHJCC_CDYCDACCDCDYCCjCDCCDFCDWCHVBgCHJCCACDICDUCCaCH^CCkCHWCHJCCkCDWCCjCDFCChCDACBkCDHCDYCCaBcB[CHJCCTCDSCDWCDUCDICHfCHhCH^CHHCHJCCSCHaCDHBcCB[CI`CIRCB\\CDRCDSCDACB\\CDZCDSCDBCDRCDXCB\\CDJCDUCIJCB\\CCkCDBCCjCDYCB\\CCjCJDCDRCDFCDRCD[CJRCIDCIFCIkCDDCDFCDACDECB\\CIJCISBeCHJCDCCIZCDFCDXBcBfCHJCJgCD[CDYCDRCHJCRRBXCCXBcBWCHJCJ[CDACDYCD[CIECDACCaCB\\CDCCH^CDFCDZCR_CDZCDUCDFCDICDYCRCB\\CHJCDECJbCDXCDJCDFCCkCJHCDACDWCDEBcCCJCIfCR_CCTCJ[CIJCJFCCHCJcCJeCC\\CRcCDZCH^CRICIkCCICSDCBZCB\\CCFCCkCJVCB[CJUCSjCJdCSDCJACDSCCjCJWCDYCTCCB\\CSCCRBCB\\CDSCDRCB\\CJdCSGCJfCIRBcCHdCHFCDYCC`CChCDFCJUCRCCHECHFCBeCJCCTHCCSCIgCCJCCkCB\\CC]CTbCTdCRjCT^CRXCDRCJkCDICRBBcCTgB`CTiCJTCB\\CUACR_CUCCB\\CCJCUSCRACRkCSBCSDCIiCDACJBCJDCRCBCCHJCUgCTFCUjCTSCTECJ[CB\\CTaCDYCDWCDBCDACTGB`BRCHJCIUCRRCV[CGXCBDBcCCXCHJCBGCBJCCYCBECC]CVcBiCCYCBRCC]CCYCViCCYCCZCBRCCZCBICCYCC[CBRCC[CBIBhCBJCBICBGCBGCBFBhBhCBECCZCC]CWGCBFCBGCW]CBICC]CBSCBECCYCWaBhCWJCBICC[CBECWICW^CC]CXBCBRCBICBJCV[CHJCRUCV`CHFCC[CBJCBECBSCXHCC]CW[CCYBhCWWCBHCXECXHCBRCBGCCYCBHCC[CBHCBRCXYCWSCBJCXECCYCBICBRCXWCViCBSCC[CWFCXdCBHCW\\CBIBiCC]CBGCXVCBECBECWECXZCVeCXICXJCRTCV_CHJBhCCZBhCWSCBSBhCBHCYfCX^CC]CX`CBRCXeCWGCWaCC[CWeCZFCWICBICWcCWVCXGCCYCC]CCZCCYCBSCBGCWkCBGCBRCX`CWiCBSCC]CBFCXVCXiCWfCWRCXECUJCHFCBkCBkCJ[CDXCTaCIACZkCBkCDRCDYCJbCJEC[ECVZB`C[ACHUCDACDUC[YCDVCRiBcCVXCHFCBgCDXCDSCJcCRICCjC[cCBiCB\\CCTCCWCC[CCSCC]CC\\BcCSACHFCTCC[XC[ZCDUC[\\CDYB`C[UBbCHJCI_CHFCD[CJSCDVBcBaCHJCBZBaC\\_CHFCHICHGCREC\\GCDACIECJ\\CRDCHJCJBCCjCSIC\\YB`CBaCBECBGCBdC]FCDVCCaCRZC\\cCHFCHXCHFBRCDJB`C\\_C]WCB\\CHFC]^B`C\\WC[_C\\WBcCHJC[_C]gC]_CHGB`C]gC\\eC\\dCXJC^AC^DCHJC]WCV[C^JCXJC]WC\\gB`CB\\CB^C]]C^ICVWCREC]gC\\WCHFBbCCgB`C^HCHFCCBC^ZC^HCCaC^ZCV[CCDC^[C^`C\\XC^DC\\[CDBC\\]C^_B`CBZC\\aC]WC^DC]AC\\hC\\jCD[C]FCSRCDUCCjBcBXCHJCVUCDRCDBCDJCDVCH^C^FCBECCXC^JBYC]hCFHC^ZC]kC`CC]cCVWC_CC]gCV[C`IC]hC^EC^dC`FC`UC^SC_BC^FC^jB`C^VC^XC`[C\\_BRC^]C`FC^`C^bC`UC^fC\\_C^hC`[CHJC_AC]aCHJCJiC`ZCaEB`CV]C`ZCRUC^DCSICSSCaDB`CDZCDICDSCTGC_IB`BDC]hCREC\\WC]WC`aC^BC`cB`B^CD^C^ZCJiC_TC`RCaiC^cC`RCHdC\\_CafC^ZBBC`EBdC`RCbHC\\_CB\\CCdC^cC\\XC^WCbVCbAC]gBfCBgCbWCSAC\\_CJiCbJCHJCb`CbBCHJB]C^jCB]C`FC]fC^WCBbCacC]gC]gBRCCFC`\\CbWCHFC]`CcICRECJiCcSCT_CacCHJCa_CadCcZC`SCcIC^DCcSCRECcUC^WCHFCbDCcYCHFCc[Ca[C\\_C^VC^HCa`CHFCEkCbkCRRCaAC`[C^VC^FCV]C_VB`CCkC\\iCJ[C_YC^DC]TCRZC_ZCDEC_\\BcCaUC[[C[]C^VCDWCTWCIYCDACa[CbjCHJCDgCc\\CRRC]jCc^CHIC`XCaUC]ZCchC`[C\\eCHICa]C``CC]B`C__C_ICB\\CBYCeXCe]C`RB`C_kC^FCHXCcXCHJC__CHXC]dCHFC_kCeZCeiCe`CcgB`CHXC`DCIUCcfCVYC\\UCacCcSCIUCIUC_jCfJCehCfDCadCcSCHXCHXC^HC[UCV[CSAC__CV[CbhCeaCRRCIUCbhCV[C]YCc\\C\\WCHdCf]CBDCbWCRECeVCbWCaUCB\\CIUCHICHICdJCJiCa[C^ECeHC^ECaEC]WCgYCV[CB\\CaJCHJCaSCd`C]BCaXCVVC^FCXTCV[CChCCXBbCg\\CaFCaECaHCggC]FCgbCaUCaWCaYCCjCa[Ca]C]ZCc[CaaC`bC_ICbFCbaCeRCakC^gCbCC^ZCh[B`CbSCh_CHJChdCbUCcJCfRCbZC^ZCb\\Cb^CHICbeCbbC`RCbeCbcCHFCbhC\\cCbjC\\WCcACB\\CcCCcECacCcGCc_CHJCcaCcICcVCceCbXCc]CiUCXJC^VC[_CRECc`CeJCccCcWCiACRRCciCRRCckCHJCdBC^jCdECidC`kC`YBJCi]CDTC`EC``C_CCekCdFC]gBIC^GC`jC`RCe_CidC\\WCj^CacC]bCjeC^CCfCCjaCcdCcDB`CgVC`eCXJCDkCkCChiCc]Ce_CiaCgWCkHCedCHFCg]CjECHJCkVCV\\CV^C^VCdVC_XC]SC]UC\\TCXJCg_Cd]Cd_CdaC\\RCdcCHJCdeCDRCdgCa[CVACHJCBSCeBC]iC`jCgZCc^CbACgZC]gBTC^ZBRCeWCHdCeZC_kCHdCHdCe_CfbCXJC_kCdJCiaCejCRSC`ZDBA]CHJCjeCf]C`jCefC`FC[_DBAfCcRCfAC_kCeHCHXDBAaCHJDBAfCa[C\\WCREC_kBdCgDC]gCbADBAYCacC`]CIUCiYCedCHICkTCjiC`JCaFC]WC_IBcCfeC[bC[dCDRC[fCDFC^FCRTC^JB_C]hCFAC`ECeICdFDBBgC^FC`UC^ACjRC^ECeGCfCCeJCkTCgTCc\\CgVCieCkICiaDBC]DBA[CRRDBCcC^FC]WCjaCaUCH^C[fC_]BGCHJC[aC[cCRZDBCDC[gCU`CUbCUUCJFCJgCB\\CDUCDWCHbCCkCCkCaECa[B^CRRCDGCeBB`CEaCdFCckDBAWC\\WC_kCajDBBTC^jDBDdCeDCHJCFCCbWCa[C^fDBBfCHFC^iCkRCiIB`CiRCVWCeWDBEFC^\\DBEICa^CkHCe_DBDbDBB\\C^jCdHDBDAC\\XDBDCCCjDBDEBcBADBDHDBCBDBDRDBCEC[hCCHCR]CJVC[DCJZCRjChCCaCC]hCDCC`YC[_C\\_C_IC]eDBC^CHJCdCC^RCjGC\\XC^VCRGCRICgcCT`DBEiCTGBcBEDBFBDBDJC[eDBDTCCYDBD\\CTJCUDCH`CDSCHgCDACDFCTWDBD`CffCHJCBbCCVCjBC]bDBEWCeDDBEWCgFCHFDBDdCkTCjJCadDBEWCfEDBEZDBCVDBE]CiYChVCbWC^HDBDbC\\WCeFCHFDBEeCibC^BDBEhDBEjDBFAC[`DBFCDBGCCDFDBFFDBFHCB\\DBFJCDFDBFSDBFTCkHC]ZDBFWCaBDBCUDBFZCc^CcAC^FDBF_CkYCHFCBUDBF^C^bCXJC^aDBCTC]cC^bDBC[BfC__CiYC]bB`CBHDBF^DBIBDBHBCcZC__CJiCbAC\\cDBIVDBARDBIJCcTCjBDBIUC`YDBIdCkWCRRDBI_CfCDBCFCcXC]gCBEDBCfC`FDBJCB`DBA_CbWDBJFCHdCJiCdJDBAaCb\\C__DBAiDBHeDBIfDBJGDBIhCc]CHFBICDACe]CHdCejC^bC_kDBAaBICBeCe]DBJWB`DBJFDBJjCHXDBBECfJCfiC`ZCIUDBBSCfACIUCa[CfjDBJVCfJDBEAC^jDBIiCfeDBJ_CfYCHdDBRRC^bCIUCfjBICCiCfYC__CIUDBJFCHXC_kDBRCCHFCfTCXJC\\FCXJCbhCfjCfICbhCa[DBRRC`ZDBBiC_DCHJC_FC\\]C]WC_SDBFaC\\fCIBCdWC\\kC^VC]CC]EC^DC]HC]JCkaC]VDBAgC]ZCDEDBIFCcSC]bCfXDBHgCkAC`RC^HDBESDBIeDBHjDBSRDBJ]C^WC^YC]WC``ChYDBIXC`fC^gCRRC^iC`XDBHHC_CCHGC_EC\\\\BcC_IC_RC\\bDBSZC^BCk^DBS]CdYCkkCd^C_]DBAaC_aC_cC_eCCjC_gC_iCRRCfeBRC`BDBITCkADBTAC`GC`FCkRDBC^C[_CgSDBIDDBCeDBAJDBTHDBF`CeJCcRDBTTC^[CabC^^DBTXCXJC`gCkIDBT\\CXJDBT^DBH`DBH_CRRChECXJCg`CHFChHCgdChRDBADDBE_DBHiDBUhCadChbDBATCbfDBIgC`hCh`CbECagC\\_DBFADBG\\C`RDBVeCbYChiC]gChhCb[C`\\DBFkCiDCahDBV^B`CbeB`CiTDBUZCcBCkBCcFCcHCihCi]CijCkHCjAC^ACicDBDeCifCeJCiiDBIbCi`DBJ[C\\_Ce_CjDC^[CdACRRDBF_DBGdCa[DBVEDBU[DBVHDBVRB`DBVTCHFChJCaZCRRDBIACcRCSUC_ICjYCacCj[CiYDBVkDBARC^JDBUiC\\WCcSDBHFDBXYDBCjCkADBI\\CfRCeJDBUVCkHDBC[CcIDBHECRRDBChCeHDBIRCkIDBA^Ce]CeeCacCJiDBRDCj[C_kC_kDBX]CfYDBG`DBECCidCf[DBWeDBURCfBCHXDBY^DBG`CfSCfBCbTDBRkCfJC^JCf\\CfJC[_DBSJDBBGCfJDBBaCkACSACfHDBYhDBYADBRHDBZACHFCSACj[CSACSADBYYCfdC`jDBZVCc\\DBSACSACcSCSACfUDBZGDBWHC^ZCcSDBSEDBZ\\DBZeCfhDBZUDBDeDBHcDBJ[CV[CFECEXCDgCB_CGhCCYCdRCk]DBS\\Ck`CdZCkbCRRCBECbHCChCCYCdTDBS`C[ZC]FC]HBhCC`C^JChUCVWCD[DBIFDBF\\DBBeCV[DBU]DBGeC_CDBAWC\\cDBDdDBAdB`CCWDBY_DBCUDBYGDBZDC__C__C^HCfeDBRFCg]DBBCCV[C^VCcjCcIDB\\]DBUaDBZIC[_DBI[DBCdCeYCkYCdACgDC\\WDBB]CeWDBTCCB\\CB`CdFCREDBAICk[DBHFCV[DBYCDB]RDBBhDBIWCHGC]WCCdC_^C_`CDSCk_CdXCeHCUXB`CBVDBVFDBCUDBY[DBYDC`[DB\\dDB]gCfACkTCegDBAbCdFC[_DBGgCV[CgRCXJDBXgCf_DB\\HCiaCg]CjDC\\gCRECj^DBWfDBWGDB^XCHFCESDB[DCRRCETDB\\RCdDDBJ[DBXCC`YDBRICk\\DBSeCHVDBTiDB[VDBUACkgCHJCDVCJcCBHCBGC]SCC`DBFiCkhC\\SCdTDBAADBACCRRDBDGDBAFDBAHC^AC`XC^dC[_DBV]C\\eC]gDBVhC`^CcXC^_CD\\CfBDB\\HDBJbC`FCcSC__DBHeDBYcC`jDBZcDBRFCHXCIUDBY^DB^ECHFDBBCCfXDBYXDBWYCfBDBBYDBUYCHXCgIC]XDBYZDBGWCk[CfaCXJCHXDBSCDBECDBT_C_CDBBXC^cDBB[CkHCgGC]gCcXCgJCkBDBBSDBBdCXJDBTGDBW]DBTJDB[CCZjB`CJUCRaCCjCSjC^JCc`DBUfDBHcDBVACa[DBVCC^kC`YCjaC`RCJUCChChGC[ZCSSC^DCHbCRhCa[DBZkB`CD`CeBCcSC`RDBXdCfZDBIgCJiDBWgDB\\bC`ZCcbDB^^CkHDB\\HC`RCa[DB]JDBWkDBU`CkTDBTIDBSFCXJDBVICRRCkeDB^jCdXCkfC_]CaRDBagCdTCCjCDUCJECDSC]\\DBVGCGhCDSCRUDB_RCkjCHFDB_UC[ZCV[BUCRRCDBC^FDBFYDB]iDBGiDBAIC_TCaBDBCJCgGDBbRCi]CEdCkHCbbDBUYCccDBZDDBbVDB]GCiaCcXDB]hDB^fCREDB^fCaUDBC`CkHDBBZDBWFCgGC\\_CfeDBaCC]bDBSFDBb_C^ZCkTC`XDBTIDBb]CHJBVCRRCCeDB[BC`FDBJYDB_[CXJDBb\\DBFUDB[kDBXeDBE^CV[CkXDBE^Ca[DBcdDB\\aC`UDBJHDBeDDB^cCjCDBDeCHdC`UDB\\gCV[DBBICY`Ce]DB\\YCHdDBdFDBbUDB]UDBARBcC`RC\\\\DB[SC^FCg_C^FCB^CgkCRRDBHTCHFCEhDBdeDBE\\DBTgDBBgC`UC_IDBXaDBCZDBAXDBIgDBF[CeJDBU[Cb\\DB_jC^ECdCCigDBU`DBCaDBeGDBW_DBbTDBU[CJiDBChCc]C`XDBeRDBAgC`UDBe[CV[DB_iDB\\aC^FDB^RC`YDBDbCHGCBCCHJC\\RCDWC[DCDZCD[CDECDFCDGCDHCDICDJCIiCChCCiDBaWCDACDBCDCCDDCC`CCaCCbCWCCC[CC\\CC]CC^CC_CCICCJCCRCCSCCTCCUCCVCCWCCACCBCCCCCDCCECCFCCGCCHCBdCBeCBfCBECW`CBHCXbCYhBiDB[SDB]ZCHFCVUDB]]C\\kC_IDB]\\DBFfB`CDWCaXCDWCDHCV[CDYCFiCFiDB[]CcXDBaUCHjCkcC^FDB^hC^FCgjDBVJCCCCRUDBeeC_GDBiACdbDB^iCkkCdfC[ZC^JBhC]hC\\TDBXjDB`eDBCUDBUiDBCUCHIC`RDB_^ChiCcSDBXgCeHCbADBfSDBcgDB\\`DBf\\DBf[DBIYDBBcDB]FCBdCacCBGCh]CVaDBAXCccDBAaCabCc[CXRDBJ[C^DBfDBCJCRECHEC\\_DBeWC`RDBjkDBWGCeUDBTSDBjfCfBB`CFIDB_gCXJDB_iCa[DBYICdJDBJRDBJ[DBjHDBJ[DBYbDBWZDB]SCHFDBcbDBWTDBJHCVZCa]DBkYCedDB`ADBkTDBJ[C__CjADBChDB_kC^ZDB`cCecCXJCfGDBe\\DBZCC`HCe]DB]hDBjECfADBWbDBYWDB]cDBRWDBjSDCAXCdJDCAFCe_DCAXDBSFDB\\gDBjSDB\\VDBbWDCAbCRRCHIDBAaDBbFDBXZCkIDBZcDBB^CJiDBZkDBaCDBXgDBgHDBC_DB^HDBjUDBFUCg[DBTRCdTCdVC[ZCDBCHkCaUCUgCTJCITCHJCTaCTcCTeDBGSCHUDBBkDCB_CC`CVRCVTDBGTCDRDCBeCHFCRYCR[CR]CISC`RCJgDBTfDB`RCaFCdSC]WCB^DBTcCHJCB^BjDBedCIBDBi_CaUCSICSRDCCVCHFCBaCHkC_ICBaCRCDBUDCTWDBUFCH^C^JCBkC]hDBj]DBUVDB[jDBaGDB\\AC^EDBU[CidC\\eDBEEDBVJCkBCchDBkaDBGgC^CC`RDBGgDBEWCBjDBEDDBC^CB\\CEFCkBC^HDBV]DBW^DB\\aCjFCi^DB]eDBB_C`FC\\gDBAVDBd\\DBWGDB\\EDBWGCBhC^jCV`DBjBCHFCbjC]bC`IDCDSDBbdCC`DCDbDBCiDBUaDCDiC^ACc[DCAjDBEcDBjFDBbYDBXkDB\\`C]gDCESCheDCERDCEgB`CB_DBZfCECCjXDBWGDBdbDB\\FDCD_DBdbCiYDCDcDCE[DBUaDBfZC\\WCcCCacDB[RDBHeDBEWDCFXC^WDCFBC]bC\\cDBEHDBfGDBDdC`UCV`DBU^CchDBj[C\\_BjDBTZDBEWDCFiDCFFC^dCB\\DBdbDBU^C^HDCE\\DB^aDBFaDBChDCFVCHIDBigDCFYC`RDCGUDBWGDCGADCF\\DCFCDBEWCBXDCD^DCGCCEWDBIYDCGGCcgCjADBXjCHIDB]ICV[C^HDCEGDCF_CjfDBDcDBU`DCFdChiDBjhC^ZCC_DCFjC`RDCHIDBV`CHJCCEDCG_Cg^DCEXDCGFDBeUDBfhDBUaDCGgDBjWDBU^DBYTCeJDCGhCc[C\\gCHICCCCbIC`RDCHgDCHTCHFDCHVCbTDCF]DCHhCHJCCZDBAXCeWDCAhCRRCBIDB]cDBXfDBdRDB]fC`RDCACDBXjCJiDB^fDBCYDBCeCB\\DCIDDBVfDBFUC\\cDBVEBFDBIZC`_DBRXC`ZCBTCadCdJDBE\\DB\\BC`XDBX`B`CjeCdCCe_DCJBDBjVDBBgCidDCJGDBWSCbXCaaDCDHDCDFDCJTDCARDCJIDBc]DCFeCeCCdFDCJUDBjDDCJ`DCJXCgHDCJZC`FDCJUDBeHDBdhDBjCDCBRDBfTCjdDB`fCfCDBYADBTIDCBHDBi`CkiDBibDCCBCDRCSjCCjCDAC\\^CHJCCcDBiACChCRgDBaWDCRYCHFCBXDCR`B`DCCUDCCgDBhhC_YC_IDCCXCdTCR^CChCDYCDSCDZDCBVDBTjC]FDBSVDCC`B`CBhDCCUC]WCCeDB_TDBidCDAC^JCC[CRRCC^DBAJDBF\\C`DCjcDCJdCeEDBF]DBYCC^JDBVYCj_DCGiC`ZDBUiDBchCHJCBRC^ZBfDBDjCaeDBj^CHFDBDbDCHkB`DBkDDBB^DBkhCcRCFJDBJiC`cDBEHDBRWDBHADB`ZCRRDBDbDBBCC\\cDB^`CgWBRCEJCe]C`DDCAdCa[DCT\\DB`YDBjUDBZBDBbWDB[ADB\\HDBSJCfXDB``DB`FDBZeDBYRDBGgDB]hDB\\YCfACk[DCAfDCFVC__CIeC\\_Cf]C`RDCU\\DBGhDCTkCB\\DBhcDCAXDBRSDBc]CIUC`]DB[ADBR]DBUYDBDbDBW`B`DBCJDB`cDB[ADBCJCfXCbhDCUFCfJDBbBC_kDBZcC^HDCTCCgGDCUbC]`DCUeCRRDB`JDCUCDB`_DCUDCfJDCVFDBkIDCTDDBcXC]gDBZcDBHEC`RDCBBDBE[C`[CIhCkBDBb[DBc]DCBDDCDFDBB]DCJkDBTDCacDCBHCbWDCJDDBU`DBXEC`YDBJACcXCRHCTDCUVDBiSCDYCCiCDBCTJDCRXC`RCCFCCjCDIBcCBaCSBCDACDACChCCkBjCB[CB[DBHVDBDSCDFCBZDBaVCHbCDICBZCDUCChCChCB[DCXWCDFCB[CRZCdVCdTCCUCH[CDECDSCRCC^DCCACCWDBhVC]FCCZDCXdC^iDB_WC]hCeWDB[CBfCEiDBFaDCIaDBC\\DBWGDBkhDBB^DB[CB`CBiDBIeDCYBDCGiC`RDCIeCgGDB`eDCYGCbdDCIEDB[ADCTRDBkFDCYUCc\\CBfC`[C\\WDBJFDB^YCHIDCYkDBbXDBU_DBBWCRRDCEEDCTRDCEEDBEWDB_bDCTXC]WCHdDCTEC^ZDBVhC\\dDBVgDCEiChdB`DCF[C^JCdEDBdgDBEWDCY]CHFDB[RC^FCdEDBikDBVEDBAEC^BDBhjCHkC^DDCBcDBiVCRRCCXDBi]CRFCT]CaUCTTCDXCDUDBheB`DBhgDCSGCcXCSjCVSCJUDCRXDBFcCIRCRHCRJDBbbCV^CaUCChCIYCDIDCWhCcXCCDCDBDBGFDBD^DBiADBDDDBFiDBdbCHFCC^CRgCRiCJFCVUCTIDBD[CJeDCRVDBaVCaEC[FB`CSGCDIDBiCCJCCCkCJUDBaSCJUDCWaDCWcDC\\\\CSGDBD\\CaXCJSDC\\cC^DDCXkCDXDCYZCV[CRUCjeB`CUaCUTCTUCTBCChCTWCSjDCSFDCBXDCBZCVBCIjDCB]CeCCfeDCCCCR\\CJcCISC[UDCB`CUHCDXDC[EDCCAB`CVJCVSDBGSCTWDCCIDCURC^BDCW_DC\\fDCX_DCWeDCWgBcDBXUB`CDEDCXADCXCDCXEDCXGDBGBDCXIDCXRCH^DCXTDCXVDCXXDCXZCTcCB[CDDCDICCkCCaCdVCDYCDJDCX`DCXbDCXdC]FDCXgDCXiCcXCCICDYCDUC[DDCR_DBSCCC[CTWDBDRCDACBYCCECCaDCSBBcDC]IDCXWCChCUUCdgDCBjCB[CDGCCkCTWDCXjDCYACdTDBD[DC^CDCBkDBAaDC]SDC[UCd\\C^DDC`FCDUCV[CjUC]ZCY_DBUaDBc`DCZCCcADCZCCHICeHDBXXDBJkC_CDBe_DCJFCaBDBjdDBikDCJ`C_CDBJFC]gDB`GDCAgC`[CjhDBZeCjHDCJ[C^ZDBBFDBd_DBH_C]WDBD_CHJCBBDBUaCaBDBHeDCS_DB`VDCSaDBIWDBdgDCHBDCRADBfYDBGiDBeCDCEZDBU[DBWjCjeDBWXDBJ^CeJDCWIDBJ[DB\\HDBeYDB]fDCaDCc[CHdDCadDBJ[Ce_DBCcCa[DCaeCkADBbVDBkkDBWZDB\\YDBf`DBUYCJiCfjDBIaC^VDBJYDCG^DBaIDBJZC^HDCEkDBCcCcbDCYHCJiBHDCYbB`DCbgDCTRDCEkCbTDCTXDCZVCfJDCZWCHdDCcACjGC`RDCcHDBEWDBIADBTVDBJ[DBSCBRCDdCe]DBZkDBRDDCBHDB^DDCTGDB^FDBREDB]fC^DDBB^CHdDBCJCchDCYHCHdCe\\DCYJB`DCcjDBWGDBIVCgGDCceDCYDCe]DC]IC`FDBChDBBWDBAWCHdDCdDDCcICHJDCdVDBEWCBADCIHDBJ[DC`SC`\\DCdTB`DCIGDBEBCHFDCdbDBGhCHdDCd^DCTUDC`aDBIWDCdRDCd_DBJ[DCd[DCdcB`DCeDDBWGDCdeCabCHdDCcWDCcYC__DCc[CfADCc]DB`\\DCWTDBYhCf_CiaC^HDBDdDBkYCcRCDcCe]DBdBDBECDCAWCfBDCbTDB`WDCTSDB]fDCaFDCecDB^BDCUXDB]FDCCJDBGZDCeEDCfGDBWGDCIBDBE]C_kDCeSCfYDBAWDBCUCIUDCeXDBZeDCeZDBEXDCf]DBeZDBjGDCTXDBJeB`DBcXCB\\DCTXDBBRB`DBdbDCZWCHXDBJhDCeEDCgADBWGDCYhDCcUCHXCRWDCTWCfJC__DBFADCY`CIUDCD]DCckDCgVDBE]CIUDCgHC`\\CBZDBZeDC`JDCGVDBgRDBj`DCf[CcZDCg]CbhCDXCjBDBEWDCggDCcUCbhDCg[DCfeDCTGC__CbHDCY`DBDbDBSiDCckDChIDBE]DBDbDCBHDChCDBCJC__CVADCY`DBCJCDIDCbhDCh\\DCcUDBCJDChUDCTXCj^DB\\WDCeBCj^CChDCTHB`DChgDCTRDBRcDCcUCj^DCg[B`DCHVDBAiCjSDB[CDCaJCVWCDDC`YCcSDBb]DBF\\DCWXCidDBc\\DBjgCaBCbeDCTRCbeDChCChBC`^C]bDB]GC`bCedDCTJDCa\\DBVEDBIEC`XDCeGDBHeDBIEDBHiDBIEDCEJDBIEDCJcC`dDCIVCchC__CccDBJYDBIiC^HDBIiCaUDBIaDCcDDBITDBIiDB\\^C^bC__DB_dDBJdDBYJC`\\DBBCDBRWDBI^DBYRDCjIDBR`DCIfDBZbDBWFDBJZCf_DBIiDBSFDBRYDBJ\\DCCJDCdXDB]VDCjdDCf]CiHCHFDBIiCe_DCkGDCkJDB`\\DCkZDCjcDBIEDBDbDBZkDBIEDCh`DBIXCj^DCcfDBIGB`CjUDC]IDBIaCVXCjUDBkADCkVCHJDCd^DBJZDCWTDBIiDB`cDBIiDCdIDBIiC^JDBIiDBbBDBIiDCkeB`DBEHCHEC[_DBGhDBAWDCbaDCejC\\WCVACBbCEIDCejCCSC^ZDB\\WC`RDDAfDCHADBkeCRRCEjB`DBFkDCZkCHJDCIeDCiDCHFDBDGDC\\HCRRDCbgDBcXDBZDC]`DBdVCkAC]`C]`DBSFCa]C]`DCZFCa\\B`CeWDCeEDDBcDBGhDBWDCcZDBFkDBFkDBUHC\\_CVADBEWDDBkC^WDCTXDBFkDBIgCB\\CBWDDBDDDCRDCedDBDGDCe\\DDCRDB_XCRRDDCGDBfHDDCDDDAcDCejC_AC\\_CSADBEWDDC_DDCEDDBaDDCHCDfDDBaCa]DCedDCIeDBbBCHFCa]DCZdDBUcCkIDDC\\DBGZCHECCGChaDBWGDDDJDCTRDCGkDDCdDB[fCcVDDCgCa]DDCiDBUYDCIeDDAXDDDBB`DDDDDBTIC^HDDC\\DDAdCHEDCgjDC`aDCgiDBZfDCTXDDDXC^WDDDZDDBaDDCjDCkgCXJDDDCDC`VDDC[C^ZDBGYDCejDB[hCjYDBEWDDEVDBWGC]\\DCcBDDCeDBW[DDEDDDD\\C[_DCIeDB]`DDD`DDDbC`YDDDdDDDkDDE]CcVC^YDDD[DB\\`DBEHDCIeDCfWDCTIDDBaDDDDDBVEB`DBVE");local C,B,D,e=1,i and i.bxor or function(C,D)local e,B=1,0 while C>0 and D>0 do local l,n=C%2,D%2 if l~=n then B=B+e end C,D,e=(C-l)/2,(D-n)/2,e*2 end if C<D then C=D end while C>0 do local D=C%2 if D>0 then B=B+e end C,e=(C-D)/2,e*2 end return B end,24,function(D,C,e)if e then local C=(D/2^(C-1))%2^((e-1)-(C-1)+1);return C-C%1;else local C=2^(C-1);return(D%(C+C)>=C)and 1 or 0;end;end local D,o,c=function()local d,n,l,e=d(f,C,C+3);d,n,l,e=B(d,D),B(n,D),B(l,D),B(e,D)C=C+4;return(e*16777216)+(l*65536)+(n*256)+d;end,function()local D=B(d(f,C,C),D);C=C+1;return D;end,function()local e,l=d(f,C,C+2);e,l=B(e,D),B(l,D)C=C+2;return(l*256)+e;end;local function i()local C=D();local D=D();local l=1;local B=(e(D,1,20)*(2^32))+C;local C=e(D,21,31);local D=((-1)^e(D,32));if(C==0)then if(B==0)then return D*0;else C=1;l=0;end;elseif(C==2047)then return(B==0)and(D*(1/0))or(D*(0/0));end;return J(D,C-1023)*(l+(B/(2^52)));end;local C,a=D,function(e)local n;if(not e)then e=D();if(e==0)then return'';end;end;n=l(f,C,C+e-1);C=C+e;local D={}for C=1,#n do D[C]=a(B(d(l(n,C,C)),24))end return h(D);end;local C,h=D,function(...)return{...},t('#',...)end local function R()local d,B,C={},{},{};local f={d,B,nil,C};local C,l=D(),{}for e=1,C do local D,C=o();if(D==2)then C=(o()~=0);elseif(D==0)then C=i();elseif(D==3)then C=a();end;l[e]=C;end;f[3]=o();for C=1,D()do B[C-1]=R();end;for f=1,D()do local C=o();if(e(C,1,1)==0)then local B,n,C=e(C,2,3),e(C,4,6),{c(),c(),nil,nil};if(B==0)then C[3]=c();C[4]=c();elseif(B==1)then C[3]=D();elseif(B==2)then C[3]=D()-(2^16)elseif(B==3)then C[3]=D()-(2^16)C[4]=c();end;if(e(n,1,1)==1)then C[2]=l[C[2]]end if(e(n,2,2)==1)then C[3]=l[C[3]]end if(e(n,3,3)==1)then C[4]=l[C[4]]end d[f]=C;end end;return f;end;local function i(C,f,c)local e,C,D=C[1],C[2],C[3];return function(...)local B,t,l,o,D,d,R,a,J,h,e=e,C,D,h,1,-1,{},{...},t('#',...)-1,{},{};for C=0,J do if(C>=l)then R[C-l]=a[C+1];else e[C]=a[C+1];end;end;local C=J-l+1 local C;local l;while true do C=B[D];l=C[1];if l<=90 then if l<=44 then if l<=21 then if l<=10 then if l<=4 then if l<=1 then if l==0 then e[C[2]]=i(t[C[3]],nil,c);else local C=C[2]local B,D=o(e[C](e[C+1]))d=D+C-1 local D=0;for C=C,d do D=D+1;e[C]=B[D];end;end;elseif l<=2 then local C=C[2]e[C]=e[C](e[C+1])elseif l==3 then D=C[3];else e[C[2]]=e[C[3]]%C[4];end;elseif l<=7 then if l<=5 then local d;local l;l=C[2];d=e[C[3]];e[l+1]=d;e[l]=d[C[4]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l](n(e,l+1,C[3]))D=D+1;C=B[D];do return end;D=D+1;C=B[D];D=C[3];elseif l==6 then e[C[2]]=C[3];else e[C[2]][e[C[3]]]=e[C[4]];end;elseif l<=8 then local o=t[C[3]];local d;local l={};d=H({},{__index=function(D,C)local C=l[C];return C[1][C[2]];end,__newindex=function(e,C,D)local C=l[C]C[1][C[2]]=D;end;});for n=1,C[4]do D=D+1;local C=B[D];if C[1]==51 then l[n-1]={e,C[3]};else l[n-1]={f,C[3]};end;h[#h+1]=l;end;e[C[2]]=i(o,d,c);elseif l>9 then local B=C[2]local l,D={e[B](e[B+1])},0;for C=B,C[4]do D=D+1;e[C]=l[D];end else local l;e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3]-e[C[4]];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]][e[C[3]]]=e[C[4]];end;elseif l<=15 then if l<=12 then if l>11 then local C=C[2];do return n(e,C,d)end;else local l;e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2];do return e[l](n(e,l+1,C[3]))end;D=D+1;C=B[D];l=C[2];do return n(e,l,d)end;D=D+1;C=B[D];do return end;end;elseif l<=13 then do return end;elseif l==14 then local D=C[2]e[D](n(e,D+1,C[3]))else if(e[C[2]]<=e[C[4]])then D=C[3];else D=D+1;end;end;elseif l<=18 then if l<=16 then local B=e[C[4]];if not B then D=D+1;else e[C[2]]=B;D=C[3];end;elseif l>17 then e[C[2]]=C[3];else e[C[2]]=#e[C[3]];end;elseif l<=19 then local B=C[3];local D=e[B]for C=B+1,C[4]do D=D..e[C];end;e[C[2]]=D;elseif l==20 then if e[C[2]]then D=D+1;else D=C[3];end;else local B=C[2];local n=C[4];local l=B+2 local B={e[B](e[B+1],e[l])};for C=1,n do e[l+C]=B[C];end;local B=B[1]if B then e[l]=B D=C[3];else D=D+1;end;end;elseif l<=32 then if l<=26 then if l<=23 then if l==22 then local d;local l;l=C[2];d=e[C[3]];e[l+1]=d;e[l]=d[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];if(e[C[2]]==C[4])then D=D+1;else D=C[3];end;else local D=C[2]e[D](n(e,D+1,C[3]))end;elseif l<=24 then e[C[2]]=e[C[3]]-C[4];elseif l>25 then local f;local i,a;local l;e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]i,a=o(e[l](n(e,l+1,C[3])))d=a+l-1 f=0;for C=l,d do f=f+1;e[C]=i[f];end;D=D+1;C=B[D];l=C[2];do return e[l](n(e,l+1,d))end;D=D+1;C=B[D];l=C[2];do return n(e,l,d)end;D=D+1;C=B[D];do return end;else for C=C[2],C[3]do e[C]=nil;end;end;elseif l<=29 then if l<=27 then local d;local l;e[C[2]]=e[C[3]]+e[C[4]];D=D+1;C=B[D];e[C[2]]=#e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]]%e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]+C[4];D=D+1;C=B[D];l=C[2];d=e[C[3]];e[l+1]=d;e[l]=d[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]][e[C[3]]]=e[C[4]];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];l=C[2]e[l]=e[l]()D=D+1;C=B[D];e[C[2]]=e[C[3]]*C[4];D=D+1;C=B[D];e[C[2]]=e[C[3]]*e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]+e[C[4]];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];l=C[2];d=e[C[3]];e[l+1]=d;e[l]=d[C[4]];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]]+C[4];D=D+1;C=B[D];D=C[3];elseif l>28 then e[C[2]]=e[C[3]]*e[C[4]];else if(e[C[2]]~=e[C[4]])then D=D+1;else D=C[3];end;end;elseif l<=30 then e[C[2]]=e[C[3]]*e[C[4]];elseif l>31 then local f;local a,i;local l;e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]a,i=o(e[l](e[l+1]))d=i+l-1 f=0;for C=l,d do f=f+1;e[C]=a[f];end;D=D+1;C=B[D];l=C[2]e[l](n(e,l+1,d))else e[C[2]]={};end;elseif l<=38 then if l<=35 then if l<=33 then e[C[2]]=e[C[3]]+e[C[4]];elseif l==34 then local D=C[2];local B=e[C[3]];e[D+1]=B;e[D]=B[C[4]];else local D=C[2]local l,B={e[D](e[D+1])},0;for C=D,C[4]do B=B+1;e[C]=l[B];end end;elseif l<=36 then local l;e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2];do return e[l](n(e,l+1,C[3]))end;D=D+1;C=B[D];l=C[2];do return n(e,l,d)end;D=D+1;C=B[D];do return end;elseif l>37 then e[C[2]]=e[C[3]]*C[4];else local l;e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2];do return e[l](n(e,l+1,C[3]))end;D=D+1;C=B[D];l=C[2];do return n(e,l,d)end;D=D+1;C=B[D];do return end;end;elseif l<=41 then if l<=39 then local D=C[2]local B,C=o(e[D](n(e,D+1,C[3])))d=C+D-1 local C=0;for D=D,d do C=C+1;e[D]=B[C];end;elseif l>40 then local l;e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2];do return e[l](n(e,l+1,C[3]))end;D=D+1;C=B[D];l=C[2];do return n(e,l,d)end;D=D+1;C=B[D];do return end;else local l;e[C[2]]={};D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]][C[3]]=e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]][C[3]]=e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]][C[3]]=e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]][C[3]]=e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]][C[3]]=e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]][C[3]]=e[C[4]];D=D+1;C=B[D];do return e[C[2]]end D=D+1;C=B[D];do return end;end;elseif l<=42 then local n;local d;local l;e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];d=C[3];n=e[d]for C=d+1,C[4]do n=n..e[C];end;e[C[2]]=n;D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];if(e[C[2]]~=e[C[4]])then D=D+1;else D=C[3];end;elseif l==43 then local c;local l;l=C[2];c=e[C[3]];e[l+1]=c;e[l]=c[C[4]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2];do return e[l](n(e,l+1,C[3]))end;D=D+1;C=B[D];l=C[2];do return n(e,l,d)end;D=D+1;C=B[D];D=C[3];else e[C[2]]=f[C[3]];end;elseif l<=67 then if l<=55 then if l<=49 then if l<=46 then if l==45 then local a;local t,i;local l;e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]]-C[4];D=D+1;C=B[D];e[C[2]]=e[C[3]]%e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]+C[4];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]t,i=o(e[l](n(e,l+1,C[3])))d=i+l-1 a=0;for C=l,d do a=a+1;e[C]=t[a];end;D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,d))D=D+1;C=B[D];e[C[2]][e[C[3]]]=e[C[4]];else local B=e[C[4]];if not B then D=D+1;else e[C[2]]=B;D=C[3];end;end;elseif l<=47 then e[C[2]]=(C[3]~=0);elseif l==48 then e[C[2]]=C[3]-e[C[4]];else if(e[C[2]]==C[4])then D=D+1;else D=C[3];end;end;elseif l<=52 then if l<=50 then local l;local n;e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];n=C[3];l=e[n]for C=n+1,C[4]do l=l..e[C];end;e[C[2]]=l;elseif l==51 then e[C[2]]=e[C[3]];else local c;local t,i;local a;local l;e[C[2]]=f[C[3]];D=D+1;C=B[D];l=C[2];a=e[C[3]];e[l+1]=a;e[l]=a[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]]-C[4];D=D+1;C=B[D];l=C[2]t,i=o(e[l](n(e,l+1,C[3])))d=i+l-1 c=0;for C=l,d do c=c+1;e[C]=t[c];end;D=D+1;C=B[D];l=C[2];do return e[l](n(e,l+1,d))end;D=D+1;C=B[D];l=C[2];do return n(e,l,d)end;end;elseif l<=53 then local l;e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]={};D=D+1;C=B[D];e[C[2]][C[3]]=C[4];D=D+1;C=B[D];e[C[2]][C[3]]=C[4];D=D+1;C=B[D];e[C[2]]={};D=D+1;C=B[D];e[C[2]][C[3]]=C[4];D=D+1;C=B[D];e[C[2]][C[3]]=e[C[4]];D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]={};D=D+1;C=B[D];e[C[2]][C[3]]=C[4];D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]][C[3]]=e[C[4]];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]][C[3]]=e[C[4]];D=D+1;C=B[D];l=C[2];do return e[l](n(e,l+1,C[3]))end;D=D+1;C=B[D];l=C[2];do return n(e,l,d)end;D=D+1;C=B[D];do return end;elseif l>54 then local d;local n;local l;e[C[2]]={};D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=#e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2];n=e[l]d=e[l+2];if(d>0)then if(n>e[l+1])then D=C[3];else e[l+3]=n;end elseif(n<e[l+1])then D=C[3];else e[l+3]=n;end else e[C[2]]=c[C[3]];end;elseif l<=61 then if l<=58 then if l<=56 then e[C[2]]=C[3]^e[C[4]];elseif l==57 then local c;local d;local l;e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2];d=e[C[3]];e[l+1]=d;e[l]=d[C[4]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];d=C[3];c=e[d]for C=d+1,C[4]do c=c..e[C];end;e[C[2]]=c;D=D+1;C=B[D];l=C[2]e[l](n(e,l+1,C[3]))D=D+1;C=B[D];D=C[3];else local l;e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];for C=C[2],C[3]do e[C]=nil;end;D=D+1;C=B[D];l=C[2];do return n(e,l,l+C[3])end;end;elseif l<=59 then e[C[2]][e[C[3]]]=e[C[4]];elseif l>60 then local l;e[C[2]]=f[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l]()D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];l=C[2]e[l]=e[l]()D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]={};D=D+1;C=B[D];e[C[2]][C[3]]=e[C[4]];D=D+1;C=B[D];e[C[2]][C[3]]=e[C[4]];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]][C[3]]=e[C[4]];D=D+1;C=B[D];e[C[2]][C[3]]=e[C[4]];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]]=c[C[3]];else local C=C[2]e[C]=e[C]()end;elseif l<=64 then if l<=62 then e[C[2]]=e[C[3]]%e[C[4]];elseif l>63 then e[C[2]]=#e[C[3]];else local B=C[2];local n=e[B+2];local l=e[B]+n;e[B]=l;if(n>0)then if(l<=e[B+1])then D=C[3];e[B+3]=l;end elseif(l>=e[B+1])then D=C[3];e[B+3]=l;end end;elseif l<=65 then for C=C[2],C[3]do e[C]=nil;end;elseif l>66 then e[C[2]]=e[C[3]]/e[C[4]];else local d;local l;l=C[2];d=e[C[3]];e[l+1]=d;e[l]=d[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];l=C[2];d=e[C[3]];e[l+1]=d;e[l]=d[C[4]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];if not e[C[2]]then D=D+1;else D=C[3];end;end;elseif l<=78 then if l<=72 then if l<=69 then if l>68 then e[C[2]]=c[C[3]];else local C=C[2]e[C]=e[C](e[C+1])end;elseif l<=70 then local f,d;local l;e[C[2]]={};D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]]=(C[3]~=0);D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]f,d={e[l](e[l+1])},0;for C=l,C[4]do d=d+1;e[C]=f[d];end D=D+1;C=B[D];D=C[3];elseif l>71 then local C=C[2]e[C](n(e,C+1,d))else e[C[2]]=e[C[3]]/C[4];end;elseif l<=75 then if l<=73 then local l;e[C[2]]=e[C[3]]%C[4];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]/C[4];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]]=e[C[3]]%C[4];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]/C[4];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]]=e[C[3]]*e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]*e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]*e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]+e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]*e[C[4]];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]/C[4];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]]=e[C[3]]%C[4];D=D+1;C=B[D];e[C[2]]=e[C[3]]+e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]%C[4];D=D+1;C=B[D];e[C[2]]=e[C[3]]%C[4];D=D+1;C=B[D];e[C[2]]=e[C[3]]*C[4];D=D+1;C=B[D];e[C[2]]=e[C[3]]+e[C[4]];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]/C[4];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]]=e[C[3]]+e[C[4]];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]/C[4];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]]=e[C[3]]+e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]%C[4];D=D+1;C=B[D];e[C[2]]=e[C[3]]*C[4];D=D+1;C=B[D];e[C[2]]=e[C[3]]%C[4];D=D+1;C=B[D];e[C[2]]=e[C[3]]+e[C[4]];D=D+1;C=B[D];do return e[C[2]]end D=D+1;C=B[D];do return end;elseif l>74 then local l;e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];for C=C[2],C[3]do e[C]=nil;end;D=D+1;C=B[D];l=C[2];do return n(e,l,l+C[3])end;else local d;local l;l=C[2];d=e[C[3]];e[l+1]=d;e[l]=d[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];if(e[C[2]]==C[4])then D=D+1;else D=C[3];end;end;elseif l<=76 then local B=C[3];local D=e[B]for C=B+1,C[4]do D=D..e[C];end;e[C[2]]=D;elseif l>77 then if(e[C[2]]~=C[4])then D=D+1;else D=C[3];end;else e[C[2]]=e[C[3]]-C[4];end;elseif l<=84 then if l<=81 then if l<=79 then local a;local i,t;local l;e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]i,t=o(e[l](n(e,l+1,C[3])))d=t+l-1 a=0;for C=l,d do a=a+1;e[C]=i[a];end;D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,d))D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]]=e[C[3]];elseif l==80 then local C=C[2]e[C]=e[C](n(e,C+1,d))else local D=C[2];do return e[D](n(e,D+1,C[3]))end;end;elseif l<=82 then local D=C[2]e[D]=e[D](n(e,D+1,C[3]))elseif l==83 then do return end;else local D=C[2];do return n(e,D,D+C[3])end;end;elseif l<=87 then if l<=85 then local l;e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]/C[4];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]/C[4];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];D=C[3];elseif l==86 then local B=C[2];local n=e[B+2];local l=e[B]+n;e[B]=l;if(n>0)then if(l<=e[B+1])then D=C[3];e[B+3]=l;end elseif(l>=e[B+1])then D=C[3];e[B+3]=l;end else if e[C[2]]then D=D+1;else D=C[3];end;end;elseif l<=88 then if(e[C[2]]<=e[C[4]])then D=D+1;else D=C[3];end;elseif l==89 then local l;e[C[2]][C[3]]=e[C[4]];D=D+1;C=B[D];e[C[2]][C[3]]=C[4];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]={};D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]]={};else local l;e[C[2]]={};D=D+1;C=B[D];e[C[2]][C[3]]=C[4];D=D+1;C=B[D];e[C[2]][C[3]]=C[4];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];if not e[C[2]]then D=D+1;else D=C[3];end;end;elseif l<=136 then if l<=113 then if l<=101 then if l<=95 then if l<=92 then if l>91 then e[C[2]]=e[C[3]]+e[C[4]];else if(e[C[2]]==e[C[4]])then D=D+1;else D=C[3];end;end;elseif l<=93 then do return e[C[2]]();end;elseif l==94 then e[C[2]]=e[C[3]]/e[C[4]];else local d;local l;l=C[2];d=e[C[3]];e[l+1]=d;e[l]=d[C[4]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l](n(e,l+1,C[3]))D=D+1;C=B[D];do return end;D=D+1;C=B[D];D=C[3];end;elseif l<=98 then if l<=96 then local l;e[C[2]]=e[C[3]]%C[4];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=C[3]^e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]/e[C[4]];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]]=C[3]-e[C[4]];D=D+1;C=B[D];e[C[2]]=C[3]^e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]*e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]%C[4];elseif l==97 then D=C[3];else local l;e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]/C[4];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]/C[4];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];D=C[3];end;elseif l<=99 then e[C[2]]=C[3]-e[C[4]];elseif l>100 then local n;local l;e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]={};D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];l=C[2]e[l]=e[l]()D=D+1;C=B[D];e[C[2]]=e[C[3]]*C[4];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];l=C[2];n=e[C[3]];e[l+1]=n;e[l]=n[C[4]];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])else do return e[C[2]]end end;elseif l<=107 then if l<=104 then if l<=102 then e[C[2]][C[3]]=C[4];elseif l>103 then local f;local i,t;local a;local l;e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2];a=e[C[3]];e[l+1]=a;e[l]=a[C[4]];D=D+1;C=B[D];l=C[2]i,t=o(e[l](e[l+1]))d=t+l-1 f=0;for C=l,d do f=f+1;e[C]=i[f];end;D=D+1;C=B[D];l=C[2];do return e[l](n(e,l+1,d))end;D=D+1;C=B[D];l=C[2];do return n(e,l,d)end;D=D+1;C=B[D];do return end;else local d;local n;local l;e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=#e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2];n=e[l]d=e[l+2];if(d>0)then if(n>e[l+1])then D=C[3];else e[l+3]=n;end elseif(n<e[l+1])then D=C[3];else e[l+3]=n;end end;elseif l<=105 then e[C[2]]={};D=D+1;C=B[D];e[C[2]][C[3]]=C[4];D=D+1;C=B[D];e[C[2]][C[3]]=C[4];D=D+1;C=B[D];e[C[2]][C[3]]=C[4];D=D+1;C=B[D];e[C[2]]={};elseif l==106 then e[C[2]]=f[C[3]];else e[C[2]]=e[C[3]]%e[C[4]];end;elseif l<=110 then if l<=108 then local C=C[2]local B,D=o(e[C](e[C+1]))d=D+C-1 local D=0;for C=C,d do D=D+1;e[C]=B[D];end;elseif l>109 then local l;e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2];do return e[l](n(e,l+1,C[3]))end;D=D+1;C=B[D];l=C[2];do return n(e,l,d)end;D=D+1;C=B[D];do return end;else local f;local i,a;local l;e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]i,a=o(e[l](e[l+1]))d=a+l-1 f=0;for C=l,d do f=f+1;e[C]=i[f];end;D=D+1;C=B[D];l=C[2];do return e[l](n(e,l+1,d))end;D=D+1;C=B[D];l=C[2];do return n(e,l,d)end;D=D+1;C=B[D];do return end;end;elseif l<=111 then local l;e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2];do return e[l](n(e,l+1,C[3]))end;D=D+1;C=B[D];l=C[2];do return n(e,l,d)end;D=D+1;C=B[D];do return end;elseif l>112 then local l;e[C[2]][C[3]]=e[C[4]];D=D+1;C=B[D];e[C[2]][C[3]]=C[4];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]={};D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];do return e[C[2]]end D=D+1;C=B[D];do return end;else e[C[2]]={};end;elseif l<=124 then if l<=118 then if l<=115 then if l>114 then e[C[2]]=e[C[3]]+C[4];else e[C[2]]=(C[3]~=0);D=D+1;end;elseif l<=116 then e[C[2]][C[3]]=e[C[4]];elseif l>117 then local l;e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l](n(e,l+1,C[3]))D=D+1;C=B[D];do return end;else local d;local n;local l;e[C[2]]={};D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2];n=e[l]d=e[l+2];if(d>0)then if(n>e[l+1])then D=C[3];else e[l+3]=n;end elseif(n<e[l+1])then D=C[3];else e[l+3]=n;end end;elseif l<=121 then if l<=119 then local d;local l;e[C[2]]=c[C[3]];D=D+1;C=B[D];l=C[2];d=e[C[3]];e[l+1]=d;e[l]=d[C[4]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];if not e[C[2]]then D=D+1;else D=C[3];end;elseif l>120 then local C=C[2];do return n(e,C,d)end;else local d;local l;l=C[2];d=e[C[3]];e[l+1]=d;e[l]=d[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];l=C[2];d=e[C[3]];e[l+1]=d;e[l]=d[C[4]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];if not e[C[2]]then D=D+1;else D=C[3];end;end;elseif l<=122 then local D=C[2];do return n(e,D,D+C[3])end;elseif l>123 then e[C[2]]=e[C[3]]%C[4];else local l;e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2];do return e[l](n(e,l+1,C[3]))end;D=D+1;C=B[D];l=C[2];do return n(e,l,d)end;D=D+1;C=B[D];do return end;end;elseif l<=130 then if l<=127 then if l<=125 then local a;local t,h;local c;local i;local l;e[C[2]]=f[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l]()D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];i=C[3];c=e[i]for C=i+1,C[4]do c=c..e[C];end;e[C[2]]=c;D=D+1;C=B[D];l=C[2]t,h=o(e[l](e[l+1]))d=h+l-1 a=0;for C=l,d do a=a+1;e[C]=t[a];end;D=D+1;C=B[D];l=C[2];do return e[l](n(e,l+1,d))end;D=D+1;C=B[D];l=C[2];do return n(e,l,d)end;D=D+1;C=B[D];do return end;elseif l==126 then if(e[C[2]]<=e[C[4]])then D=C[3];else D=D+1;end;else e[C[2]]=i(t[C[3]],nil,c);end;elseif l<=128 then if(e[C[2]]==C[4])then D=D+1;else D=C[3];end;elseif l>129 then e[C[2]][C[3]]=C[4];else local d;local f;local l;e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];f=C[3];d=e[f]for C=f+1,C[4]do d=d..e[C];end;e[C[2]]=d;D=D+1;C=B[D];l=C[2]e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];if(e[C[2]]==C[4])then D=D+1;else D=C[3];end;end;elseif l<=133 then if l<=131 then e[C[2]]=(C[3]~=0);D=D+1;elseif l>132 then local D=C[2]local B,C=o(e[D](n(e,D+1,C[3])))d=C+D-1 local C=0;for D=D,d do C=C+1;e[D]=B[C];end;else e[C[2]]=(C[3]~=0);end;elseif l<=134 then e[C[2]]=e[C[3]]*C[4];elseif l==135 then local c;local l;l=C[2];c=e[C[3]];e[l+1]=c;e[l]=c[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]]-C[4];D=D+1;C=B[D];l=C[2];do return e[l](n(e,l+1,C[3]))end;D=D+1;C=B[D];l=C[2];do return n(e,l,d)end;D=D+1;C=B[D];D=C[3];else local C=C[2]e[C]=e[C](n(e,C+1,d))end;elseif l<=159 then if l<=147 then if l<=141 then if l<=138 then if l==137 then local l;e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]/C[4];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]/C[4];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];D=C[3];else e[C[2]]=e[C[3]]+C[4];end;elseif l<=139 then local d;local l;l=C[2];d=e[C[3]];e[l+1]=d;e[l]=d[C[4]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l](n(e,l+1,C[3]))D=D+1;C=B[D];do return end;D=D+1;C=B[D];D=C[3];elseif l>140 then local d;local l;l=C[2];d=e[C[3]];e[l+1]=d;e[l]=d[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=#e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]]+e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]-C[4];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];if(e[C[2]]~=e[C[4]])then D=D+1;else D=C[3];end;else local C=C[2]e[C]=e[C]()end;elseif l<=144 then if l<=142 then local C=C[2]e[C](n(e,C+1,d))elseif l==143 then if(e[C[2]]<=e[C[4]])then D=D+1;else D=C[3];end;else local l;e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];for C=C[2],C[3]do e[C]=nil;end;D=D+1;C=B[D];l=C[2];do return n(e,l,l+C[3])end;end;elseif l<=145 then local l;e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l](n(e,l+1,C[3]))D=D+1;C=B[D];do return end;elseif l>146 then local d;local n;local l;e[C[2]]={};D=D+1;C=B[D];e[C[2]]=#e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=#e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2];n=e[l]d=e[l+2];if(d>0)then if(n>e[l+1])then D=C[3];else e[l+3]=n;end elseif(n<e[l+1])then D=C[3];else e[l+3]=n;end else local d;local l;l=C[2];d=e[C[3]];e[l+1]=d;e[l]=d[C[4]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l](n(e,l+1,C[3]))D=D+1;C=B[D];do return end;D=D+1;C=B[D];D=C[3];end;elseif l<=153 then if l<=150 then if l<=148 then e[C[2]]=C[3]^e[C[4]];elseif l>149 then do return e[C[2]]();end;else e[C[2]]=e[C[3]]/C[4];end;elseif l<=151 then local l;e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2];do return e[l](n(e,l+1,C[3]))end;D=D+1;C=B[D];l=C[2];do return n(e,l,d)end;D=D+1;C=B[D];do return end;elseif l==152 then local f;local i,t;local a;local l;e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];l=C[2];a=e[C[3]];e[l+1]=a;e[l]=a[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]-C[4];D=D+1;C=B[D];e[C[2]]=#e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]]%e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]+C[4];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]i,t=o(e[l](n(e,l+1,C[3])))d=t+l-1 f=0;for C=l,d do f=f+1;e[C]=i[f];end;D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,d))D=D+1;C=B[D];e[C[2]][e[C[3]]]=e[C[4]];else local B=C[2];local D=e[C[3]];e[B+1]=D;e[B]=D[C[4]];end;elseif l<=156 then if l<=154 then if(C[2]<e[C[4]])then D=D+1;else D=C[3];end;elseif l>155 then local a;local h,t;local i;local l;e[C[2]]=f[C[3]];D=D+1;C=B[D];l=C[2];i=e[C[3]];e[l+1]=i;e[l]=i[C[4]];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=#e[C[3]];D=D+1;C=B[D];e[C[2]]=#e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]]/e[C[4]];D=D+1;C=B[D];l=C[2]h,t=o(e[l](e[l+1]))d=t+l-1 a=0;for C=l,d do a=a+1;e[C]=h[a];end;D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,d))D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2];do return e[l](n(e,l+1,C[3]))end;D=D+1;C=B[D];l=C[2];do return n(e,l,d)end;D=D+1;C=B[D];do return end;else local d=t[C[3]];local n;local l={};n=H({},{__index=function(D,C)local C=l[C];return C[1][C[2]];end,__newindex=function(e,C,D)local C=l[C]C[1][C[2]]=D;end;});for n=1,C[4]do D=D+1;local C=B[D];if C[1]==51 then l[n-1]={e,C[3]};else l[n-1]={f,C[3]};end;h[#h+1]=l;end;e[C[2]]=i(d,n,c);end;elseif l<=157 then local C=C[2];do return e[C](n(e,C+1,d))end;elseif l>158 then local l;e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];if e[C[2]]then D=D+1;else D=C[3];end;else local D=C[2]e[D]=e[D](n(e,D+1,C[3]))end;elseif l<=170 then if l<=164 then if l<=161 then if l==160 then local d;local n;local l;e[C[2]]={};D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=#e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2];n=e[l]d=e[l+2];if(d>0)then if(n>e[l+1])then D=C[3];else e[l+3]=n;end elseif(n<e[l+1])then D=C[3];else e[l+3]=n;end else if(e[C[2]]~=C[4])then D=D+1;else D=C[3];end;end;elseif l<=162 then local D=C[2];do return e[D](n(e,D+1,C[3]))end;elseif l>163 then local l;e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]]=e[C[3]]*e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]+e[C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]]%C[4];D=D+1;C=B[D];e[C[2]]=e[C[3]]+C[4];D=D+1;C=B[D];D=C[3];else local f;local i,a;local l;e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]i,a=o(e[l](n(e,l+1,C[3])))d=a+l-1 f=0;for C=l,d do f=f+1;e[C]=i[f];end;D=D+1;C=B[D];l=C[2];do return e[l](n(e,l+1,d))end;D=D+1;C=B[D];l=C[2];do return n(e,l,d)end;D=D+1;C=B[D];do return end;end;elseif l<=167 then if l<=165 then e[C[2]]=e[C[3]][C[4]];elseif l==166 then if not e[C[2]]then D=D+1;else D=C[3];end;else local C=C[2];do return e[C](n(e,C+1,d))end;end;elseif l<=168 then local a;local c;local i,t;local l;e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]i,t=o(e[l](e[l+1]))d=t+l-1 c=0;for C=l,d do c=c+1;e[C]=i[c];end;D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,d))D=D+1;C=B[D];l=C[2];a=e[C[3]];e[l+1]=a;e[l]=a[C[4]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];l=C[2];a=e[C[3]];e[l+1]=a;e[l]=a[C[4]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]i,t=o(e[l](n(e,l+1,C[3])))d=t+l-1 c=0;for C=l,d do c=c+1;e[C]=i[c];end;D=D+1;C=B[D];l=C[2];do return e[l](n(e,l+1,d))end;D=D+1;C=B[D];l=C[2];do return n(e,l,d)end;D=D+1;C=B[D];do return end;elseif l==169 then if not e[C[2]]then D=D+1;else D=C[3];end;else local l;e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];if e[C[2]]then D=D+1;else D=C[3];end;end;elseif l<=176 then if l<=173 then if l<=171 then do return e[C[2]]end elseif l==172 then local l;e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](e[l+1])D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];e[C[2]]=f[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]];D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,C[3]))D=D+1;C=B[D];do return e[C[2]]end D=D+1;C=B[D];do return end;else local B=C[2];local l=e[B]local n=e[B+2];if(n>0)then if(l>e[B+1])then D=C[3];else e[B+3]=l;end elseif(l<e[B+1])then D=C[3];else e[B+3]=l;end end;elseif l<=174 then e[C[2]]=e[C[3]];elseif l>175 then local l=C[2];local n=C[4];local B=l+2 local l={e[l](e[l+1],e[B])};for C=1,n do e[B+C]=l[C];end;local l=l[1]if l then e[B]=l D=C[3];else D=D+1;end;else local B=C[2];local l=e[B]local n=e[B+2];if(n>0)then if(l>e[B+1])then D=C[3];else e[B+3]=l;end elseif(l<e[B+1])then D=C[3];else e[B+3]=l;end end;elseif l<=179 then if l<=177 then e[C[2]]=e[C[3]][e[C[4]]];elseif l>178 then if(e[C[2]]~=e[C[4]])then D=D+1;else D=C[3];end;else e[C[2]][C[3]]=e[C[4]];end;elseif l<=180 then local f;local i,a;local l;e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=c[C[3]];D=D+1;C=B[D];e[C[2]]=e[C[3]][C[4]];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];e[C[2]]=C[3];D=D+1;C=B[D];l=C[2]i,a=o(e[l](n(e,l+1,C[3])))d=a+l-1 f=0;for C=l,d do f=f+1;e[C]=i[f];end;D=D+1;C=B[D];l=C[2]e[l]=e[l](n(e,l+1,d))D=D+1;C=B[D];e[C[2]][e[C[3]]]=e[C[4]];elseif l==181 then e[C[2]]=e[C[3]][C[4]];else if(C[2]<e[C[4]])then D=D+1;else D=C[3];end;end;D=D+1;end;end;end;return i(R(),{},r)(...);end)(...)
+--//doitenroi.9941
+local Players = game:GetService("Players")
+if not script_key then
+    Players.LocalPlayer:Kick("Key not found make sure running script with key")
+    return
+end
+local doitenroi =
+    (function()
+    local function a(b)
+        return (b:gsub(
+            ".",
+            function(c)
+                return string.format("%02X", string.byte(c))
+            end
+        ))
+    end
+
+    local function c(d)
+        return (d:gsub(
+            "..",
+            function(e)
+                return string.char(tonumber(e, 16))
+            end
+        ))
+    end
+
+    local function f(g, h)
+        local i = 0
+        local j = 1
+        while g > 0 or h > 0 do
+            local k = g % 2
+            local l = h % 2
+            if k ~= l then
+                i = i + j
+            end
+            j = j * 2
+            g = math.floor(g / 2)
+            h = math.floor(h / 2)
+        end
+        return i
+    end
+
+    local function m(n, o)
+        local p = {}
+        local q = #o
+        for r = 1, #n do
+            local s = string.byte(n, r)
+            local t = string.byte(o, (r - 1) % q + 1)
+            p[r] = string.char(f(s, t))
+        end
+        return table.concat(p)
+    end
+
+    local function u(v, w)
+        w = w % 8
+        local x = math.floor(v / 2 ^ w)
+        local y = (v * 2 ^ (8 - w)) % 256
+        local function z(A, B)
+            local C = 0
+            local D = 1
+            while A > 0 or B > 0 do
+                local E = A % 2
+                local F = B % 2
+                if E ~= F then
+                    C = C + D
+                end
+                D = D * 2
+                A = math.floor(A / 2)
+                B = math.floor(B / 2)
+            end
+            return C
+        end
+        return z(y, x)
+    end
+
+    local function G(H, I)
+        local J = {}
+        for K = 1, #H do
+            local L = string.byte(H, K)
+            local M = u(L, 8 - I)
+            J[K] = string.char(M)
+        end
+        return table.concat(J)
+    end
+
+    local function N(O)
+        local P = "doitenroi"
+        local Q = 3
+        local R = c(O)
+        local S = G(R, Q)
+        local T = m(S, P)
+        return T
+    end
+
+    local U = {
+        [1] = "25A0E5A9A6EAA6AB6B4AC6C4854221880BE4A12BE4E70A2B86C4C0C6E4E0C645",
+        [2] = "C50745E80A8223E04562A3C3674485E0A4650A67CB42A30B49E2C5006B45E0E5",
+        [3] = "8B8487838482E3E6A34A2BC704A2C644E4264AEBA724C263E867E1C5670AC4E0"
+    }
+
+    local V = {
+        __index = function(_, W)
+            local X = U[W]
+            if X then
+                return N(X)
+            else
+                error("[doitenroi] Invalid key access", 0)
+            end
+        end,
+        __newindex = function()
+            error("[doitenroi] Write denied", 0)
+        end,
+        __metatable = "[doitenroi] LOCKED"
+    }
+
+    local Y = setmetatable({}, V)
+
+    local Z = {
+        __index = function(_, aa)
+            if aa == "keygen" then
+                return Y
+            else
+                error("[doitenroi] Access violation", 0)
+            end
+        end,
+        __newindex = function()
+            error("[doitenroi] Write denied", 0)
+        end,
+        __metatable = "[doitenroi] LOCKED"
+    }
+
+    local ab = setmetatable({}, Z)
+    return ab
+end)()
+
+local function toHex(str)
+    return (str:gsub(
+        ".",
+        function(c)
+            return string.format("%02X", c:byte())
+        end
+    ))
+end
+local function fromHex(hex)
+    return (hex:gsub(
+        "..",
+        function(cc)
+            return string.char(tonumber(cc, 16))
+        end
+    ))
+end
+local function bxor(a, b)
+    local res = 0
+    local bitval = 1
+    while a > 0 or b > 0 do
+        local abit = a % 2
+        local bbit = b % 2
+        if abit ~= bbit then
+            res = res + bitval
+        end
+        bitval = bitval * 2
+        a = math.floor(a / 2)
+        b = math.floor(b / 2)
+    end
+    return res
+end
+
+local function mul32(a, b)
+    local aLow = a % 0x10000
+    local aHigh = math.floor(a / 0x10000)
+    local bLow = b % 0x10000
+    local bHigh = math.floor(b / 0x10000)
+
+    local low = aLow * bLow
+    local mid = aLow * bHigh + aHigh * bLow
+    local high = aHigh * bHigh
+
+    local carry = math.floor(low / 0x10000) + (mid % 0x10000)
+    local resultLow = low % 0x10000 + (carry % 0x10000) * 0x10000
+    local resultHigh = high + math.floor(mid / 0x10000) + math.floor(carry / 0x10000)
+
+    return (resultHigh % 0x10000) * 0x10000 + (resultLow % 0x10000)
+end
+
+local function fnv1a(str)
+    local hash = 2166136261
+    for i = 1, #str do
+        hash = bxor(hash, string.byte(str, i))
+        hash = mul32(hash, 16777619)
+    end
+    return string.format("%08x", hash)
+end
+
+local function verifysignature(key, securet, time, serverSignature, serverSecret)
+    local input = key .. "|" .. securet .. "|" .. tostring(time) .. "|" .. serverSecret
+    local computed = fnv1a(input)
+    return computed == serverSignature
+end
+local function xor(data, key)
+    local result = {}
+    for i = 1, #data do
+        local a = data:byte(i)
+        local b = key:byte(((i - 1) % #key + 1))
+        result[i] = string.char(bit32.bxor(a, b))
+    end
+    return table.concat(result)
+end
+
+local function reverse(str)
+    return str:reverse()
+end
+local function shiftKey(key, iv)
+    return xor(key:rep(math.ceil(#iv / #key)), iv)
+end
+local function randomIV()
+    local iv = {}
+    for i = 1, 8 do
+        iv[i] = string.char(math.random(0, 255))
+    end
+    return table.concat(iv)
+end
+local function encrypt(content, key)
+    local iv = randomIV()
+    local shiftedKey = shiftKey(key, iv)
+    local reversed = reverse(content)
+    local encrypted = xor(reversed, shiftedKey)
+    return reverse(toHex(iv .. encrypted))
+end
+local function decrypt(data, key)
+    local decoded = fromHex(reverse(data))
+    local iv = decoded:sub(1, 8)
+    local encrypted = decoded:sub(9)
+    local shiftedKey = shiftKey(key, iv)
+    return reverse(xor(encrypted, shiftedKey))
+end
+local function randomString(len)
+    local charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    local t, i = {}, 1
+    local seed = tostring(os.clock() * 1e9):reverse()
+
+    while i <= len do
+        local hash = 0
+        local j = 1
+        while j <= #seed do
+            hash = (hash + seed:byte(j) * j) % 256
+            j = j + 1
+        end
+
+        local idx = (hash + i * 73) % #charset + 1
+        t[i] = charset:sub(idx, idx)
+        seed = tostring(os.clock() * 1e9 + idx * i):reverse()
+        i = i + 1
+    end
+
+    return table.concat(t)
+end
+local function jd(s)
+    local function get(k)
+        local i = 1
+        local key = '"' .. k .. '":'
+        while i <= #s do
+            if s:sub(i, i + #key - 1) == key then
+                i = i + #key
+                while s:sub(i, i):match("%s") do
+                    i = i + 1
+                end
+                if s:sub(i, i) == '"' then
+                    i = i + 1
+                    local start = i
+                    while i <= #s and s:sub(i, i) ~= '"' do
+                        i = i + 1
+                    end
+                    return s:sub(start, i - 1)
+                else
+                    local start = i
+                    while i <= #s and s:sub(i, i):match("%d") do
+                        i = i + 1
+                    end
+                    return tonumber(s:sub(start, i - 1))
+                end
+            end
+            i = i + 1
+        end
+    end
+
+    return {
+        status = get("status"),
+        notes = get("notes"),
+        expiredtime = get("expiredtime"),
+        execution = get("execution"),
+        integrity = get("integrity"),
+        key = get("key")
+    }
+end
+local function jsencode(tbl)
+    local parts = {}
+    table.insert(parts, "{")
+    local first = true
+    for k, v in pairs(tbl) do
+        if not first then
+            table.insert(parts, ",")
+        end
+        first = false
+        table.insert(parts, '"' .. tostring(k) .. '":')
+
+        local t = typeof(v)
+        if t == "string" then
+            table.insert(parts, '"' .. v:gsub('"', '\\"') .. '"')
+        else
+            table.insert(parts, tostring(v))
+        end
+    end
+    table.insert(parts, "}")
+    return table.concat(parts)
+end
+local function getclientid()
+    if gethwid then
+        return gethwid()
+    elseif request then
+        local res =
+            request(
+            {
+                Url = "https://doitenroi.vercel.app/api/test",
+                Method = "POST"
+            }
+        )
+        return res and res.Body or nil
+    else
+        return nil
+    end
+end
+local function validate(wlkey)
+    local hwid = getclientid()
+    local timesent = os.time()
+    local randomstr = randomString(32)
+
+    local encryptedData = encrypt(jsencode({key = wlkey,hwida = hwid,time = tostring(timesent),securet = randomstr}), doitenroi.keygen[1])
+
+    local success, res =
+        pcall(
+        function()
+            return request(
+                {
+                    Url = "https://doitenroi.vercel.app/api/wlsystem",
+                    Method = "POST",
+                    Headers = {["Content-Type"] = "application/json"},
+                    Body = jsencode(
+                        {
+                            action = "validate",
+                            data = encryptedData
+                        }
+                    )
+                }
+            )
+        end
+    )
+
+    if not success or not res.Success then
+        return "error", "Failed to reach server", 0, 0, nil
+    end
+    if islclousre and islclousre(request) or iscclosure and not iscclosure(request) then
+        return "error", "Failed to reach server", 0, 0, nil
+    end
+    local decrypted = decrypt(res.Body, doitenroi.keygen[2])
+    local decoded = jd(decrypted)
+    if not decoded then
+        return "error", "Invalid response", 0, 0, nil
+    end
+    return decoded.status, decoded.notes or "", decoded.integrity or "", timesent or 0, randomstr or "", decoded.expiredtime or
+        0, decoded.execution or 0, decoded.key or ""
+end
+
+local status, notes, integrity, timeclient, secure, expired, exec, key = validate(script_key)
+if status == "valid" then
+    local verified = verifysignature(key, secure, timeclient, integrity, doitenroi.keygen[3])
+    if not verified or script_key ~= key then
+        return Players.LocalPlayer:Kick("integrity verify failed")
+    end
+elseif status == "hwidmismatch" then
+    Players.LocalPlayer:Kick("Key Linked With Different Hwid. Use /resethwid for reset hwid on this key")
+    return
+elseif status == "expired" then
+    Players.LocalPlayer:Kick("Your Key Is Expired")
+    return
+elseif status == "invalid" then
+    Players.LocalPlayer:Kick("Your Key Is Invalid")
+    return
+elseif status == "hwidnotfound" then
+    Players.LocalPlayer:Kick("not found hwid in executor")
+    return
+else
+    Players.LocalPlayer:Kick(notes)
+    return
+end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/fat"))()
