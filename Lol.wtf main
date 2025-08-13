@@ -4,6 +4,7 @@ local BladeBall_Training = 15234596844 -- Training mode (if it exists)
 local PhantomBall = 12979690461
 local NinetyNine_Night_In_The_Forest = 79546208627805
 local BladeBall_ProSever = 14732610803
+local Afterthetutorial = 16281300371
 local GameID = game.PlaceId
 
 pcall(function()
