@@ -4,7 +4,8 @@ local BladeBallIDs = {
     14732610803, -- Pro Server
     16281300371, -- After tutorial
     15144787112, -- Duel lobby
-    14915220621, -- Ranked mode
+    14915220621, -- Ranked lobby
+    15264892126, -- Ranked match
 }
 
 local ForestIDs = {
