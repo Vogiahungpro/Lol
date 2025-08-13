@@ -1,0 +1,130 @@
+Country = loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/defualt%20country%20ink%20game))()
+if game.CoreGui:FindFirstChild("Country") == nil then
+local gui = Instance.new("ScreenGui", game.CoreGui)
+gui.Name = "Country"
+
+local Frame = Instance.new("Frame")
+Frame.Size = UDim2.new(0, 390, 0, 150)
+Frame.Position = UDim2.new(0.5, -194, 0.5, -88)
+Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame.BorderColor3 = Color3.new(0, 0, 0)
+Frame.BorderSizePixel = 1
+Frame.Active = true
+Frame.BackgroundTransparency = 0 
+Frame.Parent = gui
+
+local UICorner = Instance.new("UICorner")
+UICorner.CornerRadius = UDim.new(0, 7)
+UICorner.Parent = Frame
+
+local Stoke = Instance.new("UIStroke")
+Stoke.Color = Color3.new(0, 0, 0)
+Stoke.Thickness = 3
+Stoke.Parent = Frame
+
+local TextBox = Instance.new("TextBox")
+TextBox.Size = UDim2.new(1, 0, 0.2, 0)
+TextBox.Position = UDim2.new(0, 0, 0, 0)
+TextBox.BackgroundColor3 = Color3.new(0, 0, 0)
+TextBox.BorderColor3 = Color3.new(0, 0, 0)
+TextBox.BorderSizePixel = 1
+TextBox.Text = ""
+TextBox.PlaceholderText = "Search Country"
+TextBox.TextWrapped = true
+TextBox.TextColor3 = Color3.new()
+TextBox.BackgroundTransparency = 1
+TextBox.Font = Enum.Font.Code
+TextBox.TextSize = 17
+TextBox.Parent = Frame
+TextBox.Changed:Connect(function()
+	if game.CoreGui.Country:FindFirstChild("Frame"):FindFirstChild("ScrollingFrame") then
+		if TextBox.Text:lower() ~= "" then
+			for i,v in pairs(game.CoreGui.Country.Frame:FindFirstChild("ScrollingFrame"):GetDescendants()) do
+				if v:IsA("TextButton") then
+					if string.find(v.Text:lower(), TextBox.Text:lower()) then
+						v.Visible = true
+					else
+						v.Visible = false
+					end
+				end
+			end
+		else
+			for i, v in pairs(game.CoreGui.Country.Frame:FindFirstChild("ScrollingFrame"):GetDescendants()) do
+				if v:IsA("TextButton") then
+					v.Visible = true
+				end
+			end
+		end
+	end
+end)
+
+local ScrollingFrame2 = Instance.new("ScrollingFrame")
+ScrollingFrame2.Size = UDim2.new(1, 0, 0.8, 0)
+ScrollingFrame2.Position = UDim2.new(0, 0, 0.2, 0)
+ScrollingFrame2.BackgroundColor3 = Color3.new(1, 1, 1)
+ScrollingFrame2.BorderColor3 = Color3.new(0, 0, 0)
+ScrollingFrame2.BorderSizePixel = 1
+ScrollingFrame2.BackgroundTransparency = 1
+ScrollingFrame2.ScrollingDirection = Enum.ScrollingDirection.Y
+ScrollingFrame2.HorizontalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+ScrollingFrame2.VerticalScrollBarInset = Enum.ScrollBarInset.ScrollBar
+ScrollingFrame2.ScrollBarThickness = 0
+ScrollingFrame2.CanvasSize = UDim2.new(0, 0, 0, 0)
+ScrollingFrame2.Parent = Frame
+
+local Padding = Instance.new("UIPadding")
+Padding.PaddingTop = UDim.new(0, 10)
+Padding.Parent = ScrollingFrame2
+
+local UIListLayout = Instance.new("UIListLayout")
+UIListLayout.Padding = UDim.new(0, 7)
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Parent = ScrollingFrame2
+
+local function updateCanvasSize2()
+    local contentHeight = UIListLayout.AbsoluteContentSize.Y
+    ScrollingFrame2.CanvasSize = UDim2.new(0, 0, 0, contentHeight + 55)
+end
+
+updateCanvasSize2()
+ScrollingFrame2.ChildAdded:Connect(updateCanvasSize2)
+ScrollingFrame2.ChildRemoved:Connect(updateCanvasSize2)
+
+local function ButtonTab(Name, Callback)
+local Button = Instance.new("TextButton")
+Button.Size = UDim2.new(0.9, 0, 0, 30)
+Button.Position = UDim2.new(0.8, 0, 0, 0)
+Button.BackgroundColor3 = Color3.new(255,255,255)
+Button.BorderColor3 = Color3.new(0, 0, 0)
+Button.BorderSizePixel = 1
+Button.Text = Name
+Button.BackgroundTransparency = 0
+Button.TextColor3 = Color3.new(0, 0, 0)
+Button.Font = Enum.Font.Code
+Button.FontSize = "Size18"
+Button.Parent = ScrollingFrame2
+Button.MouseButton1Click:Connect(function()
+	pcall(Callback)
+	game.CoreGui:FindFirstChild("Country"):Destroy()
+end)
+end
+
+if Country then
+	if Country["Country default"] then
+		for _, v in pairs(Country["Country default"]) do
+			ButtonTab(v, function()
+				getgenv().TranslationCounter = v
+			end)
+		end
+	end
+
+	if Country["Counter Other"] then
+		for i, v in pairs(Country["Counter Other"]) do
+			ButtonTab(v, function()
+				getgenv().TranslationCounter = v
+			end)
+		end
+	end
+end
+end
