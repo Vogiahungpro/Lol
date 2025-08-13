@@ -6,10 +6,24 @@ local BladeBallIDs = {
     15144787112, -- Duel lobby (update this after checking)
 }
 
+local ForestIDs = {
+    79546208627805, -- Original 99 Night in the Forest
+    126509999114328 -- New/Alternate place ID
+}
+
 local GameID = game.PlaceId
 
 local function isBladeBall(id)
     for _, v in ipairs(BladeBallIDs) do
+        if v == id then
+            return true
+        end
+    end
+    return false
+end
+
+local function isForest(id)
+    for _, v in ipairs(ForestIDs) do
         if v == id then
             return true
         end
@@ -32,7 +46,7 @@ pcall(function()
     elseif GameID == 12979690461 then
         print("Loading Phantom Ball script...")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Phantom%20ball"))()
-    elseif GameID == 79546208627805 then
+    elseif isForest(GameID) then
         print("Loading 99 Night in the Forest script...")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/99"))()
     else
