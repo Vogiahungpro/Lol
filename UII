@@ -297,9 +297,9 @@ local Config = setmetatable({
         
                 return
             end
-        
+
             local flags = readfile('Lol/'..file_name..'.json')
-        
+
             if not flags then
                 self:save(file_name, config)
         
@@ -528,139 +528,144 @@ function Library:create_ui()
     Lol.Parent = CoreGui
 
     local Container = Instance.new('Frame')
-    Container.ClipsDescendants = true
-    Container.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    Container.AnchorPoint = Vector2.new(0.5, 0.5)
-    Container.Name = 'Container'
-    Container.BackgroundTransparency = 0.05000000074505806
-    Container.BackgroundColor3 = Color3.fromRGB(12, 13, 15)
-    Container.Position = UDim2.new(0.5, 0, 0.5, 0)
-    Container.Size = UDim2.new(0, 0, 0, 0)
-    Container.Active = true
-    Container.BorderSizePixel = 0
-    Container.Parent = Lol
+Container.ClipsDescendants = true
+Container.BorderColor3 = Color3.fromRGB(100, 100, 100) -- Changed to medium grey
+Container.AnchorPoint = Vector2.new(0.5, 0.5)
+Container.Name = 'Container'
+Container.BackgroundTransparency = 0.2
+Container.BackgroundColor3 = Color3.fromRGB(80, 80, 80) -- Changed to darker medium grey
+Container.Position = UDim2.new(0.5, 0, 0.5, 0)
+Container.Size = UDim2.new(0, 0, 0, 0)
+Container.Active = true
+Container.BorderSizePixel = 0
+Container.Parent = Lol
 
-    local UICorner = Instance.new('UICorner')
-    UICorner.CornerRadius = UDim.new(0, 10)
-    UICorner.Parent = Container
-    
-    local UIStroke = Instance.new('UIStroke')
-    UIStroke.Color = Color3.fromRGB(52, 66, 89)
-    UIStroke.Transparency = 0.5
-    UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-    UIStroke.Parent = Container
-    
-    local Handler = Instance.new('Frame')
-    Handler.BackgroundTransparency = 1
-    Handler.Name = 'Handler'
-    Handler.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    Handler.Size = UDim2.new(0, 698, 0, 479)
-    Handler.BorderSizePixel = 0
-    Handler.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    Handler.Parent = Container
-    
-    local Tabs = Instance.new('ScrollingFrame')
-    Tabs.ScrollBarImageTransparency = 1
-    Tabs.ScrollBarThickness = 0
-    Tabs.Name = 'Tabs'
-    Tabs.Size = UDim2.new(0, 129, 0, 401)
-    Tabs.Selectable = false
-    Tabs.AutomaticCanvasSize = Enum.AutomaticSize.XY
-    Tabs.BackgroundTransparency = 1
-    Tabs.Position = UDim2.new(0.026097271591424942, 0, 0.1111111119389534, 0)
-    Tabs.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    Tabs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    Tabs.BorderSizePixel = 0
-    Tabs.CanvasSize = UDim2.new(0, 0, 0.5, 0)
-    Tabs.Parent = Handler
-    
-    local UIListLayout = Instance.new('UIListLayout')
-    UIListLayout.Padding = UDim.new(0, 4)
-    UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-    UIListLayout.Parent = Tabs
-    
-    local ClientName = Instance.new('TextLabel')
-    ClientName.FontFace = Font.new('rbxasset://fonts/families/GothamSSm.json', Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
-    ClientName.TextColor3 = Color3.fromRGB(152, 181, 255)
-    ClientName.TextTransparency = 0.20000000298023224
-    ClientName.Text = 'Lol'
-    ClientName.Name = 'ClientName'
-    ClientName.Size = UDim2.new(0, 31, 0, 13)
-    ClientName.AnchorPoint = Vector2.new(0, 0.5)
-    ClientName.Position = UDim2.new(0.0560000017285347, 0, 0.054999999701976776, 0)
-    ClientName.BackgroundTransparency = 1
-    ClientName.TextXAlignment = Enum.TextXAlignment.Left
-    ClientName.BorderSizePixel = 0
-    ClientName.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    ClientName.TextSize = 13
-    ClientName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    ClientName.Parent = Handler
-    
-    local UIGradient = Instance.new('UIGradient')
-    UIGradient.Color = ColorSequence.new{
-        ColorSequenceKeypoint.new(0, Color3.fromRGB(155, 155, 155)),
-        ColorSequenceKeypoint.new(1, Color3.fromRGB(255, 255, 255))
-    }
-    UIGradient.Parent = ClientName
-    
-    local Pin = Instance.new('Frame')
-    Pin.Name = 'Pin'
-    Pin.Position = UDim2.new(0.026000000536441803, 0, 0.13600000739097595, 0)
-    Pin.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    Pin.Size = UDim2.new(0, 2, 0, 16)
-    Pin.BorderSizePixel = 0
-    Pin.BackgroundColor3 = Color3.fromRGB(152, 181, 255)
-    Pin.Parent = Handler
-    
-    local UICorner = Instance.new('UICorner')
-    UICorner.CornerRadius = UDim.new(1, 0)
-    UICorner.Parent = Pin
-    
-    local Icon = Instance.new('ImageLabel')
-    Icon.ImageColor3 = Color3.fromRGB(152, 181, 255)
-    Icon.ScaleType = Enum.ScaleType.Fit
-    Icon.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    Icon.AnchorPoint = Vector2.new(0, 0.5)
-    Icon.Image = 'rbxassetid://107819132007001'
-    Icon.BackgroundTransparency = 1
-    Icon.Position = UDim2.new(0.02500000037252903, 0, 0.054999999701976776, 0)
-    Icon.Name = 'Icon'
-    Icon.Size = UDim2.new(0, 18, 0, 18)
-    Icon.BorderSizePixel = 0
-    Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    Icon.Parent = Handler
-    
-    local Divider = Instance.new('Frame')
-    Divider.Name = 'Divider'
-    Divider.BackgroundTransparency = 0.5
-    Divider.Position = UDim2.new(0.23499999940395355, 0, 0, 0)
-    Divider.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    Divider.Size = UDim2.new(0, 1, 0, 479)
-    Divider.BorderSizePixel = 0
-    Divider.BackgroundColor3 = Color3.fromRGB(52, 66, 89)
-    Divider.Parent = Handler
-    
-    local Sections = Instance.new('Folder')
-    Sections.Name = 'Sections'
-    Sections.Parent = Handler
-    
-    local Minimize = Instance.new('TextButton')
-    Minimize.FontFace = Font.new('rbxasset://fonts/families/SourceSansPro.json', Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-    Minimize.TextColor3 = Color3.fromRGB(0, 0, 0)
-    Minimize.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    Minimize.Text = ''
-    Minimize.AutoButtonColor = false
-    Minimize.Name = 'Minimize'
-    Minimize.BackgroundTransparency = 1
-    Minimize.Position = UDim2.new(0.020057305693626404, 0, 0.02922755666077137, 0)
-    Minimize.Size = UDim2.new(0, 24, 0, 24)
-    Minimize.BorderSizePixel = 0
-    Minimize.TextSize = 14
-    Minimize.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    Minimize.Parent = Handler
-    
-    local UIScale = Instance.new('UIScale')
-    UIScale.Parent = Container
+local UICorner = Instance.new('UICorner')
+UICorner.CornerRadius = UDim.new(0, 10)
+UICorner.Parent = Container
+
+local UIStroke = Instance.new('UIStroke')
+UIStroke.Color = Color3.fromRGB(100, 100, 100) -- Changed to medium grey
+UIStroke.Transparency = 0.4
+UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke.Parent = Container
+
+local Handler = Instance.new('Frame')
+Handler.BackgroundTransparency = 1
+Handler.Name = 'Handler'
+Handler.BorderColor3 = Color3.fromRGB(100, 100, 100) -- Changed to medium grey
+Handler.Size = UDim2.new(0, 698, 0, 479)
+Handler.BorderSizePixel = 0
+Handler.BackgroundColor3 = Color3.fromRGB(80, 80, 80) -- Changed to darker medium grey
+Handler.Parent = Container
+
+local Tabs = Instance.new('ScrollingFrame')
+Tabs.ScrollBarImageTransparency = 1
+Tabs.ScrollBarThickness = 0
+Tabs.Name = 'Tabs'
+Tabs.Size = UDim2.new(0, 129, 0, 401)
+Tabs.Selectable = false
+Tabs.AutomaticCanvasSize = Enum.AutomaticSize.XY
+Tabs.BackgroundTransparency = 1
+Tabs.Position = UDim2.new(0.026, 0, 0.111, 0)
+Tabs.BorderColor3 = Color3.fromRGB(100, 100, 100) -- Changed to medium grey
+Tabs.BackgroundColor3 = Color3.fromRGB(80, 80, 80) -- Changed to darker medium grey
+Tabs.BorderSizePixel = 0
+Tabs.CanvasSize = UDim2.new(0, 0, 0.5, 0)
+Tabs.Parent = Handler
+
+local UIListLayout = Instance.new('UIListLayout')
+UIListLayout.Padding = UDim.new(0, 4)
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Parent = Tabs
+
+local ClientName = Instance.new('TextLabel')
+ClientName.FontFace = Font.new('rbxasset://fonts/families/GothamSSm.json', Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
+ClientName.TextColor3 = Color3.fromRGB(180, 180, 180) -- Changed to light grey for text
+ClientName.TextTransparency = 0.05
+ClientName.Text = 'Lol'
+ClientName.Name = 'Lol'
+ClientName.Size = UDim2.new(0, 31, 0, 13)
+ClientName.AnchorPoint = Vector2.new(0, 0.5)
+ClientName.Position = UDim2.new(0.056, 0, 0.055, 0)
+ClientName.BackgroundTransparency = 1
+ClientName.TextXAlignment = Enum.TextXAlignment.Left
+ClientName.BorderSizePixel = 0
+ClientName.BorderColor3 = Color3.fromRGB(100, 100, 100) -- Changed to medium grey
+ClientName.TextSize = 13
+ClientName.BackgroundColor3 = Color3.fromRGB(80, 80, 80) -- Changed to darker medium grey
+ClientName.Parent = Handler
+
+local UIGradient = Instance.new('UIGradient')
+UIGradient.Color = ColorSequence.new{
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(120, 180, 255)), -- Changed to light blue
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(80, 80, 80)) -- Changed to darker medium grey
+}
+UIGradient.Rotation = 90
+UIGradient.Transparency = NumberSequence.new{
+    NumberSequenceKeypoint.new(0, 0.1),
+    NumberSequenceKeypoint.new(1, 0.3)
+}
+UIGradient.Parent = Container
+
+local Pin = Instance.new('Frame')
+Pin.Name = 'Pin'
+Pin.Position = UDim2.new(0.026, 0, 0.136, 0)
+Pin.BorderColor3 = Color3.fromRGB(100, 100, 100) -- Changed to medium grey
+Pin.Size = UDim2.new(0, 2, 0, 16)
+Pin.BorderSizePixel = 0
+Pin.BackgroundColor3 = Color3.fromRGB(120, 180, 255) -- Changed to light blue
+Pin.Parent = Handler
+
+local UICorner = Instance.new('UICorner')
+UICorner.CornerRadius = UDim.new(1, 0)
+UICorner.Parent = Pin
+
+local Icon = Instance.new('ImageLabel')
+Icon.ImageColor3 = Color3.fromRGB(120, 180, 255) -- Changed to light blue
+Icon.ScaleType = Enum.ScaleType.Fit
+Icon.BorderColor3 = Color3.fromRGB(100, 100, 100) -- Changed to medium grey
+Icon.AnchorPoint = Vector2.new(0, 0.5)
+Icon.Image = 'rbxassetid://107819132007001'
+Icon.BackgroundTransparency = 1
+Icon.Position = UDim2.new(0.025, 0, 0.055, 0)
+Icon.Name = 'Icon'
+Icon.Size = UDim2.new(0, 18, 0, 18)
+Icon.BorderSizePixel = 0
+Icon.BackgroundColor3 = Color3.fromRGB(80, 80, 80) -- Changed to darker medium grey
+Icon.Parent = Handler
+
+local Divider = Instance.new('Frame')
+Divider.Name = 'Divider'
+Divider.BackgroundTransparency = 0.3
+Divider.Position = UDim2.new(0.235, 0, 0, 0)
+Divider.BorderColor3 = Color3.fromRGB(100, 100, 100) -- Changed to medium grey
+Divider.Size = UDim2.new(0, 1, 0, 479)
+Divider.BorderSizePixel = 0
+Divider.BackgroundColor3 = Color3.fromRGB(100, 100, 100) -- Changed to medium grey
+Divider.Parent = Handler
+
+local Sections = Instance.new('Folder')
+Sections.Name = 'Sections'
+Sections.Parent = Handler
+
+local Minimize = Instance.new('TextButton')
+Minimize.FontFace = Font.new('rbxasset://fonts/families/SourceSansPro.json', Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+Minimize.TextColor3 = Color3.fromRGB(180, 180, 180) -- Changed to light grey
+Minimize.BorderColor3 = Color3.fromRGB(100, 100, 100) -- Changed to medium grey
+Minimize.Text = ''
+Minimize.AutoButtonColor = false
+Minimize.Name = 'Minimize'
+Minimize.BackgroundTransparency = 1
+Minimize.Position = UDim2.new(0.020, 0, 0.029, 0)
+Minimize.Size = UDim2.new(0, 24, 0, 24)
+Minimize.BorderSizePixel = 0
+Minimize.TextSize = 14
+Minimize.BackgroundColor3 = Color3.fromRGB(120, 180, 255) -- Changed to light blue
+Minimize.Parent = Handler
+
+local UIScale = Instance.new('UIScale')
+UIScale.Parent = Container
 
     self._ui = Lol
 
@@ -785,19 +790,19 @@ function Library:create_ui()
                         BackgroundTransparency = 0.5
                     }):Play()
 
-                    TweenService:Create(object.TextLabel, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
-                        TextTransparency = 0.2,
-                        TextColor3 = Color3.fromRGB(152, 181, 255)
-                    }):Play()
+                                    TweenService:Create(object.TextLabel, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
+                    TextTransparency = 0.2,
+                    TextColor3 = Color3.fromRGB(120, 180, 255) -- Changed to light blue
+                }):Play()
 
-                    TweenService:Create(object.TextLabel.UIGradient, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
-                        Offset = Vector2.new(1, 0)
-                    }):Play()
+                TweenService:Create(object.TextLabel.UIGradient, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
+                    Offset = Vector2.new(1, 0)
+                }):Play()
 
-                    TweenService:Create(object.Icon, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
-                        ImageTransparency = 0.2,
-                        ImageColor3 = Color3.fromRGB(152, 181, 255)
-                    }):Play()
+                TweenService:Create(object.Icon, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
+                    ImageTransparency = 0.2,
+                    ImageColor3 = Color3.fromRGB(120, 180, 255) -- Changed to light blue
+                }):Play()
                 end
 
                 continue
@@ -810,7 +815,7 @@ function Library:create_ui()
                 
                 TweenService:Create(object.TextLabel, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
                     TextTransparency = 0.7,
-                    TextColor3 = Color3.fromRGB(255, 255, 255)
+                    TextColor3 = Color3.fromRGB(180, 180, 180) -- Changed to light grey
                 }):Play()
 
                 TweenService:Create(object.TextLabel.UIGradient, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
@@ -819,7 +824,7 @@ function Library:create_ui()
 
                 TweenService:Create(object.Icon, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
                     ImageTransparency = 0.8,
-                    ImageColor3 = Color3.fromRGB(255, 255, 255)
+                    ImageColor3 = Color3.fromRGB(180, 180, 180) -- Changed to light grey
                 }):Play()
             end
         end
@@ -853,8 +858,8 @@ function Library:create_ui()
 
         local Tab = Instance.new('TextButton')
         Tab.FontFace = Font.new('rbxasset://fonts/families/SourceSansPro.json', Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-        Tab.TextColor3 = Color3.fromRGB(0, 0, 0)
-        Tab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+        Tab.TextColor3 = Color3.fromRGB(180, 180, 180) -- Changed to light grey
+        Tab.BorderColor3 = Color3.fromRGB(100, 100, 100) -- Changed to medium grey
         Tab.Text = ''
         Tab.AutoButtonColor = false
         Tab.BackgroundTransparency = 1
@@ -862,7 +867,7 @@ function Library:create_ui()
         Tab.Size = UDim2.new(0, 129, 0, 38)
         Tab.BorderSizePixel = 0
         Tab.TextSize = 14
-        Tab.BackgroundColor3 = Color3.fromRGB(22, 28, 38)
+        Tab.BackgroundColor3 = Color3.fromRGB(80, 80, 80) -- Changed to darker medium grey
         Tab.Parent = Tabs
         Tab.LayoutOrder = self._tab
         
@@ -872,7 +877,7 @@ function Library:create_ui()
         
         local TextLabel = Instance.new('TextLabel')
         TextLabel.FontFace = Font.new('rbxasset://fonts/families/GothamSSm.json', Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
-        TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel.TextColor3 = Color3.fromRGB(180, 180, 180) -- Changed to light grey
         TextLabel.TextTransparency = 0.7 -- 0.800000011920929
         TextLabel.Text = title
         TextLabel.Size = UDim2.new(0, font_size.X, 0, 16)
@@ -881,23 +886,23 @@ function Library:create_ui()
         TextLabel.BackgroundTransparency = 1
         TextLabel.TextXAlignment = Enum.TextXAlignment.Left
         TextLabel.BorderSizePixel = 0
-        TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+        TextLabel.BorderColor3 = Color3.fromRGB(100, 100, 100) -- Changed to medium grey
         TextLabel.TextSize = 13
-        TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        TextLabel.BackgroundColor3 = Color3.fromRGB(80, 80, 80) -- Changed to darker medium grey
         TextLabel.Parent = Tab
         
         local UIGradient = Instance.new('UIGradient')
         UIGradient.Color = ColorSequence.new{
-            ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 255, 255)),
-            ColorSequenceKeypoint.new(0.7, Color3.fromRGB(155, 155, 155)),
-            ColorSequenceKeypoint.new(1, Color3.fromRGB(58, 58, 58))
+            ColorSequenceKeypoint.new(0, Color3.fromRGB(120, 180, 255)), -- Changed to light blue
+            ColorSequenceKeypoint.new(0.7, Color3.fromRGB(150, 150, 150)), -- Changed to medium-light grey
+            ColorSequenceKeypoint.new(1, Color3.fromRGB(80, 80, 80)) -- Changed to darker medium grey
         }
         UIGradient.Parent = TextLabel
         
         local Icon = Instance.new('ImageLabel')
         Icon.ScaleType = Enum.ScaleType.Fit
         Icon.ImageTransparency = 0.800000011920929
-        Icon.BorderColor3 = Color3.fromRGB(0, 0, 0)
+        Icon.BorderColor3 = Color3.fromRGB(100, 100, 100) -- Changed to medium grey
         Icon.AnchorPoint = Vector2.new(0, 0.5)
         Icon.BackgroundTransparency = 1
         Icon.Position = UDim2.new(0.10000000149011612, 0, 0.5, 0)
@@ -905,7 +910,7 @@ function Library:create_ui()
         Icon.Image = icon
         Icon.Size = UDim2.new(0, 12, 0, 12)
         Icon.BorderSizePixel = 0
-        Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        Icon.BackgroundColor3 = Color3.fromRGB(80, 80, 80) -- Changed to darker medium grey
         Icon.Parent = Tab
 
         local LeftSection = Instance.new('ScrollingFrame')
@@ -991,187 +996,150 @@ function Library:create_ui()
             end
 
             local Module = Instance.new('Frame')
-            Module.ClipsDescendants = true
-            Module.BorderColor3 = Color3.fromRGB(0, 0, 0)
-            Module.BackgroundTransparency = 0.5
-            Module.Position = UDim2.new(0.004115226212888956, 0, 0, 0)
-            Module.Name = 'Module'
-            Module.Size = UDim2.new(0, 241, 0, 93)
-            Module.BorderSizePixel = 0
-            Module.BackgroundColor3 = Color3.fromRGB(22, 28, 38)
-            Module.Parent = settings.section
+Module.ClipsDescendants = true
+Module.Name = 'Module'
+Module.Size = UDim2.new(0, 241, 0, 93)
+Module.Position = UDim2.new(0.0041, 0, 0, 0)
+Module.BackgroundTransparency = 0.15
+Module.BackgroundColor3 = Color3.fromRGB(80, 80, 80) -- Changed to darker medium grey
+Module.BorderSizePixel = 0
+Module.BorderColor3 = Color3.fromRGB(100, 100, 100) -- Changed to medium grey
+Module.Parent = settings.section
 
-            local UIListLayout = Instance.new('UIListLayout')
-            UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-            UIListLayout.Parent = Module
-            
-            local UICorner = Instance.new('UICorner')
-            UICorner.CornerRadius = UDim.new(0, 5)
-            UICorner.Parent = Module
-            
-            local UIStroke = Instance.new('UIStroke')
-            UIStroke.Color = Color3.fromRGB(52, 66, 89)
-            UIStroke.Transparency = 0.5
-            UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
-            UIStroke.Parent = Module
-            
-            local Header = Instance.new('TextButton')
-            Header.FontFace = Font.new('rbxasset://fonts/families/SourceSansPro.json', Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-            Header.TextColor3 = Color3.fromRGB(0, 0, 0)
-            Header.BorderColor3 = Color3.fromRGB(0, 0, 0)
-            Header.Text = ''
-            Header.AutoButtonColor = false
-            Header.BackgroundTransparency = 1
-            Header.Name = 'Header'
-            Header.Size = UDim2.new(0, 241, 0, 93)
-            Header.BorderSizePixel = 0
-            Header.TextSize = 14
-            Header.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            Header.Parent = Module
-            
-            local Icon = Instance.new('ImageLabel')
-            Icon.ImageColor3 = Color3.fromRGB(152, 181, 255)
-            Icon.ScaleType = Enum.ScaleType.Fit
-            Icon.ImageTransparency = 0.699999988079071
-            Icon.BorderColor3 = Color3.fromRGB(0, 0, 0)
-            Icon.AnchorPoint = Vector2.new(0, 0.5)
-            Icon.Image = 'rbxassetid://79095934438045'
-            Icon.BackgroundTransparency = 1
-            Icon.Position = UDim2.new(0.07100000232458115, 0, 0.8199999928474426, 0)
-            Icon.Name = 'Icon'
-            Icon.Size = UDim2.new(0, 15, 0, 15)
-            Icon.BorderSizePixel = 0
-            Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            Icon.Parent = Header
-            
-            local ModuleName = Instance.new('TextLabel')
-            ModuleName.FontFace = Font.new('rbxasset://fonts/families/GothamSSm.json', Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
-            ModuleName.TextColor3 = Color3.fromRGB(152, 181, 255)
-            ModuleName.TextTransparency = 0.20000000298023224
-            if not settings.rich then
-                ModuleName.Text = settings.title or "Skibidi"
-            else
-                ModuleName.RichText = true
-                ModuleName.Text = settings.richtext or "<font color='rgb(255,0,0)'>Lol</font> user"
-            end;
-            ModuleName.Name = 'ModuleName'
-            ModuleName.Size = UDim2.new(0, 205, 0, 13)
-            ModuleName.AnchorPoint = Vector2.new(0, 0.5)
-            ModuleName.Position = UDim2.new(0.0729999989271164, 0, 0.23999999463558197, 0)
-            ModuleName.BackgroundTransparency = 1
-            ModuleName.TextXAlignment = Enum.TextXAlignment.Left
-            ModuleName.BorderSizePixel = 0
-            ModuleName.BorderColor3 = Color3.fromRGB(0, 0, 0)
-            ModuleName.TextSize = 13
-            ModuleName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            ModuleName.Parent = Header
-            
-            local Description = Instance.new('TextLabel')
-            Description.FontFace = Font.new('rbxasset://fonts/families/GothamSSm.json', Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
-            Description.TextColor3 = Color3.fromRGB(152, 181, 255)
-            Description.TextTransparency = 0.699999988079071
-            Description.Text = settings.description
-            Description.Name = 'Description'
-            Description.Size = UDim2.new(0, 205, 0, 13)
-            Description.AnchorPoint = Vector2.new(0, 0.5)
-            Description.Position = UDim2.new(0.0729999989271164, 0, 0.41999998688697815, 0)
-            Description.BackgroundTransparency = 1
-            Description.TextXAlignment = Enum.TextXAlignment.Left
-            Description.BorderSizePixel = 0
-            Description.BorderColor3 = Color3.fromRGB(0, 0, 0)
-            Description.TextSize = 10
-            Description.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            Description.Parent = Header
-            
-            local Toggle = Instance.new('Frame')
-            Toggle.Name = 'Toggle'
-            Toggle.BackgroundTransparency = 0.699999988079071
-            Toggle.Position = UDim2.new(0.8199999928474426, 0, 0.7570000290870667, 0)
-            Toggle.BorderColor3 = Color3.fromRGB(0, 0, 0)
-            Toggle.Size = UDim2.new(0, 25, 0, 12)
-            Toggle.BorderSizePixel = 0
-            Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-            Toggle.Parent = Header
-            
-            local UICorner = Instance.new('UICorner')
-            UICorner.CornerRadius = UDim.new(1, 0)
-            UICorner.Parent = Toggle
-            
-            local Circle = Instance.new('Frame')
-            Circle.BorderColor3 = Color3.fromRGB(0, 0, 0)
-            Circle.AnchorPoint = Vector2.new(0, 0.5)
-            Circle.BackgroundTransparency = 0.20000000298023224
-            Circle.Position = UDim2.new(0, 0, 0.5, 0)
-            Circle.Name = 'Circle'
-            Circle.Size = UDim2.new(0, 12, 0, 12)
-            Circle.BorderSizePixel = 0
-            Circle.BackgroundColor3 = Color3.fromRGB(66, 80, 115)
-            Circle.Parent = Toggle
-            
-            local UICorner = Instance.new('UICorner')
-            UICorner.CornerRadius = UDim.new(1, 0)
-            UICorner.Parent = Circle
-            
-            local Keybind = Instance.new('Frame')
-            Keybind.Name = 'Keybind'
-            Keybind.BackgroundTransparency = 0.699999988079071
-            Keybind.Position = UDim2.new(0.15000000596046448, 0, 0.7350000143051147, 0)
-            Keybind.BorderColor3 = Color3.fromRGB(0, 0, 0)
-            Keybind.Size = UDim2.new(0, 33, 0, 15)
-            Keybind.BorderSizePixel = 0
-            Keybind.BackgroundColor3 = Color3.fromRGB(152, 181, 255)
-            Keybind.Parent = Header
-            
-            local UICorner = Instance.new('UICorner')
-            UICorner.CornerRadius = UDim.new(0, 3)
-            UICorner.Parent = Keybind
-            
-            local TextLabel = Instance.new('TextLabel')
-            TextLabel.FontFace = Font.new('rbxasset://fonts/families/GothamSSm.json', Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
-            TextLabel.TextColor3 = Color3.fromRGB(209, 222, 255)
-            TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-            TextLabel.Text = 'None'
-            TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
-            TextLabel.Size = UDim2.new(0, 25, 0, 13)
-            TextLabel.BackgroundTransparency = 1
-            TextLabel.TextXAlignment = Enum.TextXAlignment.Left
-            TextLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
-            TextLabel.BorderSizePixel = 0
-            TextLabel.TextSize = 10
-            TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            TextLabel.Parent = Keybind
-            
-            local Divider = Instance.new('Frame')
-            Divider.BorderColor3 = Color3.fromRGB(0, 0, 0)
-            Divider.AnchorPoint = Vector2.new(0.5, 0)
-            Divider.BackgroundTransparency = 0.5
-            Divider.Position = UDim2.new(0.5, 0, 0.6200000047683716, 0)
-            Divider.Name = 'Divider'
-            Divider.Size = UDim2.new(0, 241, 0, 1)
-            Divider.BorderSizePixel = 0
-            Divider.BackgroundColor3 = Color3.fromRGB(52, 66, 89)
-            Divider.Parent = Header
-            
-            local Divider = Instance.new('Frame')
-            Divider.BorderColor3 = Color3.fromRGB(0, 0, 0)
-            Divider.AnchorPoint = Vector2.new(0.5, 0)
-            Divider.BackgroundTransparency = 0.5
-            Divider.Position = UDim2.new(0.5, 0, 1, 0)
-            Divider.Name = 'Divider'
-            Divider.Size = UDim2.new(0, 241, 0, 1)
-            Divider.BorderSizePixel = 0
-            Divider.BackgroundColor3 = Color3.fromRGB(52, 66, 89)
-            Divider.Parent = Header
-            
-            local Options = Instance.new('Frame')
-            Options.Name = 'Options'
-            Options.BackgroundTransparency = 1
-            Options.Position = UDim2.new(0, 0, 1, 0)
-            Options.BorderColor3 = Color3.fromRGB(0, 0, 0)
-            Options.Size = UDim2.new(0, 241, 0, 8)
-            Options.BorderSizePixel = 0
-            Options.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-            Options.Parent = Module
+local UIListLayout = Instance.new('UIListLayout')
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Parent = Module
+
+local UICorner = Instance.new('UICorner')
+UICorner.CornerRadius = UDim.new(0, 5)
+UICorner.Parent = Module
+
+local UIStroke = Instance.new('UIStroke')
+UIStroke.Color = Color3.fromRGB(100, 100, 100) -- Changed to medium grey
+UIStroke.Transparency = 0.4
+UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+UIStroke.Parent = Module
+
+local Header = Instance.new('TextButton')
+Header.Name = 'Header'
+Header.Size = UDim2.new(0, 241, 0, 93)
+Header.BackgroundTransparency = 1
+Header.Text = ''
+Header.AutoButtonColor = false
+Header.BorderSizePixel = 0
+Header.Parent = Module
+
+local Icon = Instance.new('ImageLabel')
+Icon.Name = 'Icon'
+Icon.Image = 'rbxassetid://79095934438045'
+Icon.Position = UDim2.new(0.071, 0, 0.82, 0)
+Icon.Size = UDim2.new(0, 15, 0, 15)
+Icon.ImageTransparency = 0.4
+Icon.ImageColor3 = Color3.fromRGB(120, 180, 255) -- Changed to light blue
+Icon.BackgroundTransparency = 1
+Icon.Parent = Header
+
+local ModuleName = Instance.new('TextLabel')
+ModuleName.Name = 'ModuleName'
+ModuleName.Size = UDim2.new(0, 205, 0, 13)
+ModuleName.Position = UDim2.new(0.073, 0, 0.24, 0)
+ModuleName.TextXAlignment = Enum.TextXAlignment.Left
+ModuleName.TextSize = 13
+ModuleName.TextTransparency = 0.05
+ModuleName.TextColor3 = Color3.fromRGB(180, 180, 180) -- Changed to light grey
+ModuleName.BackgroundTransparency = 1
+ModuleName.FontFace = Font.new('rbxasset://fonts/families/GothamSSm.json', Enum.FontWeight.SemiBold)
+ModuleName.Text = settings.rich and settings.richtext or (settings.title or "Skibidi")
+ModuleName.RichText = settings.rich or false
+ModuleName.Parent = Header
+
+local Description = Instance.new('TextLabel')
+Description.Name = 'Description'
+Description.Size = UDim2.new(0, 205, 0, 13)
+Description.Position = UDim2.new(0.073, 0, 0.42, 0)
+Description.TextXAlignment = Enum.TextXAlignment.Left
+Description.TextSize = 10
+Description.TextTransparency = 0.45
+Description.TextColor3 = Color3.fromRGB(150, 150, 150) -- Changed to medium-light grey
+Description.BackgroundTransparency = 1
+Description.FontFace = ModuleName.FontFace
+Description.Text = settings.description or "Descrição aqui"
+Description.Parent = Header
+
+local Toggle = Instance.new('Frame')
+Toggle.Name = 'Toggle'
+Toggle.Position = UDim2.new(0.82, 0, 0.757, 0)
+Toggle.Size = UDim2.new(0, 25, 0, 12)
+Toggle.BackgroundColor3 = Color3.fromRGB(80, 80, 80) -- Changed to darker medium grey
+Toggle.BackgroundTransparency = 0.3
+Toggle.BorderSizePixel = 0
+Toggle.Parent = Header
+
+local ToggleCorner = Instance.new('UICorner')
+ToggleCorner.CornerRadius = UDim.new(1, 0)
+ToggleCorner.Parent = Toggle
+
+local Circle = Instance.new('Frame')
+Circle.Name = 'Circle'
+Circle.Size = UDim2.new(0, 12, 0, 12)
+Circle.Position = UDim2.new(0, 0, 0.5, 0)
+Circle.AnchorPoint = Vector2.new(0, 0.5)
+Circle.BackgroundColor3 = Color3.fromRGB(100, 100, 100) -- Changed to medium grey
+Circle.BackgroundTransparency = 0.1
+Circle.BorderSizePixel = 0
+Circle.Parent = Toggle
+
+local CircleCorner = Instance.new('UICorner')
+CircleCorner.CornerRadius = UDim.new(1, 0)
+CircleCorner.Parent = Circle
+
+local Keybind = Instance.new('Frame')
+Keybind.Name = 'Keybind'
+Keybind.Position = UDim2.new(0.15, 0, 0.735, 0)
+Keybind.Size = UDim2.new(0, 33, 0, 15)
+Keybind.BackgroundColor3 = Color3.fromRGB(120, 180, 255) -- Changed to light blue
+Keybind.BackgroundTransparency = 0.3
+Keybind.BorderSizePixel = 0
+Keybind.Parent = Header
+
+local KeybindCorner = Instance.new('UICorner')
+KeybindCorner.CornerRadius = UDim.new(0, 3)
+KeybindCorner.Parent = Keybind
+
+local TextLabel = Instance.new('TextLabel')
+TextLabel.Name = 'KeyText'
+TextLabel.Size = UDim2.new(0, 25, 0, 13)
+TextLabel.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.Text = "None"
+TextLabel.TextColor3 = Color3.fromRGB(180, 180, 180) -- Changed to light grey
+TextLabel.TextSize = 10
+TextLabel.BackgroundTransparency = 1
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel.FontFace = ModuleName.FontFace
+TextLabel.Parent = Keybind
+
+local Divider1 = Instance.new('Frame')
+Divider1.Name = 'DividerTop'
+Divider1.Position = UDim2.new(0.5, 0, 0.62, 0)
+Divider1.AnchorPoint = Vector2.new(0.5, 0)
+Divider1.Size = UDim2.new(0, 241, 0, 1)
+Divider1.BackgroundColor3 = Color3.fromRGB(100, 100, 100) -- Changed to medium grey
+Divider1.BackgroundTransparency = 0.4
+Divider1.BorderSizePixel = 0
+Divider1.Parent = Header
+
+local Divider2 = Divider1:Clone()
+Divider2.Name = 'DividerBottom'
+Divider2.Position = UDim2.new(0.5, 0, 1, 0)
+Divider2.Parent = Header
+
+local Options = Instance.new('Frame')
+Options.Name = 'Options'
+Options.Position = UDim2.new(0, 0, 1, 0)
+Options.Size = UDim2.new(0, 241, 0, 8)
+Options.BackgroundTransparency = 1
+Options.Parent = Module
 
             local UIPadding = Instance.new('UIPadding')
             UIPadding.PaddingTop = UDim.new(0, 8)
@@ -1192,11 +1160,11 @@ function Library:create_ui()
                     }):Play()
 
                     TweenService:Create(Toggle, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
-                        BackgroundColor3 = Color3.fromRGB(152, 181, 255)
+                        BackgroundColor3 = Color3.fromRGB(120, 180, 255) -- Changed to light blue
                     }):Play()
 
                     TweenService:Create(Circle, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
-                        BackgroundColor3 = Color3.fromRGB(152, 181, 255),
+                        BackgroundColor3 = Color3.fromRGB(120, 180, 255), -- Changed to light blue
                         Position = UDim2.fromScale(0.53, 0.5)
                     }):Play()
                 else
@@ -1205,11 +1173,11 @@ function Library:create_ui()
                     }):Play()
 
                     TweenService:Create(Toggle, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
-                        BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+                        BackgroundColor3 = Color3.fromRGB(80, 80, 80) -- Changed to darker medium grey
                     }):Play()
 
                     TweenService:Create(Circle, TweenInfo.new(0.5, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
-                        BackgroundColor3 = Color3.fromRGB(66, 80, 115),
+                        BackgroundColor3 = Color3.fromRGB(100, 100, 100), -- Changed to medium grey
                         Position = UDim2.fromScale(0, 0.5)
                     }):Play()
                 end
@@ -1364,7 +1332,7 @@ function Library:create_ui()
             
                 -- Container Frame
                 local Paragraph = Instance.new('Frame')
-                Paragraph.BackgroundColor3 = Color3.fromRGB(32, 38, 51)
+                Paragraph.BackgroundColor3 = Color3.fromRGB(80, 80, 80) -- Changed to darker medium grey
                 Paragraph.BackgroundTransparency = 0.1
                 Paragraph.Size = UDim2.new(0, 207, 0, 30) -- Initial size, auto-resized later
                 Paragraph.BorderSizePixel = 0
@@ -1380,7 +1348,7 @@ function Library:create_ui()
                 -- Title Label
                 local Title = Instance.new('TextLabel')
                 Title.FontFace = Font.new('rbxasset://fonts/families/GothamSSm.json', Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
-                Title.TextColor3 = Color3.fromRGB(210, 210, 210)
+                Title.TextColor3 = Color3.fromRGB(180, 180, 180) -- Changed to light grey
                 Title.Text = settings.title or "Title"
                 Title.Size = UDim2.new(1, -10, 0, 20)
                 Title.Position = UDim2.new(0, 5, 0, 5)
@@ -1394,13 +1362,13 @@ function Library:create_ui()
                 -- Body Text
                 local Body = Instance.new('TextLabel')
                 Body.FontFace = Font.new('rbxasset://fonts/families/GothamSSm.json', Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-                Body.TextColor3 = Color3.fromRGB(180, 180, 180)
+                Body.TextColor3 = Color3.fromRGB(150, 150, 150) -- Changed to medium-light grey
                 
                 if not settings.rich then
                     Body.Text = settings.text or "Skibidi"
                 else
                     Body.RichText = true
-                    Body.Text = settings.richtext or "<font color='rgb(255,0,0)'>Lol</font> user"
+                    Body.Text = settings.richtext or "<font color='rgb(120,180,255)'>Lol</font> user" -- Changed to light blue
                 end
                 
                 Body.Size = UDim2.new(1, -10, 0, 20)
@@ -1416,13 +1384,13 @@ function Library:create_ui()
                 -- Hover effect for Paragraph (optional)
                 Paragraph.MouseEnter:Connect(function()
                     TweenService:Create(Paragraph, TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
-                        BackgroundColor3 = Color3.fromRGB(42, 50, 66)
+                        BackgroundColor3 = Color3.fromRGB(100, 150, 255) -- Changed to slightly darker light blue
                     }):Play()
                 end)
             
                 Paragraph.MouseLeave:Connect(function()
                     TweenService:Create(Paragraph, TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
-                        BackgroundColor3 = Color3.fromRGB(32, 38, 51)
+                        BackgroundColor3 = Color3.fromRGB(80, 80, 80) -- Changed to darker medium grey
                     }):Play()
                 end)
 
@@ -1448,7 +1416,7 @@ function Library:create_ui()
             
                 -- Container Frame
                 local TextFrame = Instance.new('Frame')
-                TextFrame.BackgroundColor3 = Color3.fromRGB(32, 38, 51)
+                TextFrame.BackgroundColor3 = Color3.fromRGB(80, 80, 80) -- Changed to darker medium grey
                 TextFrame.BackgroundTransparency = 0.1
                 TextFrame.Size = UDim2.new(0, 207, 0, settings.CustomYSize) -- Initial size, auto-resized later
                 TextFrame.BorderSizePixel = 0
@@ -1464,13 +1432,13 @@ function Library:create_ui()
                 -- Body Text
                 local Body = Instance.new('TextLabel')
                 Body.FontFace = Font.new('rbxasset://fonts/families/GothamSSm.json', Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-                Body.TextColor3 = Color3.fromRGB(180, 180, 180)
+                Body.TextColor3 = Color3.fromRGB(150, 150, 150) -- Changed to medium-light grey
             
                 if not settings.rich then
                     Body.Text = settings.text or "Skibidi" -- Default text
                 else
                     Body.RichText = true
-                    Body.Text = settings.richtext or "<font color='rgb(255,0,0)'>Lol</font> user" -- Default rich text
+                    Body.Text = settings.richtext or "<font color='rgb(120,180,255)'>Lol</font> user" -- Changed to light blue
                 end
             
                 Body.Size = UDim2.new(1, -10, 1, 0)
@@ -1486,13 +1454,13 @@ function Library:create_ui()
                 -- Hover effect for TextFrame (optional)
                 TextFrame.MouseEnter:Connect(function()
                     TweenService:Create(TextFrame, TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
-                        BackgroundColor3 = Color3.fromRGB(42, 50, 66)
+                        BackgroundColor3 = Color3.fromRGB(100, 150, 255) -- Changed to slightly darker light blue
                     }):Play()
                 end)
             
                 TextFrame.MouseLeave:Connect(function()
                     TweenService:Create(TextFrame, TweenInfo.new(0.3, Enum.EasingStyle.Quint, Enum.EasingDirection.Out), {
-                        BackgroundColor3 = Color3.fromRGB(32, 38, 51)
+                        BackgroundColor3 = Color3.fromRGB(80, 80, 80) -- Changed to darker medium grey
                     }):Play()
                 end)
 
@@ -1528,7 +1496,7 @@ function Library:create_ui()
             
                 local Label = Instance.new('TextLabel')
                 Label.FontFace = Font.new('rbxasset://fonts/families/GothamSSm.json', Enum.FontWeight.SemiBold, Enum.FontStyle.Normal)
-                Label.TextColor3 = Color3.fromRGB(255, 255, 255)
+                Label.TextColor3 = Color3.fromRGB(180, 180, 180) -- Changed to light grey
                 Label.TextTransparency = 0.2
                 Label.Text = settings.title or "Enter text"
                 Label.Size = UDim2.new(0, 207, 0, 13)
@@ -1543,15 +1511,15 @@ function Library:create_ui()
             
                 local Textbox = Instance.new('TextBox')
                 Textbox.FontFace = Font.new('rbxasset://fonts/families/SourceSansPro.json', Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-                Textbox.TextColor3 = Color3.fromRGB(255, 255, 255)
-                Textbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+                Textbox.TextColor3 = Color3.fromRGB(180, 180, 180) -- Changed to light grey
+                Textbox.BorderColor3 = Color3.fromRGB(100, 100, 100) -- Changed to medium grey
                 Textbox.PlaceholderText = settings.placeholder or "Enter text..."
                 Textbox.Text = Library._config._flags[settings.flag] or ""
                 Textbox.Name = 'Textbox'
                 Textbox.Size = UDim2.new(0, 207, 0, 15)
                 Textbox.BorderSizePixel = 0
                 Textbox.TextSize = 10
-                Textbox.BackgroundColor3 = Color3.fromRGB(152, 181, 255)
+                Textbox.BackgroundColor3 = Color3.fromRGB(120, 180, 255) -- Changed to light blue
                 Textbox.BackgroundTransparency = 0.9
                 Textbox.ClearTextOnFocus = false
                 Textbox.Parent = Options
