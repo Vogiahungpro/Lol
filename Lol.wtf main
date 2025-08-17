@@ -6,6 +6,7 @@ local BladeBallIDs = {
     15144787112, -- Duel lobby
     14915220621, -- Ranked lobby
     15264892126, -- Ranked match
+    17757592456, -- New event sex
 }
 
 local ForestIDs = {
