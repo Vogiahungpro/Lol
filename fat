@@ -4759,7 +4759,95 @@ oldIndex = hookmetamethod(game, "__index", newcclosure(function(self, key)
 	end
 	return oldIndex(self, key)
 end))
+local Radius = 35
+local UndergroundOffset = 0
+local SpinSpeed = 12
 
+local Enabled = false
+local SavedCF = nil
+local spinAngle = 0
+
+local module = misc:create_module({
+	title = "Spin Controller",
+	description = "Controls spin behavior",
+	flag = "spin_controller",
+	section = "left",
+	callback = function(state)
+		Enabled = state
+	end
+})
+
+module:create_slider({
+	title = "Radius",
+   maximum_value = 500,
+   minimum_value = 35,
+	value = Radius,
+	flag = "radius",
+	callback = function(value)
+		Radius = value
+	end
+})
+
+module:create_slider({
+	title = "Speed",
+   maximum_value = 500,
+   minimum_value = 35,
+	value = SpinSpeed,
+	flag = "spinspeed",
+	callback = function(value)
+		SpinSpeed = value
+	end
+})
+
+module:create_slider({
+	title = "Underground Offset",
+   maximum_value = 100,
+   minimum_value = -100,
+	value = UndergroundOffset,
+	flag = "undergroundoffset",
+	callback = function(value)
+		UndergroundOffset = value
+	end
+})
+
+RunService.Heartbeat:Connect(function(dt)
+	if Enabled and Player.Character and Player.Character:FindFirstChild("HumanoidRootPart") then
+		local HRP = Player.Character.HumanoidRootPart
+
+		SavedCF = HRP.CFrame
+
+		spinAngle += SpinSpeed * dt
+		local offset = Vector3.new(
+			math.cos(spinAngle) * Radius,
+			UndergroundOffset,
+			math.sin(spinAngle) * Radius
+		)
+
+		HRP.CFrame = CFrame.new(SavedCF.Position + offset, SavedCF.Position + offset + SavedCF.LookVector)
+
+		RunService.RenderStepped:Wait()
+
+		HRP.CFrame = SavedCF
+	end
+end)
+
+local oldIndex
+oldIndex = hookmetamethod(game, "__index", newcclosure(function(self, key)
+	if Enabled and not checkcaller() then
+		if key == "CFrame" 
+			and Player.Character 
+			and Player.Character:FindFirstChild("HumanoidRootPart") then
+
+			local HRP = Player.Character.HumanoidRootPart
+			if self == HRP then
+				return SavedCF or HRP.CFrame
+			elseif self == Player.Character:FindFirstChild("Head") then
+				return (SavedCF and SavedCF + Vector3.new(0, HRP.Size.Y/2 + 0.5, 0)) or HRP.CFrame
+			end
+		end
+	end
+	return oldIndex(self, key)
+end))
 ReplicatedStorage.Remotes.ParrySuccessAll.OnClientEvent:Connect(function(_, root)
     if root.Parent and root.Parent ~= Player.Character then
         if root.Parent.Parent ~= workspace.Alive then
