@@ -69,7 +69,7 @@ pcall(function()
     elseif isBladeBall(GameID) then
         print("Loading Blade Ball script...")
         local success, error = pcall(function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/bb"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/fat"))()
         end)
         if not success then
             warn("Failed to load Blade Ball script: " .. tostring(error))
