@@ -18,6 +18,11 @@ local MuscleLegendIDs = {
     3623096087 -- Muscle Legend
 }
 
+local ZombiesHuntyIDs = {
+    86076978383613,   -- Zombies Hunty main
+    103754275310547   -- Zombies Hunty alternate
+}
+
 local GameID = game.PlaceId
 
 local function isBladeBall(id)
@@ -40,6 +45,15 @@ end
 
 local function isMuscleLegend(id)
     for _, v in ipairs(MuscleLegendIDs) do
+        if v == id then
+            return true
+        end
+    end
+    return false
+end
+
+local function isZombiesHunty(id)
+    for _, v in ipairs(ZombiesHuntyIDs) do
         if v == id then
             return true
         end
@@ -72,6 +86,10 @@ pcall(function()
     elseif isMuscleLegend(GameID) then
         print("Loading Muscle Legend script...")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Muscle%20legend"))()
+
+    elseif isZombiesHunty(GameID) then
+        print("Loading Zombies Hunty script...")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Hunty"))()
 
     else
         warn("No script configured for this game. Current ID: " .. tostring(GameID))
