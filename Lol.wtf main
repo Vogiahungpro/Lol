@@ -9,20 +9,6 @@ local BladeBallIDs = {
     17757592456, -- New event sex
 }
 
-local ForestIDs = {
-    79546208627805, -- Original 99 Night in the Forest
-    126509999114328 -- New/Alternate place ID
-}
-
-local MuscleLegendIDs = {
-    3623096087 -- Muscle Legend
-}
-
-local ZombiesHuntyIDs = {
-    86076978383613,   -- Zombies Hunty main
-    103754275310547   -- Zombies Hunty alternate
-}
-
 local GameID = game.PlaceId
 
 local function isBladeBall(id)
@@ -34,42 +20,11 @@ local function isBladeBall(id)
     return false
 end
 
-local function isForest(id)
-    for _, v in ipairs(ForestIDs) do
-        if v == id then
-            return true
-        end
-    end
-    return false
-end
-
-local function isMuscleLegend(id)
-    for _, v in ipairs(MuscleLegendIDs) do
-        if v == id then
-            return true
-        end
-    end
-    return false
-end
-
-local function isZombiesHunty(id)
-    for _, v in ipairs(ZombiesHuntyIDs) do
-        if v == id then
-            return true
-        end
-    end
-    return false
-end
-
 pcall(function()
-    if GameID == 109983668079237 then
-        print("Loading Steal a Brainrot script...")
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Lol"))()
-
-    elseif isBladeBall(GameID) then
+    if isBladeBall(GameID) then
         print("Loading Blade Ball script...")
         local success, error = pcall(function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/fat"))()
+            loadstring(game:HttpGet("https://pastefy.app/igrwmRoB/raw"))()
         end)
         if not success then
             warn("Failed to load Blade Ball script: " .. tostring(error))
@@ -78,18 +33,9 @@ pcall(function()
     elseif GameID == 12979690461 then
         print("Loading Phantom Ball script...")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Phantom%20ball"))()
-
-    elseif isForest(GameID) then
-        print("Loading 99 Night in the Forest script...")
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/99"))()
-
-    elseif isMuscleLegend(GameID) then
-        print("Loading Muscle Legend script...")
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Muscle%20legend"))()
-
-    elseif isZombiesHunty(GameID) then
-        print("Loading Zombies Hunty script...")
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/Lol/refs/heads/main/Hunty"))()
+    elseif GameID == 3101667897 then
+        print("Loading Legend of speed script...")
+        loadstring(game:HttpGet("https://cdn.authguard.org/virtual-file/4f0a458ca08d490085db3ce9f6521a59"))()
 
     else
         warn("No script configured for this game. Current ID: " .. tostring(GameID))
