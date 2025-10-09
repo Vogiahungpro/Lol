@@ -36,6 +36,9 @@ pcall(function()
     elseif GameID == 3101667897 then
         print("Loading Legend of speed script...")
         loadstring(game:HttpGet("https://cdn.authguard.org/virtual-file/4f0a458ca08d490085db3ce9f6521a59"))()
+    elseif GameID == 18687417158 then
+        print("Loading Forsaken script...")
+        loadstring(game:HttpGet("https://pastefy.app/4KHoEZVz/raw"))()
 
     else
         warn("No script configured for this game. Current ID: " .. tostring(GameID))
