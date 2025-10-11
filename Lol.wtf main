@@ -39,6 +39,9 @@ pcall(function()
     elseif GameID == 18687417158 then
         print("Loading Forsaken script...")
         loadstring(game:HttpGet("https://pastefy.app/4KHoEZVz/raw"))()
+    elseif GameID == 537413528 then
+        print("Loading Build a boat for treasure script...")
+        loadstring(game:HttpGet("https://pastefy.app/0UuJfTkj/raw"))()
 
     else
         warn("No script configured for this game. Current ID: " .. tostring(GameID))
