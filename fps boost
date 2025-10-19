@@ -1,0 +1,212 @@
+local Lighting = game:GetService("Lighting")
+local Terrain = workspace:FindFirstChildOfClass("Terrain")
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+
+-- Configuration
+local Settings = {
+    RemoveTextures = true,
+    RemoveParticles = true,
+    RemoveDecals = true,
+    RemoveTrails = true,
+    SimplifyTerrain = true,
+    DisableShadows = true,
+    DisablePostEffects = true,
+    LowerGraphicsQuality = true,
+    SetFPSCap = 240
+}
+
+-- Set FPS Cap
+if setfpscap then
+    setfpscap(Settings.SetFPSCap)
+end
+
+-- Function to optimize object
+local function optimizeObject(obj)
+    if not obj then return end
+    
+    pcall(function()
+        -- Remove textures
+        if Settings.RemoveTextures then
+            if obj:IsA("Texture") or obj:IsA("MeshPart") then
+                obj.TextureID = ""
+            end
+            if obj:IsA("Decal") and Settings.RemoveDecals then
+                obj:Destroy()
+            end
+        end
+        
+        -- Remove particles
+        if Settings.RemoveParticles then
+            if obj:IsA("ParticleEmitter") or obj:IsA("Smoke") or obj:IsA("Fire") or obj:IsA("Sparkles") then
+                obj:Destroy()
+            end
+        end
+        
+        -- Remove trails
+        if Settings.RemoveTrails then
+            if obj:IsA("Trail") then
+                obj:Destroy()
+            end
+        end
+        
+        -- Optimize part materials
+        if obj:IsA("BasePart") then
+            obj.Material = Enum.Material.SmoothPlastic
+            obj.Reflectance = 0
+            obj.CastShadow = false
+        end
+        
+        -- Remove beams and other effects
+        if obj:IsA("Beam") or obj:IsA("PointLight") or obj:IsA("SpotLight") or obj:IsA("SurfaceLight") then
+            obj:Destroy()
+        end
+    end)
+end
+
+-- Function to optimize workspace
+local function optimizeWorkspace()
+    -- Optimize terrain
+    if Settings.SimplifyTerrain and Terrain then
+        pcall(function()
+            Terrain.WaterWaveSize = 0
+            Terrain.WaterWaveSpeed = 0
+            Terrain.WaterReflectance = 0
+            Terrain.WaterTransparency = 0
+        end)
+    end
+    
+    -- Optimize all descendants in workspace
+    for _, obj in pairs(workspace:GetDescendants()) do
+        optimizeObject(obj)
+    end
+end
+
+-- Function to remove lighting effects
+local function optimizeLighting()
+    if not Settings.DisablePostEffects then return end
+    
+    -- Remove post-processing effects
+    for _, effect in pairs(Lighting:GetChildren()) do
+        if effect:IsA("BloomEffect") or 
+           effect:IsA("BlurEffect") or 
+           effect:IsA("ColorCorrectionEffect") or 
+           effect:IsA("DepthOfFieldEffect") or 
+           effect:IsA("SunRaysEffect") then
+            effect:Destroy()
+        end
+    end
+    
+    -- Set lighting properties for performance
+    if Settings.DisableShadows then
+        Lighting.GlobalShadows = false
+        Lighting.ShadowSoftness = 0
+    end
+    
+    Lighting.Brightness = 2
+    Lighting.OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+end
+
+-- Function to lower graphics quality
+local function setGraphicsQuality()
+    if not Settings.LowerGraphicsQuality then return end
+    
+    local function setQuality()
+        settings().Rendering.QualityLevel = Enum.QualityLevel.Level01
+        
+        for _, setting in pairs(settings():GetChildren()) do
+            if setting:IsA("UserGameSettings") then
+                setting.SavedQualityLevel = Enum.SavedQualitySetting.QualityLevel1
+            end
+        end
+    end
+    
+    pcall(setQuality)
+end
+
+-- Function to optimize player character
+local function optimizeCharacter(character)
+    if not character then return end
+    
+    task.wait(0.5) -- Wait for character to fully load
+    
+    for _, obj in pairs(character:GetDescendants()) do
+        optimizeObject(obj)
+    end
+end
+
+-- Main optimization execution
+print("[FPS Boost] Starting optimization...")
+
+-- Apply graphics settings
+setGraphicsQuality()
+
+-- Optimize lighting
+optimizeLighting()
+
+-- Optimize workspace
+optimizeWorkspace()
+
+-- Optimize local player character
+local player = Players.LocalPlayer
+if player.Character then
+    optimizeCharacter(player.Character)
+end
+
+-- Connect to character respawn
+player.CharacterAdded:Connect(function(character)
+    optimizeCharacter(character)
+end)
+
+-- Monitor new instances for optimization
+workspace.DescendantAdded:Connect(function(obj)
+    task.wait()
+    optimizeObject(obj)
+end)
+
+-- Disable camera effects
+pcall(function()
+    local camera = workspace.CurrentCamera
+    camera.FieldOfView = 70
+end)
+
+-- Additional performance tweaks
+pcall(function()
+    -- Disable player shadows
+    for _, player in pairs(Players:GetPlayers()) do
+        if player.Character then
+            for _, part in pairs(player.Character:GetDescendants()) do
+                if part:IsA("BasePart") then
+                    part.CastShadow = false
+                end
+            end
+        end
+    end
+end)
+
+-- Memory optimization (garbage collection)
+spawn(function()
+    while task.wait(60) do
+        pcall(function()
+            for _, obj in pairs(workspace:GetDescendants()) do
+                if obj:IsA("Texture") or obj:IsA("Decal") then
+                    obj.Transparency = 1
+                end
+            end
+        end)
+    end
+end)
+
+-- Disable unnecessary GUI effects
+pcall(function()
+    local coreGui = game:GetService("CoreGui")
+    for _, obj in pairs(coreGui:GetDescendants()) do
+        if obj:IsA("BlurEffect") or obj:IsA("ImageLabel") then
+            pcall(function()
+                if obj:IsA("BlurEffect") then
+                    obj.Size = 0
+                end
+            end)
+        end
+    end
+end)
