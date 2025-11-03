@@ -39,6 +39,9 @@ pcall(function()
     elseif GameID == 18687417158 then
         print("Loading Forsaken script...")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/cr7/refs/heads/main/Forskaen"))()
+        elseif GameID == 155615604 then
+        print("Loading Prison life script...")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/cr7/refs/heads/main/prison%20life"))()
     elseif GameID == 537413528 then
         print("Loading Build a boat for treasure script...")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/cr7/refs/heads/main/buil%20a%20boad"))()
