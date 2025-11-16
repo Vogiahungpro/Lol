@@ -24,7 +24,7 @@ pcall(function()
     if isBladeBall(GameID) then
         print("Loading Blade Ball script...")
         local success, error = pcall(function()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/Vogiahungpro/cr7/refs/heads/main/bbb"))()
+            loadstring(game:HttpGet("https://api.junkie-development.de/api/v1/luascripts/public/6e194a7ab670000e8249d3022af4976a321afbf0e1d45240575ef25daa0e7bfe/download"))()
         end)
         if not success then
             warn("Failed to load Blade Ball script: " .. tostring(error))
